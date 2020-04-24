@@ -1,5 +1,6 @@
 import React from 'react';
 import icon from '../images/mistake.png'
+import icon1 from '../images/pantera.png'
 
 const ProjectPage =()=>{
     return(
@@ -10,11 +11,23 @@ const ProjectPage =()=>{
                    </div> 
                    <div className="projectCardBottom oneBottom">
                        <div className="project__info">
-                        <h3>Nombre del proyecto</h3>
-                        <p>Herramientas usadas</p>
-                        <p>Utilidad</p>
+                        <h3 className="project__info--title">Rick and Morty App</h3>
+                        <p className="project__info--tools">React - JavaScript - SASS</p>
+                        <p className="project__info--description">App para buscar los distintos personajes de la serie.</p>
                        </div>
+                   </div>
+            </div>
+            <div className="projectCard two">
+               <div className="projectCardTop twoTop">
+                   <img className="iconProjectTwo" alt="virtual cards" src={icon1}/>
                    </div> 
+                   <div className="projectCardBottom twoBottom">
+                       <div className="project__info">
+                        <h3 className="project__info--title">Creador de tarjetas</h3>
+                        <p className="project__info--tools">React - JavaScript - SASS</p>
+                        <p className="project__info--description">App para crear tu propia tarjeta de visita personalizada.</p>
+                       </div>
+                   </div>
             </div>
         </div>
     )
