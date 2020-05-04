@@ -1,0 +1,11 @@
+@mixin forTablet {
+    @media all and (min-width:$tablet){
+      @content
+    }
+  }
+
+@mixin forDesktop {
+    @media all and (min-width:$desktop){
+      @content
+    }
+  }

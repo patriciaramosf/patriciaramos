@@ -45,10 +45,11 @@ const handleLanguages=()=>{
                 <div className="projects__titleContainer">
                     <h2 className="projects__title">{`${props.currentLanguage === false ? 'PROYECTOS -' : 'PROJECTS -'}`}</h2>
                 </div>
+                <div className="next">
+                {props.currentLanguage === false ? <ProjectPage/> : <ProjectPageEn/>}
+                </div>
             </div>
-            <div className="next">
-            {props.currentLanguage === false ? <ProjectPage/> : <ProjectPageEn/>}
-            </div>
+            
             
         </div>
     )
