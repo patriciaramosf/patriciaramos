@@ -1,24 +1,21 @@
 import React from 'react';
 import photo from '../images/patricartoon.jpeg'
-import ProjectPage from './ProjectPage.js'
+import ProjectPage from '../components/ProjectPage.js'
 import { Link } from 'react-router-dom';
-const HomePage =(props)=>{
-const handleLanguages=()=>{
-    props.changeLanguage()
-}
-console.log(props.currentLanguage)
+
+const HomePageEnglish =()=>{
     return(
         <div className="HomePage">
+            {/* <Link to ='/'> */}
             <div className="languageToggle">
                 <label className="switch">
-                    <input  type="checkbox"
-                            onChange={handleLanguages}
-                    />
+                    <input type="checkbox"/>
                     <span className="slider round"/>
                 </label>
             </div>
+            {/* </Link> */}
             <div className="mainTitle">
-                <h1>{`${props.currentLanguage === false ? ' - ¡HOLA!' : ' - HI!'}`}</h1>
+                <h1>- HI!</h1>
             </div>
             <div className="mainPhoto">
             <img alt="profile" className="thePhoto" src={photo}></img>
@@ -35,7 +32,7 @@ console.log(props.currentLanguage)
             </div>
             <div className="stepToProjects">
                 <div className="projects__titleContainer">
-                    <h2 className="projects__title">{`${props.currentLanguage === false ? 'PROYECTOS -' : 'PROJECTS -'}`}</h2>
+                    <h2 className="projects__title">PROJECTS -</h2>
                 </div>
             </div>
             <ProjectPage></ProjectPage>
@@ -43,4 +40,4 @@ console.log(props.currentLanguage)
         </div>
     )
 }
-export default HomePage;
+export default HomePageEnglish;
