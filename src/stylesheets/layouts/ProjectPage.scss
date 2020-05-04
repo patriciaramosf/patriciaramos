@@ -73,3 +73,20 @@
         } 
     }
 }
+.three{
+    .threeTop{
+        background-color:lightskyblue;
+        .iconProjectThree{
+            width:80px;
+            position: absolute;
+            top:25px;
+            left:10px;
+        }
+        .iconProjectThreeNight{
+            width:70px;
+            position: absolute;
+            top:35px;
+            right:20px;
+        }
+    }
+}
