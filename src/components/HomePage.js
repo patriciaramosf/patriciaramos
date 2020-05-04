@@ -2,13 +2,16 @@ import React from 'react';
 import photo from '../images/patricartoon.jpeg'
 import ProjectPage from './ProjectPage.js'
 import ProjectPageEn from '../componentesEnglish/ProjectPageEn.js'
+import {Link} from 'react-router-dom';
 const HomePage =(props)=>{
 const handleLanguages=()=>{
     props.changeLanguage()
 }
     return(
         <div className="HomePage">
-            <div className="aside"></div>
+            <div className="aside">
+                <Link to={`${props.currentLanguage === false ? '/proyectos' : 'projects'}`}><p className="linkTabletProject">{`${props.currentLanguage === false ? ' PROYECTOS -' : ' PROJECTS -'}`}</p></Link>
+            </div>
             <div className="main">
                 <div className="languageToggle">
                     <label className="switch">

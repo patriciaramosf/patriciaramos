@@ -16,9 +16,6 @@
     }
 
 }
-.hidden{
-    display:none
-}
 .HomePage{
     height:100vh;
     margin-top:30px;
@@ -42,6 +39,17 @@
                 border-right:1px solid lightgray;
                 position:fixed;
                 background-color: white;
+                .linkTabletProject{
+                    text-transform: uppercase;
+                    color: black;
+                    font-family: $fontFamilyTitle;
+                    font-size:28px;
+                    font-weight: 200;
+                    transform:rotate(270deg);
+                    position:absolute;
+                    top:480px;
+                    right:10px;
+                }
             }
         }
         .main{
@@ -69,6 +77,9 @@
                 text-transform: uppercase;
                 margin-left:200px;
                 font-family: $fontFamilyTitle;
+                @include forTablet{
+                    font-size:$titleTablet;
+                }
             }
             .thePhoto{
                 width:90%;
@@ -124,12 +135,13 @@
                     text-align: left;
                     margin-left:20px;
                     margin-right:20px;
+                    font-size:26px;
                 }
                     .description{
                         display:none;
                         @include forTablet{
                             display:block;
-                            font-size:18px;
+                            font-size:20px;
                             text-align: left;
                             line-height:30px;
                         }

@@ -4,9 +4,13 @@ import icon1 from '../images/pantera.png'
 import icon2day from '../images/day.png'
 import icon2night from '../images/night.png'
 
-const ProjectPage =()=>{
+const ProjectPage =(props)=>{
     return(
         <div className="ProjectPage">
+            <div className="aside">
+            <p className="linkTabletProject">{`${props.currentLanguage === false ? ' HOME -' : ' HOMEE -'}`}</p>
+            </div>
+            <div className="main">
             <div className="projectCard one">
                <div className="projectCardTop oneTop">
                    <img className="iconProjectOne" alt="rick and morty" src={icon}/>
@@ -67,6 +71,7 @@ const ProjectPage =()=>{
                         </a>
                        </div>
                    </div>
+            </div>
             </div>
         </div>
     )

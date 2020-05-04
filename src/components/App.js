@@ -1,6 +1,8 @@
 import React from 'react';
 import HomePage from './HomePage.js'
 import '../stylesheets/App.scss';
+import ProjectPage from './ProjectPage.js'
+import ProjectPageEn from '../componentesEnglish/ProjectPageEn.js'
 import { Route, Switch } from 'react-router-dom';
 
 class App extends React.Component {
@@ -27,6 +29,16 @@ class App extends React.Component {
                       currentLanguage={this.state.languageEn}
             />
           </Route>
+          <Route exact path='/proyectos'>
+            <ProjectPage  changeLanguage={this.changeLanguage}
+                          currentLanguage={this.state.languageEn}
+            />
+          </Route>
+          <Route exact path='/project'>
+            <ProjectPageEn  changeLanguage={this.changeLanguage}
+                            currentLanguage={this.state.languageEn}
+            />
+            </Route>
         </Switch>
       </div>
       
