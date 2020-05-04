@@ -41,17 +41,16 @@
                             justify-content: flex-end;
                             font-size: 20px;
                             opacity:0.8;
-                                .fa-code{
+                                .fas{
+                                    color:$primaryColor;
                                     margin-right:25px;
+                                    text-decoration: none;
+                                        }
                                     }
-                                
-                                .fa-tablet-alt{
-                                    margin-right:10px;
                                 }
+                                
                         }
                 }
-        }
-}
 .one{
     .oneTop{
         background-color:/*  #fbfc74; */ $primaryColor;

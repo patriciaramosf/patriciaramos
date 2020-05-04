@@ -1,7 +1,6 @@
 import React from 'react';
 import HomePage from './HomePage.js'
 import '../stylesheets/App.scss';
-import HomePageEnglish from '../componentsEnglish/HomePageEnglish'
 import { Route, Switch } from 'react-router-dom';
 
 class App extends React.Component {
@@ -27,9 +26,6 @@ class App extends React.Component {
             <HomePage changeLanguage={this.changeLanguage}
                       currentLanguage={this.state.languageEn}
             />
-          </Route>
-          <Route exact path='/en'>
-          <HomePageEnglish/>
           </Route>
         </Switch>
       </div>

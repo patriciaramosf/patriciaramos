@@ -1,6 +1,5 @@
 @import './core/variables';
 @import './components/button';
-
 .HomePage{
     height:100vh;
     margin:20px 20px 40px 20px;
@@ -43,10 +42,16 @@
             .fab{
                 font-size: 28px;
                 color:$primaryColor;
+                &:hover{
+                    color:black;
+                }
             }
             .fas{
                 font-size: 28px;
                 color:$primaryColor;
+                &:hover{
+                    color:black;
+                }
             }
         }
         .mainText{

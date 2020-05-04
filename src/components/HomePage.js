@@ -1,12 +1,11 @@
 import React from 'react';
 import photo from '../images/patricartoon.jpeg'
 import ProjectPage from './ProjectPage.js'
-import { Link } from 'react-router-dom';
+import ProjectPageEn from '../componentesEnglish/ProjectPageEn.js'
 const HomePage =(props)=>{
 const handleLanguages=()=>{
     props.changeLanguage()
 }
-console.log(props.currentLanguage)
     return(
         <div className="HomePage">
             <div className="languageToggle">
@@ -18,15 +17,24 @@ console.log(props.currentLanguage)
                 </label>
             </div>
             <div className="mainTitle">
-                <h1>{`${props.currentLanguage === false ? ' - ¡HOLA!' : ' - HI!'}`}</h1>
+                <h1>{`${props.currentLanguage === false ? ' - ¡HOLA!' : ' - HELLO!'}`}</h1>
             </div>
             <div className="mainPhoto">
             <img alt="profile" className="thePhoto" src={photo}></img>
             </div>
             <div className="mainIcons">
-                <i className="fab fa-github"></i>
-                <i className="fab fa-linkedin-in"></i>
-                <i className="fas fa-envelope"></i>
+                <a  href="https://github.com/patriciaramosf"
+                    target="blank">
+                    <i className="fab fa-github"></i>
+                </a>
+                <a  href="https://www.linkedin.com/in/patricia-ramos-franco/"
+                    target="blank">
+                    <i className="fab fa-linkedin-in"></i>
+                </a>
+                <a  href="mailto:patriciaramosf94@gmail.com"
+                    target="blank">
+                    <i className="fas fa-envelope"></i>
+                </a>
             </div>
             <div className="mainText">
                 <p>
@@ -38,7 +46,9 @@ console.log(props.currentLanguage)
                     <h2 className="projects__title">{`${props.currentLanguage === false ? 'PROYECTOS -' : 'PROJECTS -'}`}</h2>
                 </div>
             </div>
-            <ProjectPage></ProjectPage>
+            <div className="next">
+            {props.currentLanguage === false ? <ProjectPage/> : <ProjectPageEn/>}
+            </div>
             
         </div>
     )
