@@ -4,6 +4,14 @@ import ProjectPage from './ProjectPage.js'
 const HomePage =()=>{
     return(
         <div className="HomePage">
+            <div className="languageToggle">
+                <label className="switch">
+                    <input type="checkbox"/>
+                    <span className="slider round">
+                    {/* <span class="es">ES</span><span class="en">EN</span> */}
+                    </span>
+                </label>
+            </div>
             <div className="mainTitle">
                 <h1>- ¡Hola!</h1>
             </div>

@@ -1,4 +1,5 @@
 @import './core/variables';
+@import './components/button';
 
 .HomePage{
     height:100vh;
@@ -7,6 +8,11 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+        .languageToggle{
+            position:absolute;
+            left:20px;
+            top:5px;
+        }
         .mainTitle{
             text-align: left;
             font-size: $titlePhone;
