@@ -2,7 +2,6 @@ import React from 'react';
 import icon from '../images/mistake.png'
 import icon1 from '../images/pantera.png'
 import icon2day from '../images/day.png'
-import icon2night from '../images/night.png'
 const  patri =()=>{
     return(
         <div className="ProjectPageEn">

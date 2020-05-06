@@ -3,19 +3,8 @@ import photo from '../images/patricartoon.jpeg'
 import ProjectPage from './ProjectPage.js'
 import ProjectPageEn from '../componentesEnglish/ProjectPageEn.js'
 const HomePage =(props)=>{
-const handleLanguages=()=>{
-    props.changeLanguage()
-}
     return(
         <div className="HomePage">
-            <div className="languageToggle">
-                <label className="switch">
-                    <input  type="checkbox"
-                            onChange={handleLanguages}
-                    />
-                    <span className="slider round"/>
-                </label>
-            </div>
             <div className="mainTitle">
                 <h1>{`${props.currentLanguage === false ? ' - ¡HOLA!' : ' - HELLO!'}`}</h1>
             </div>
@@ -38,8 +27,9 @@ const handleLanguages=()=>{
             </div>
             <div className="mainText">
                 <p>
-                    <span className="myweb">Patricia Ramos Frontend Developer</span>
+                <span className="myweb">Patricia Ramos<br></br><span className="myJob">Frontend Developer</span></span>
                 </p>
+                <p className="description">{`${props.currentLanguage === false ? 'Tras varios años en Marketing y Publicidad decidí comenzar como programadora.' : 'After several experiences in the Advertising Field, I´ve decided to go deeper and becoming a programmer.'}`}</p>
             </div>
             <div className="stepToProjects">
                 <div className="projects__titleContainer">

@@ -1,24 +1,67 @@
 .aside{
-    display:none;
-    width:0vw;
-    height:0vh;
-    @include forTablet{
-        display:block;
-        width:35vw;
-        height:100vh;
-        border-right:1px solid lightgray;
-        position:fixed;
-        background-color: white;
-        .linkTabletProject{
-            text-transform: uppercase;
-            color: black;
-            font-family: $fontFamilyTitle;
-            font-size:28px;
-            font-weight: 200;
-            transform:rotate(270deg);
-            position:absolute;
-            top:480px;
-            right:10px;
+    display:block;
+    margin-top:0px;
+        @include forTablet{
+            width:270px;
+            height:100%;
+            border-right:1px solid lightgray;
+            position:fixed;
+            background-color: white;
+            margin-top:0px;
+            }
+    .languageToggle{
+        position:absolute;
+        left:20px;
+        top:25px;  
+         @include forTablet{
+             top:25px;
+         }
+    }
+    .linkTabletProject{
+        display:none;
+            @include forTablet{
+                display:block;
+                text-transform: uppercase;
+                color: black;
+                font-family: $fontFamilyTitle;
+                font-size:28px;
+                font-weight: 200;
+                transform:rotate(270deg);
+                position:absolute;
+                top:480px;
+                right:10px;
+                }
+        }
+    .mainIconsAside{
+        display:none;
+            @include forTablet{
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top:20px;
+                position:absolute;
+                left:60px;
+                bottom:30px;
+            }
+            i{
+                margin-left:20px;
+                margin-right:20px;
+            }
+            .fab{
+                font-size: 28px;
+                color:$primaryColor;
+                &:hover{
+                    color:black;
+                }
+            }
+            .fas{
+                font-size: 28px;
+                color:$primaryColor;
+                &:hover{
+                    color:black;
+                }
+            }
         }
     }
-}
+
+           

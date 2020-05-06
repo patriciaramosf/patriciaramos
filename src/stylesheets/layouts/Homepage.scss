@@ -1,7 +1,19 @@
 @import './core/variables';
 @import './components/button';
-.hidden{
-    display:none
+@keyframes colorchange{
+    0%{
+        color:black;
+    }
+    50%{
+        color:darkgray;
+    }
+    75%{
+        color:lightgrey;
+    }
+    100%{
+        color:black;
+    }
+
 }
 .HomePage{
     height:100vh;
@@ -10,11 +22,11 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-        .languageToggle{
-            position:absolute;
-            left:20px;
-            top:5px;
-        }
+    @include forTablet{
+        margin-left:270px;
+        background-color: #FFFCF9;
+        margin-top:0px;
+    }
         .mainTitle{
             text-align: left;
             font-size: $titlePhone;
@@ -25,6 +37,10 @@
             text-transform: uppercase;
             margin-left:160px;
             font-family: $fontFamilyTitle;
+                @include forTablet{
+                    font-size:$titleTablet;
+                    margin-top:120px;
+                }
         }
         .thePhoto{
             width:100%;
@@ -32,12 +48,20 @@
             border-top:solid 2px black;
             border-bottom:solid 2px black;
             opacity:0.8;
+            @include forTablet{
+                margin-top:20px;
+                width:80%;
+                margin-left:40px;
+            }
         }
         .mainIcons{
             display:flex;
             justify-content: space-around;
             align-items: center;
             margin-top:20px;
+            @include forTablet{
+                display:none;
+            }
             i{
                 margin-left:20px;
                 margin-right:20px;
@@ -68,10 +92,28 @@
             line-height: 40px;
             text-justify:auto;
             color:#333333;
-                .myweb{
-                    font-weight: bold;
+            @include forTablet{
+                text-align: left;
+                font-size:26px;
+                margin-left:40px;
+            }
+            .description{
+                    display:none;
+                    @include forTablet{
+                        display:block;
+                        font-size:20px;
+                        text-align: left;
+                        line-height:30px;
+                    }
                 }
-        }
+                    .myweb{
+                        font-weight: bold;
+                    }
+                    .myJob{
+                        font-size: 26px;
+                        animation: colorchange 10s 1;
+                    }
+            }
         .stepToProjects{
             margin-top:60px;
             margin-bottom:20px;
@@ -83,7 +125,14 @@
                     text-transform: uppercase;
                     margin-right:87px;
                     font-family: $fontFamilyTitle;
-
+                    @include forTablet{
+                        display: none;
                 }
                 }
+                .next{
+                    @include forTablet{
+                        display:none;
+                    }
+                }
+            }
 }
