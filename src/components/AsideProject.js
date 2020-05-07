@@ -1,22 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Aside =(props)=>{
-    const handleLanguages=()=>{
-        props.changeLanguage()
-    }
+const AsideProject =(props)=>{
     return(
         <div className="aside">
-            <div className="languageToggle">
-                <label className="switch">
-                    <input  type="checkbox"
-                            onChange={handleLanguages}
-                    />
-                    <span className="slider round"/>
-                </label>
-            </div>
-                <Link to={`${props.currentLanguage === false ? '/proyectos' : '/projects'}`}>
-                    <p className="linkTabletProject">{`${props.currentLanguage === false ? ' PROYECTOS -' : ' PROJECTS -'}`}
+                <Link to={`${props.currentLanguage === false ? '/' : '/'}`}>
+                    <p className="linkTabletProject">{`${props.currentLanguage === false ? ' HOLA -' : ' HELLO -'}`}
                     </p>
                 </Link>
                 <div className="mainIconsAside">
@@ -35,6 +24,6 @@ const Aside =(props)=>{
             </div>
             </div>
     )}
-export default Aside;
+export default AsideProject;
 
 

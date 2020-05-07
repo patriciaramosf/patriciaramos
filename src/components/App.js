@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePage from './HomePage.js'
 import Aside from './Aside.js'
+import AsideProject from './AsideProject.js'
 import ProjectPage from './ProjectPage.js'
 import ProjectPageEn from '../componentesEnglish/ProjectPageEn.js'
 import '../stylesheets/App.scss';
@@ -21,12 +22,9 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.languageEn)
     return (
-     
       <div className="App">
           <Switch>
-         
            <Route exact path='/'>
               <Aside changeLanguage={this.changeLanguage}
                       currentLanguage={this.state.languageEn}
@@ -36,15 +34,15 @@ class App extends React.Component {
               />
           </Route>
           <Route exact path='/proyectos'>
-              <Aside    changeLanguage={this.changeLanguage}
+              <AsideProject    changeLanguage={this.changeLanguage}
                         currentLanguage={this.state.languageEn}
               />
               <ProjectPage  changeLanguage={this.changeLanguage}
                             currentLanguage={this.state.languageEn}
               />
           </Route>
-          <Route exact path='/project'>
-              <Aside  changeLanguage={this.changeLanguage}
+          <Route exact path='/projects'>
+              <AsideProject  changeLanguage={this.changeLanguage}
                       currentLanguage={this.state.languageEn}
               />
               <ProjectPageEn  changeLanguage={this.changeLanguage}
