@@ -5,7 +5,7 @@ const AsideProject =(props)=>{
     return(
         <div className="aside">
                 <Link to={`${props.currentLanguage === false ? '/' : '/'}`}>
-                    <p className="linkTabletProject">{`${props.currentLanguage === false ? ' HOLA -' : ' HELLO -'}`}
+                    <p className="linkTabletProject">{`${props.currentLanguage === false ? ' HOLA' : ' HELLO'}`}
                     </p>
                 </Link>
                 <div className="mainIconsAside">

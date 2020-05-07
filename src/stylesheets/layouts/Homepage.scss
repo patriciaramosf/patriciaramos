@@ -1,7 +1,7 @@
 @import './core/variables';
 @keyframes colorchange{
     0%{
-        color:black;
+        color:$black;
     }
     50%{
         color:darkgray;
@@ -10,9 +10,14 @@
         color:lightgrey;
     }
     100%{
-        color:black;
+        color:$black;
     }
 
+}
+@keyframes beating {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
 }
 .HomePage{
     height:100vh;
@@ -31,7 +36,7 @@
             font-size: $titlePhone;
             margin-top:10px;
             margin-bottom:20px;
-            color:black;
+            color:$black;
             font-weight: bold;
             text-transform: uppercase;
             margin-left:160px;
@@ -90,7 +95,7 @@
             font-size:26px;
             line-height: 40px;
             text-justify:auto;
-            color:#333333;
+            color:$black;
             @include forTablet{
                 text-align: left;
                 font-size:26px;
@@ -100,9 +105,10 @@
                     display:none;
                     @include forTablet{
                         display:block;
-                        font-size:20px;
+                        font-size:18px;
                         text-align: left;
                         line-height:30px;
+                        margin-right:10px;
                     }
                 }
                     .myweb{
@@ -112,6 +118,19 @@
                         font-size: 26px;
                         animation: colorchange 10s 1;
                     }
+                    .dedicatory{
+                        color:$black;
+                        .pasteis{
+                            font-size: 14px;
+                        }
+                        .fas{
+                            color:#C42021;
+                            margin-left:6px;
+                            font-size:14px;
+                            padding-right:5px;
+                            animation:beating .5s 10;
+                        }
+                    }
             }
         .stepToProjects{
             margin-top:60px;
@@ -119,7 +138,7 @@
                 .projects__title{
                     text-align: right;
                     font-size: $titlePhone;
-                    color:black;
+                    color:$black;
                     font-weight: bold;
                     text-transform: uppercase;
                     margin-right:87px;

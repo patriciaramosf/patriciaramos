@@ -8,5 +8,6 @@
     background:white;
     @include forTablet{
         background-color: #FFFCF9;
+        height:100%;
     } 
 }
