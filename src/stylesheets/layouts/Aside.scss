@@ -30,6 +30,18 @@
                 position:absolute;
                 top:480px;
                 right:10px;
+                background:linear-gradient(to bottom, $primaryColor 0%,$primaryColor 100%);
+                background-position: 0 100%;
+                background-repeat: repeat-x;
+                background-size: 2px 3px;
+                color: #000;
+                text-decoration: none;
+                transition: background-size .8s;
+                transition: background-position .4s;
+                  &:hover {
+                    background-position: 0 50%;
+                    background-size: 5px 5px;
+                  }
                 }
         }
     .mainIconsAside{
@@ -41,7 +53,7 @@
                 margin-top:20px;
                 position:absolute;
                 left:60px;
-                bottom:30px;
+                bottom:50px;
             }
             i{
                 margin-left:20px;

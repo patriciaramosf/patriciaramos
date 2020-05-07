@@ -3,6 +3,10 @@
     display: inline-block;
     width: 55px;
     height: 29px;
+    @include forTablet{
+      width:75px;
+      height:36px;
+    }
   }
   
   /* Hide default HTML checkbox */
@@ -35,6 +39,10 @@
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
+    @include forTablet{
+      width:28px;
+      height:28px;
+    }
   }
   
   input:checked + .slider {
@@ -49,6 +57,11 @@
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+    @include forTablet{
+      -webkit-transform: translateX(36px);
+      -ms-transform: translateX(36px);
+      transform: translateX(36px);
+    }
   }
   
   /* Rounded sliders */
@@ -72,6 +85,10 @@
  font-family: $fontFamilyGeneral;
  padding-left:20px;
  font-weight: bold;
+ @include forTablet{
+  font-size:18px;
+  padding-left:20px;
+}
 }
 
 input:checked + .slider:after{  
@@ -79,4 +96,8 @@ content:'EN';
 padding-right:40px;
 color:$primaryColor;
 font-weight: bold;
+@include forTablet{
+  font-size:18px;
+  padding-right:45px;
+}
 }
