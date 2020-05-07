@@ -1,5 +1,6 @@
+@import './components/button';
+@import './core/variables';
 .aside{
-    display:block;
     margin-top:0px;
         @include forTablet{
             width:270px;
@@ -10,9 +11,8 @@
             margin-top:0px;
             }
     .languageToggle{
-        position:absolute;
-        left:20px;
-        top:25px;  
+        margin-top:25px;
+        margin-left:20px;
          @include forTablet{
              top:25px;
          }

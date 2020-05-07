@@ -26,29 +26,30 @@ class App extends React.Component {
      
       <div className="App">
           <Switch>
+         
            <Route exact path='/'>
-             <Aside changeLanguage={this.changeLanguage}
-                    currentLanguage={this.state.languageEn}
-             />
-            <HomePage changeLanguage={this.changeLanguage}
+              <Aside changeLanguage={this.changeLanguage}
                       currentLanguage={this.state.languageEn}
-            />
+              />
+              <HomePage changeLanguage={this.changeLanguage}
+                        currentLanguage={this.state.languageEn}
+              />
           </Route>
           <Route exact path='/proyectos'>
-            <Aside          changeLanguage={this.changeLanguage}
+              <Aside    changeLanguage={this.changeLanguage}
+                        currentLanguage={this.state.languageEn}
+              />
+              <ProjectPage  changeLanguage={this.changeLanguage}
                             currentLanguage={this.state.languageEn}
-            />
-            <ProjectPage  changeLanguage={this.changeLanguage}
-                          currentLanguage={this.state.languageEn}
-            />
+              />
           </Route>
           <Route exact path='/project'>
-            <Aside  changeLanguage={this.changeLanguage}
-                    currentLanguage={this.state.languageEn}
-            />
-            <ProjectPageEn  changeLanguage={this.changeLanguage}
-                            currentLanguage={this.state.languageEn}
-            />
+              <Aside  changeLanguage={this.changeLanguage}
+                      currentLanguage={this.state.languageEn}
+              />
+              <ProjectPageEn  changeLanguage={this.changeLanguage}
+                              currentLanguage={this.state.languageEn}
+              />
             </Route>
         </Switch>
       </div>
