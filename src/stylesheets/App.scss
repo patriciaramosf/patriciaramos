@@ -11,3 +11,10 @@
         height:100%;
     } 
 }
+html{
+   background-color: white;
+    @include forTablet{
+        background-color: #FFFCF9;
+        height:100%;
+    } 
+}
