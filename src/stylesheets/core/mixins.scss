@@ -9,3 +9,8 @@
       @content
     }
   }
+  @mixin forSuperdesktop {
+    @media all and (min-width:$superdesktop){
+      @content
+    }
+  }

@@ -6,6 +6,7 @@ import responsive from '../images/responsive.png'
 const ProjectPage =(props)=>{
     return(
         <div className="ProjectPage">
+            <div className="containerProject">
             <div className="projectCard one">
                <div className="projectCardTop oneTop">
                    <img className="iconProjectOne" alt="rick and morty" src={icon}/>
@@ -67,6 +68,7 @@ const ProjectPage =(props)=>{
                         </a>
                        </div>
                    </div>
+            </div>
             </div>
         </div>
     )

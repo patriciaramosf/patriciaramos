@@ -1,38 +1,54 @@
 .ProjectPage{
-    margin-top:60px;
-    display: grid;
-    grid-column:1;
     padding-bottom:20px;
     font-family:$fontFamilyGeneral;
-    grid-gap:40px;
-    @include forTablet{
-        margin-left:270px;
-        background-color: #FFFCF9;
-        margin-top:0px;
-        height:100vh;
-    }
         .projectCard{
-            background:white;
             width:340px;
             height:300px;
             -webkit-box-shadow: 3px 3px 3px 2px rgba(59, 59, 59, 0.2);
             box-shadow: 3px 3px 3px 2px rgba(59, 59, 59, 0.2);
             position: relative;
             @include forTablet{
-                width:400px;
+                width:420px;
                 height:360px;
                 margin-top:20px;
                 margin-left:40px;
             }
             @include forDesktop{
-                width:950px;
+                width:650px;
                 height:350px;
+                background:none;
+                margin-left:100px;
+                margin-right:100px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                @include forSuperdesktop{
+                    width:1100px;
+                }
             }
                 .projectCardTop{
                     height:45%;
+                    @include forDesktop{
+                        width:100%;
+                        height:350px;
+                        margin-left:20px;
+                        -webkit-box-shadow: 3px 3px 3px 2px rgba(59, 59, 59, 0.2);
+                        box-shadow: 3px 3px 3px 2px rgba(59, 59, 59, 0.2);
+                    }
                 }
                 .projectCardBottom{
                     height:55%;
+                    background:white;
+                   @include forDesktop{
+                        height:320px;
+                        width:350px;
+                        position:absolute;
+                        background-color: white;
+                        -webkit-box-shadow: 3px 3px 3px 0px rgba(59, 59, 59, 0.2);
+                        box-shadow: 3px 3px 3px 0px rgba(59, 59, 59, 0.2);
+                    }
+                    @include forSuperdesktop{
+                        height:350px;
+                    }
                         .project__info{
                             padding:10px;
                             line-height: 20px;
@@ -41,6 +57,10 @@
                             @include forTablet{
                                   font-size:24px; 
                                   line-height: 25px; 
+                            }
+                            @include forDesktop{
+                                padding:20px;
+                                margin-top:60px;
                             }
                             .project__info--title{
                                 font-weight: bold;
@@ -81,7 +101,17 @@
                 }
 .one{
     .oneTop{
-        background-color:/*  #fbfc74; */ $primaryColor;
+        background-color: $primaryColor;
+        @include forDesktop{
+        }
+        
+    }
+    .oneBottom{
+        @include forDesktop{
+            top:-30px;
+            left:40px;
+        }
+    }
         .iconProjectOne{
             width:210px;
             position: absolute;
@@ -90,12 +120,24 @@
             @include forTablet{
                 width:240px;
             }
+            @include forDesktop{
+                /* width:300px;
+                top:3px;
+                right:-60px; */
+                display:none;
+            }
         } 
     }
-}
 .two{
     .twoTop{
         background-color: black;
+        }
+    .twoBottom{
+            @include forDesktop{
+                top:-30px;
+                right:10px;
+            }
+        }
         .iconProjectTwo{
             width:180px;
             position: absolute;
@@ -105,12 +147,25 @@
                 width:220px;
                 top:-58px;
             }
+            @include forDesktop{
+                width:250px;
+                top:40px;
+                left:30px;
+                display:none;
+            }
         } 
     }
-}
+    
 .three{
     .threeTop{
         background-color:#9A98B5;
+    }
+    .threeBottom{
+        @include forDesktop{
+            top:-30px;
+            left:40px;
+        }
+    }
         .iconProjectThree{
             width:250px;
             position: absolute;
@@ -121,6 +176,25 @@
                 top:-50px;
                 left:120px;
             }
+            @include forDesktop{
+                width:300px;
+                top:80px;
+                left:370px;
+                display:none;
+            }
         }
     }
-}
+    .containerProject{
+    display: grid;
+    grid-column:1;
+    grid-gap:40px;
+    @include forTablet{
+        margin-left:260px;
+        justify-content: center;
+    }
+    @include forDesktop{
+        margin-left:280px;
+        justify-content: center;
+        grid-gap:50px;
+    }
+    }
