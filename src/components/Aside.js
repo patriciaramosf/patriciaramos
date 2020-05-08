@@ -15,7 +15,7 @@ const Aside =(props)=>{
                     <span className="slider round"/>
                 </label>
             </div>
-                <Link to={`${props.currentLanguage === false ? '/proyectos' : '/projects'}`}>
+                <Link to='/projects'>
                     <p className="linkTabletProject">{`${props.currentLanguage === false ? ' PROYECTOS' : ' PROJECTS'}`}
                     </p>
                 </Link>

@@ -106,16 +106,16 @@
 }
 .three{
     .threeTop{
-        background-color:lightskyblue;
+        background-color:#9A98B5;
         .iconProjectThree{
-            width:80px;
+            width:250px;
             position: absolute;
-            top:25px;
-            left:10px;
+            top:-35px;
+            left:100px;
             @include forTablet{
-                width:140px;
-                top:13px;
-                left:20px;
+                width:300px;
+                top:-50px;
+                left:120px;
             }
         }
     }

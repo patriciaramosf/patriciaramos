@@ -1,9 +1,9 @@
 import React from 'react';
 import icon from '../images/mistake.png'
 import icon1 from '../images/pantera.png'
-import icon2day from '../images/day.png'
+import responsive from '../images/responsive.png'
 
-const ProjectPage =()=>{
+const ProjectPage =(props)=>{
     return(
         <div className="ProjectPage">
             <div className="projectCard one">
@@ -14,11 +14,13 @@ const ProjectPage =()=>{
                        <div className="project__info">
                         <h3 className="project__info--title">Rick and Morty App</h3>
                         <p className="project__info--tools">React - JavaScript - SASS</p>
-                        <p className="project__info--description">Busca a tus personajes favoritos de la serie.</p>
+                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Busca a tus personajes favoritos de la serie.' : 'Find your favourite character of the tv serie with this App.'}`}</p>
                        </div>
                        <div className="cardIcons">
                        <a href="https://github.com/patriciaramosf/modulo-3-evaluacion-final-patriciaramosf"><i className="fas fa-code"></i></a>
-                       <a href="http://beta.adalab.es/modulo-3-evaluacion-final-patriciaramosf/#/"><i className="fas fa-tablet-alt"></i></a>
+                       <a   target="blank"
+                            href="http://beta.adalab.es/modulo-3-evaluacion-final-patriciaramosf/#/"><i className="fas fa-tablet-alt"></i>
+                        </a>
                        </div>
                    </div>
             </div>
@@ -30,7 +32,7 @@ const ProjectPage =()=>{
                        <div className="project__info">
                         <h3 className="project__info--title">Creador de tarjetas</h3>
                         <p className="project__info--tools">React - JavaScript - SASS</p>
-                        <p className="project__info--description">Personaliza tu tarjeta y compártela en Twitter.</p>
+                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Personaliza tu tarjeta y compártela en Twitter.' : 'Get your personal card and share it on Twitter.'}`}</p>
                        </div>
                        <div className="cardIcons">
                         <a  target="blank"
@@ -46,21 +48,21 @@ const ProjectPage =()=>{
             </div>
             <div className="projectCard three">
                <div className="projectCardTop threeTop">
-                   <img className="iconProjectThree" alt="darkMode" src={icon2day}/>
+                   <img className="iconProjectThree" alt="darkMode" src={responsive}/>
                    </div> 
                    <div className="projectCardBottom threeBottom">
                        <div className="project__info">
-                        <h3 className="project__info--title">Dark Mode</h3>
-                        <p className="project__info--tools">JavaScript - CSS</p>
-                        <p className="project__info--description">Modo noche versión COVID19.</p>
+                        <h3 className="project__info--title">Collapsing Margins</h3>
+                        <p className="project__info--tools">HTML - Sass</p>
+                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Mi primer projecto en Adalab, Web Responsive.' : 'My first project at Adalab, a responsive Web.'}`}</p>
                        </div>
                        <div className="cardIcons">
                         <a  target="blank"
-                            href="https://github.com/patriciaramosf/dark-mode">
+                            href="https://github.com/patriciaramosf/Collapsing-margins-Web__Adalab-Project">
                             <i className="fas fa-code"></i>
                         </a>
                        <a   target="blank" 
-                            href="https://patriciaramosf.github.io/dark-mode/">
+                            href="http://beta.adalab.es/project-promo-i-module-1-team-3-afternoon-final/">
                             <i className="fas fa-tablet-alt"></i>
                         </a>
                        </div>
