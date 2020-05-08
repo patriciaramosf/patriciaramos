@@ -251,3 +251,34 @@
             }
     }
 }
+.four{
+    .fourTop{
+        background-color: #BF1A2F;
+    }
+    .fourBottom{
+        @include forDesktop{
+            top:-30px;
+            left:40px;
+        }
+    }
+        .iconProjectfour{
+            width:180px;
+            position: absolute;
+            top:-40px;
+            right:0px;
+            @include forTablet{
+                width:220px;
+                top:-50px;
+            }
+            @include forDesktop{
+                top:-20px;
+                width:300px;
+                right:-20px;
+            }
+            @include forSuperdesktop{
+               right:60px;
+               top:-40px;
+               width:400px;
+            }
+        }
+}

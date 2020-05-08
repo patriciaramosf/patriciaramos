@@ -1,6 +1,7 @@
 import React from 'react';
 import icon from '../images/mistake.png'
 import icon1 from '../images/pantera.png'
+import icon4 from '../images/hodor.png'
 import icongif from '../images/mygiphy.png'
 import jar from '../images/sticker.png'
 import responsive from '../images/responsive.png'
@@ -90,6 +91,24 @@ const ProjectPage =(props)=>{
                        <a   target="blank" 
                             href="http://beta.adalab.es/project-promo-i-module-1-team-3-afternoon-final/">
                             <i className="fas fa-tablet-alt"></i>
+                        </a>
+                       </div>
+                   </div>
+            </div>
+            <div className="projectCard four">
+               <div className="projectCardTop fourTop">
+                   <img className="iconProjectfour" alt="rick and morty" src={icon4}/>
+                   </div> 
+                   <div className="projectCardBottom fourBottom">
+                       <div className="project__info">
+                        <h3 className="project__info--title">Buscador de películas</h3>
+                        <p className="project__info--tools">JavaScript - SASS</p>
+                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Buscador de películas a través de API.' : 'Movie searcher.'}`}</p>
+                       </div>
+                       <div className="cardIcons">
+                       <a href="https://github.com/patriciaramosf/find-movies-from-api"><i className="fas fa-code"></i></a>
+                       <a   target="blank"
+                            href="https://patriciaramosf.github.io/find-movies-from-api/"><i className="fas fa-tablet-alt"></i>
                         </a>
                        </div>
                    </div>
