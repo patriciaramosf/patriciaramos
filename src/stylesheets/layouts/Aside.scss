@@ -8,7 +8,6 @@
             border-right:1px solid lightgray;
             position:fixed;
             background-color: white;
-           /*  margin-top:-40px; */
             }
     .languageToggle{
         margin-top:25px;
@@ -29,7 +28,7 @@
                 transform:rotate(270deg);
                 position:absolute;
                 top:480px;
-                right:10px;
+                right:30px;
                 background:linear-gradient(to bottom, $primaryColor 0%,$primaryColor 100%);
                 background-position: 0 100%;
                 background-repeat: repeat-x;
@@ -43,6 +42,10 @@
                     background-size: 5px 5px;
                   }
                 }
+            @include forDesktop{
+                font-size:36px;
+                right:30px;
+            }
         }
     .mainIconsAside{
         display:none;
@@ -55,6 +58,9 @@
                 left:60px;
                 bottom:50px;
             }
+            @include forDesktop{
+                left:20px;
+                }
             i{
                 margin-left:20px;
                 margin-right:20px;
@@ -62,6 +68,9 @@
             .fab{
                 font-size: 28px;
                 color:$primaryColor;
+                @include forDesktop{
+                font-size: 36px;
+                }
                 &:hover{
                     color:black;
                 }
@@ -69,6 +78,9 @@
             .fas{
                 font-size: 28px;
                 color:$primaryColor;
+                @include forDesktop{
+                    font-size: 36px;
+                    }
                 &:hover{
                     color:black;
                 }

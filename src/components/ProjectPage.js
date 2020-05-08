@@ -1,6 +1,7 @@
 import React from 'react';
 import icon from '../images/mistake.png'
 import icon1 from '../images/pantera.png'
+import jar from '../images/sticker.png'
 import responsive from '../images/responsive.png'
 
 const ProjectPage =(props)=>{
@@ -10,6 +11,7 @@ const ProjectPage =(props)=>{
             <div className="projectCard one">
                <div className="projectCardTop oneTop">
                    <img className="iconProjectOne" alt="rick and morty" src={icon}/>
+                   <img className="iconProjectOneDesk" alt="rick and morty" src={jar}/>
                    </div> 
                    <div className="projectCardBottom oneBottom">
                        <div className="project__info">
@@ -31,7 +33,7 @@ const ProjectPage =(props)=>{
                    </div> 
                    <div className="projectCardBottom twoBottom">
                        <div className="project__info">
-                        <h3 className="project__info--title">Creador de tarjetas</h3>
+                        <h3 className="project__info--title">{`${props.currentLanguage === false ? 'Creador de tarjetas' : 'Card Generator'}`}</h3>
                         <p className="project__info--tools">React - JavaScript - SASS</p>
                         <p className="project__info--description">{`${props.currentLanguage === false ? 'Personaliza tu tarjeta y compártela en Twitter.' : 'Get your personal card and share it on Twitter.'}`}</p>
                        </div>
