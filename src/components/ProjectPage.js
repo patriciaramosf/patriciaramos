@@ -1,7 +1,6 @@
 import React from 'react';
-import icon from '../images/mistake.png'
 import icon1 from '../images/pantera.png'
-import icon4 from '../images/hodor.png'
+import icon4 from '../images/pixar.png'
 import icongif from '../images/mygiphy.png'
 import jar from '../images/sticker.png'
 import responsive from '../images/responsive.png'
@@ -12,13 +11,12 @@ const ProjectPage =(props)=>{
             <div className="containerProject">
             <div className="projectCard one">
                <div className="projectCardTop oneTop">
-                   <img className="iconProjectOne" alt="rick and morty" src={icon}/>
                    <img className="iconProjectOneDesk" alt="rick and morty" src={jar}/>
                    </div> 
                    <div className="projectCardBottom oneBottom">
                        <div className="project__info">
                         <h3 className="project__info--title">Rick and Morty App</h3>
-                        <p className="project__info--tools">React - JavaScript - SASS</p>
+                        <p className="project__info--tools">React - JavaScript - Sass</p>
                         <p className="project__info--description">{`${props.currentLanguage === false ? 'Busca a tus personajes favoritos de la serie.' : 'Find your favourite character of the tv serie with this App.'}`}</p>
                        </div>
                        <div className="cardIcons">
@@ -36,7 +34,7 @@ const ProjectPage =(props)=>{
                    <div className="projectCardBottom twoBottom2">
                        <div className="project__info">
                         <h3 className="project__info--title">{`${props.currentLanguage === false ? 'Generador de tarjetas' : 'Card Generator'}`}</h3>
-                        <p className="project__info--tools">JavaScript - SASS</p>
+                        <p className="project__info--tools">JavaScript - Sass</p>
                         <p className="project__info--description">{`${props.currentLanguage === false ? 'Personaliza tu tarjeta y compártela en Twitter.' : 'Get your personal card and share it on Twitter.'}`}</p>
                        </div>
                        <div className="cardIcons">
@@ -58,7 +56,7 @@ const ProjectPage =(props)=>{
                    <div className="projectCardBottom twoBottom">
                        <div className="project__info">
                         <h3 className="project__info--title">{`${props.currentLanguage === false ? 'Proyecto de código heredado' : 'Legacy Code Project'}`}</h3>
-                        <p className="project__info--tools">React - SASS</p>
+                        <p className="project__info--tools">React - Sass</p>
                         <p className="project__info--description">{`${props.currentLanguage === false ? 'Migración de Javascript a React JS.' : 'Migration from Javascript to React JS.'}`}</p>
                        </div>
                        <div className="cardIcons">
@@ -102,7 +100,7 @@ const ProjectPage =(props)=>{
                    <div className="projectCardBottom fourBottom">
                        <div className="project__info">
                         <h3 className="project__info--title">Buscador de películas</h3>
-                        <p className="project__info--tools">JavaScript - SASS</p>
+                        <p className="project__info--tools">JavaScript - Sass</p>
                         <p className="project__info--description">{`${props.currentLanguage === false ? 'Buscador de películas a través de API.' : 'Movie searcher.'}`}</p>
                        </div>
                        <div className="cardIcons">

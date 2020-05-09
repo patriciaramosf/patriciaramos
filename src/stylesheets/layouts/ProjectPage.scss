@@ -4,10 +4,12 @@
     .containerProject{
         display: grid;
         grid-column:1;
-        grid-gap:40px;
+        grid-gap:45px;
+        margin-top:40px;
         @include forTablet{
             margin-left:260px;
             justify-content: center;
+            margin-top:0px;
         }
         @include forDesktop{
             margin-left:280px;
@@ -130,31 +132,28 @@
             left:40px;
         }
     }
-        .iconProjectOne{
-            width:210px;
+        .iconProjectOneDesk{
             position: absolute;
-            top:-50px;
-            right:-20px;
+            width:160px;
+            left:200px;
+            top:-30px;
             @include forTablet{
                 width:240px;
+                width:210px;
+                left:200px;
+                top:-25px;
             }
-            @include forDesktop{
-                display:none;
-            }
-        }
-        .iconProjectOneDesk{
-            display:none;
             @include forDesktop{
                 display:block;
                 position:absolute;
                 top:-20px;
                 width:300px;
-                right:-60px;
+                left:400px;
                 transform:rotate(20deg);
             }
             @include forSuperdesktop{
                 width:400px;
-                right:-30px;
+                left:650px;
             }
         }
     }
@@ -262,23 +261,23 @@
         }
     }
         .iconProjectfour{
-            width:180px;
+            width:120px;
             position: absolute;
-            top:-40px;
-            right:0px;
+            top:-35px;
+            right:20px;
             @include forTablet{
-                width:220px;
+                width:150px;
                 top:-50px;
             }
             @include forDesktop{
                 top:-20px;
-                width:300px;
-                right:-20px;
+                width:260px;
+                right:2px;
             }
             @include forSuperdesktop{
                right:60px;
-               top:-40px;
-               width:400px;
+               top:-60px;
+               width:300px;
             }
         }
 }
