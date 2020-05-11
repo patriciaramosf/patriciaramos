@@ -123,18 +123,6 @@
         .stepToProjects{
             margin-top:60px;
             margin-bottom:20px;
-                .projects__title{
-                    text-align: right;
-                    font-size: $titlePhone;
-                    color:$black;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    margin-right:87px;
-                    font-family: $fontFamilyTitle;
-                    @include forTablet{
-                        display: none;
-                }
-                }
                 .next{
                     @include forTablet{
                         display:none;

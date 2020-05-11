@@ -16,8 +16,8 @@ const Aside =(props)=>{
                 </label>
             </div>
                 <Link to='/projects'>
-                    <p className="linkTabletProject">{`${props.currentLanguage === false ? ' PROYECTOS' : ' PROJECTS'}`}
-                    </p>
+                    <button className="linkTabletProject">{`${props.currentLanguage === false ? ' PROYECTOS' : ' PROJECTS'}`}
+                    </button>
                 </Link>
                 <div className="mainIconsAside">
                 <a  href="https://github.com/patriciaramosf"

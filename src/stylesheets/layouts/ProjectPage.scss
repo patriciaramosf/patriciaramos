@@ -16,6 +16,68 @@
             justify-content: center;
             grid-gap:50px;
         }
+        @include forSuperdesktop{
+            grid-gap:70px;
+        }
+        .projects__title{
+            text-align: right;
+            font-size: $titlePhone;
+            color:$black;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right:87px;
+            font-family: $fontFamilyTitle;
+            @include forTablet{
+                margin-top:40px;
+                font-size: $titleTablet;
+                margin-right:17px;
+        }
+        @include forDesktop{
+        margin-right:87px;
+    }
+        @include forSuperdesktop{
+            font-size:$titleDesktop;
+            margin-top:60px;
+        }
+        }
+        .allbuttons{
+            text-align: center;
+            display:flex;
+            justify-content: space-evenly;
+            padding:5px;
+                .btn{
+                    border:1px solid $black;
+                    background-color: transparent;
+                    color:$primaryColor;
+                    text-shadow: -2px -1px rgba(0,0,0,0.2);
+                    box-shadow:1px 0.5px 3.5px 0.5px $primaryColor;
+                    font-size: 16px;
+                    width:90px;
+                    height:35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include forTablet{
+                        width:100px;
+                        height:35px;
+                        font-size: 18px;
+                        margin-left:40px;
+                }
+                @include forDesktop{
+                    width:140px;
+                    height:40px;
+                    font-size: 24px;
+                    margin-left:40px;
+                    margin-bottom:20px;
+            }
+            @include forSuperdesktop{
+                    width:200px;
+                    height:70px;
+                    font-size: 28px;
+                    margin-top:20px;
+            }
+                }
+        }
         .projectCard{
             width:340px;
             height:300px;
@@ -64,6 +126,7 @@
                     }
                     @include forSuperdesktop{
                         height:350px;
+                        width:400px;
                     }
                         .project__info{
                             padding:10px;

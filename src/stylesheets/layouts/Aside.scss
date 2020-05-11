@@ -21,26 +21,17 @@
             @include forTablet{
                 display:block;
                 text-transform: uppercase;
-                color: $black;
-                font-family: $fontFamilyTitle;
+                color: $primaryColor;
+                font-family: $fontFamilyGeneral;
                 font-size:28px;
                 font-weight: 200;
                 transform:rotate(270deg);
                 position:absolute;
                 top:480px;
                 right:30px;
-                background:linear-gradient(to bottom, $primaryColor 0%,$primaryColor 100%);
-                background-position: 0 100%;
-                background-repeat: repeat-x;
-                background-size: 2px 3px;
-                color: $black;
-                text-decoration: none;
-                transition: background-size .8s;
-                transition: background-position .4s;
-                  &:hover {
-                    background-position: 0 50%;
-                    background-size: 5px 5px;
-                  }
+                border:1px solid $black;
+                text-shadow: -2px -1px rgba(0,0,0,0.2);
+                box-shadow:1px 0.5px 3.5px 0.5px $primaryColor;
                 }
             @include forDesktop{
                 font-size:36px;

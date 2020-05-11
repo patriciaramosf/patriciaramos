@@ -9,6 +9,14 @@ const ProjectPage =(props)=>{
     return(
         <div className="ProjectPage">
             <div className="containerProject">
+            <div className="projects__titleContainer">
+                    <h2 className="projects__title">{`${props.currentLanguage === false ? 'PROYECTOS -' : 'PROJECTS -'}`}</h2>
+            </div>
+            <div className="allbuttons">
+                <button className="btn btnAll">{`${props.currentLanguage === false ? 'Todo' : 'All'}`}</button>
+                <button className="btn btnJavascript">JavaScript</button>
+                <button className="btn btnReact">React</button>
+            </div>
             <div className="projectCard one">
                <div className="projectCardTop oneTop">
                    <img className="iconProjectOneDesk" alt="rick and morty" src={jar}/>
@@ -57,7 +65,7 @@ const ProjectPage =(props)=>{
                        <div className="project__info">
                         <h3 className="project__info--title">{`${props.currentLanguage === false ? 'Proyecto de código heredado' : 'Legacy Code Project'}`}</h3>
                         <p className="project__info--tools">React - Sass</p>
-                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Migración de Javascript a React JS.' : 'Migration from Javascript to React JS.'}`}</p>
+                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Migración de Javascript a React JS. #darkMode' : 'Migration from Javascript to React JS #darkMode.'}`}</p>
                        </div>
                        <div className="cardIcons">
                         <a  target="blank"

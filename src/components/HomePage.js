@@ -34,9 +34,6 @@ const HomePage =(props)=>{
                 <p className="description">{`${props.currentLanguage === false ? 'Me gusta comer(' : 'I love eating ('}`}<small className="dedicatory"><span className="pasteis">{`${props.currentLanguage === false ? 'tortilla de patatas' : 'pastèis de bacalhau'}`}</span>)</small>{`${props.currentLanguage === false ? ',leer y reírme.' : ',reading and laughing.'}`}</p>
             </div>
             <div className="stepToProjects">
-                <div className="projects__titleContainer">
-                    <h2 className="projects__title">{`${props.currentLanguage === false ? 'PROYECTOS -' : 'PROJECTS -'}`}</h2>
-                </div>
                 <div className="next">
                     <ProjectPage    currentLanguage={props.currentLanguage}
                     />
