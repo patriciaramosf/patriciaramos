@@ -22,11 +22,11 @@ const ProjectPage =(props)=>{
                 <button     className="btn btnReact">
                             React
                 </button>
-                <button     className="btn btnReact">
+                <button     className="btn btnLayout">
                             {`${props.currentLanguage === false ? 'Maquetación' : 'Layout'}`}
                 </button>
             </div>
-            <div className='projectCard one react'>
+            <div className='projectCard one'>
                <div className="projectCardTop oneTop">
                    <img className="iconProjectOneDesk" alt="rick and morty" src={jar}/>
                    </div> 
@@ -44,7 +44,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className="projectCard two2 javascript">
+            <div className="projectCard two2">
                <div className="projectCardTop twoTop2">
                    <img className="iconProjectTwo2" alt="virtual cards" src={icongif}/>
                    </div> 
@@ -66,7 +66,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className="projectCard two react">
+            <div className="projectCard two">
                <div className="projectCardTop twoTop">
                    <img className="iconProjectTwo" alt="virtual cards" src={icon1}/>
                    </div> 
