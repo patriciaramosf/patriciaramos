@@ -36,10 +36,6 @@ const HomePage =(props)=>{
             <div className="stepToProjects">
                 <div className="next">
                     <ProjectPage    currentLanguage={props.currentLanguage}
-                                    showProjects={this.showProjects}
-                                    showProjectJs={this.showProjectJs}
-                                    showProjectReact={this.showProjectReact}
-                                    showProjectLayout={this.showProjectLayout}
                     />
                 </div>
             </div>
