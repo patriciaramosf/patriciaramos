@@ -51,16 +51,17 @@
                     color:$primaryColor;
                     text-shadow: -2px -1px rgba(0,0,0,0.2);
                     box-shadow:1px 0.5px 3.5px 0.5px $primaryColor;
-                    font-size: 16px;
-                    width:90px;
+                    font-size: 10px;
+                    width:80px;
+                    margin:2px;
+                    font-weight: bold;
                     height:35px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     @include forTablet{
-                        width:100px;
+                        width:70px;
                         height:35px;
-                        font-size: 18px;
                         margin-left:40px;
                 }
                 @include forDesktop{

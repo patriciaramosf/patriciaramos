@@ -16,8 +16,9 @@ const ProjectPage =(props)=>{
                 <button className="btn btnAll">{`${props.currentLanguage === false ? 'Todo' : 'All'}`}</button>
                 <button className="btn btnJavascript">JavaScript</button>
                 <button className="btn btnReact">React</button>
+                <button className="btn btnReact">{`${props.currentLanguage === false ? 'Maquetación' : 'Layout'}`}</button>
             </div>
-            <div className="projectCard one">
+            <div className="projectCard one react">
                <div className="projectCardTop oneTop">
                    <img className="iconProjectOneDesk" alt="rick and morty" src={jar}/>
                    </div> 
@@ -35,7 +36,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className="projectCard two2">
+            <div className="projectCard two2 javascript">
                <div className="projectCardTop twoTop2">
                    <img className="iconProjectTwo2" alt="virtual cards" src={icongif}/>
                    </div> 
@@ -57,7 +58,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className="projectCard two">
+            <div className="projectCard two react">
                <div className="projectCardTop twoTop">
                    <img className="iconProjectTwo" alt="virtual cards" src={icon1}/>
                    </div> 
@@ -79,9 +80,9 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className="projectCard three">
+            <div className="projectCard three layout">
                <div className="projectCardTop threeTop">
-                   <img className="iconProjectThree" alt="darkMode" src={responsive}/>
+                   <img className="iconProjectThree" alt="collapsingMargins" src={responsive}/>
                    </div> 
                    <div className="projectCardBottom threeBottom">
                        <div className="project__info">
@@ -101,9 +102,9 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className="projectCard four">
+            <div className="projectCard four javascript">
                <div className="projectCardTop fourTop">
-                   <img className="iconProjectfour" alt="rick and morty" src={icon4}/>
+                   <img className="iconProjectfour" alt="Search Films" src={icon4}/>
                    </div> 
                    <div className="projectCardBottom fourBottom">
                        <div className="project__info">
