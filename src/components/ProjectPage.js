@@ -5,7 +5,11 @@ import icongif from '../images/mygiphy.png'
 import jar from '../images/sticker.png'
 import responsive from '../images/responsive.png'
 
-const ProjectPage =(props)=>{
+const ProjectPage =(props)=>{ 
+    const filterSelectionAll=()=> props.showProjects();
+    const filterSelectionJs=()=> props.showProjectJs();
+    const filterSelectionReact=()=> props.showProjectReact();
+    const filterSelectionLayout=()=> props.showProjectLayout();
     return(
         <div className="ProjectPage">
             <div className="containerProject">
@@ -13,12 +17,37 @@ const ProjectPage =(props)=>{
                     <h2 className="projects__title">{`${props.currentLanguage === false ? 'PROYECTOS -' : 'PROJECTS -'}`}</h2>
             </div>
             <div className="allbuttons">
-                <button className="btn btnAll">{`${props.currentLanguage === false ? 'Todo' : 'All'}`}</button>
-                <button className="btn btnJavascript">JavaScript</button>
-                <button className="btn btnReact">React</button>
-                <button className="btn btnReact">{`${props.currentLanguage === false ? 'Maquetación' : 'Layout'}`}</button>
+                <button     className="btn btnAll"
+                            onClick={filterSelectionAll}>
+                            {`${props.currentLanguage === false ? 'Todo' : 'All'}`}
+                </button>
+                <button     className="btn btnJavascript" 
+                            onClick={filterSelectionJs}>
+                            JavaScript
+                </button>
+                <button     className="btn btnReact"
+                            onClick={filterSelectionReact}>
+                            React
+                </button>
+                <button     className="btn btnReact" 
+                            onClick={filterSelectionLayout}>
+                            {`${props.currentLanguage === false ? 'Maquetación' : 'Layout'}`}
+                </button>
             </div>
-            <div className="projectCard one react">
+            <div className={`${props.showJs === false ? 'hidden' : props.showLayout === false ? 'hidden': props.showAll === false ? 'projectCard one react' : 'projectCard one react'}`}>
+           {/*  {`fas ${
+                  myType === 'fire'
+                    ? 'fa-fire-alt'
+                    : myType === 'water'
+                    ? 'fa-tint'
+                    : myType === 'grass'
+                    ? 'fa-leaf'
+                    : myType === 'bug'
+                    ? 'fa-bug'
+                    : myType === 'flying'
+                    ? 'fa-dove'
+                    : 'fa-skull-crossbones'
+                }`} */}
                <div className="projectCardTop oneTop">
                    <img className="iconProjectOneDesk" alt="rick and morty" src={jar}/>
                    </div> 

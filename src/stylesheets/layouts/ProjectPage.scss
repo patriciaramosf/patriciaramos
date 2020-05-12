@@ -38,6 +38,7 @@
         @include forSuperdesktop{
             font-size:$titleDesktop;
             margin-top:60px;
+          
         }
         }
         .allbuttons{
@@ -344,4 +345,7 @@
                width:300px;
             }
         }
+}
+.hidden{
+    display:none;
 }
