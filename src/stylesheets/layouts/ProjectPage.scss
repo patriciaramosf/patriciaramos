@@ -31,6 +31,7 @@
                 margin-top:40px;
                 font-size: $titleTablet;
                 margin-right:17px;
+                display:none;
         }
         @include forDesktop{
         margin-right:87px;
@@ -60,6 +61,40 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    @include forTablet{
+                        width:70px;
+                        height:35px;
+                        margin-left:40px;
+                }
+                @include forDesktop{
+                    width:140px;
+                    height:40px;
+                    font-size: 24px;
+                    margin-left:40px;
+                    margin-bottom:20px;
+            }
+            @include forSuperdesktop{
+                    width:200px;
+                    height:70px;
+                    font-size: 28px;
+                    margin-top:20px;
+            }
+                }
+                .btnClicked{
+                    border:1px solid  $primaryColor ;
+                    background-color: transparent;
+                    color:$black;
+                    text-shadow: -2px -1px rgba(0,0,0,0.2);
+                    box-shadow:1px 0.5px 3.5px 0.5px $black;
+                    font-size: 10px;
+                    width:80px;
+                    margin:2px;
+                    font-weight: bold;
+                    height:35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    content:'reset';
                     @include forTablet{
                         width:70px;
                         height:35px;
@@ -348,4 +383,9 @@
 }
 .hidden{
     display:none;
+}
+.red{
+    background-color: red;
+    font-size: 40px;
+
 }
