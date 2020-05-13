@@ -100,10 +100,15 @@
                     display:none;
                     @include forTablet{
                         display:block;
-                        font-size:18px;
+                        font-size:22px;
                         text-align: left;
-                        line-height:30px;
+                        line-height:32px;
                         margin-right:10px;
+                        margin-top:10px;
+                    }
+                    .animatedHobbies{
+                       font-weight: bold;
+                       border-bottom:4px solid $primaryColor;
                     }
                 }
                     .myweb{
@@ -112,12 +117,6 @@
                     .myJob{
                         font-size: 26px;
                         animation: colorchange 10s 1;
-                    }
-                    .dedicatory{
-                        color:$black;
-                        .pasteis{
-                            font-size: 14px;
-                        }
                     }
             }
         .stepToProjects{

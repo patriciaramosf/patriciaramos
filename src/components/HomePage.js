@@ -28,10 +28,10 @@ const HomePage =(props)=>{
                 <p>
                 <span className="myweb">Patricia Ramos<br></br><span className="myJob">Frontend Developer</span></span>
                 </p>
-                <p className="description">{`${props.currentLanguage === false ? 'Tras varias experiencias en el sector del Marketing Digital, decidí formarme como desarrolladora Frontend en Adalab Digital.' : 'After several experiences in the Digital Marketing Field, I decided to learn to code at Adalab Digital.'}`}</p>
-                <p className="description">{`${props.currentLanguage === false ? 'Soy de Madrid, me considero una persona alegre y colaborativa, y estoy buscando trabajo, ya sea aquí o en Lisboa.' : 'I´m from Madrid, I consider myself a happy and collaborative person and I´m looking for a job either here or in Lisbon.'}`}
+                <p className="description">{`${props.currentLanguage === false ? 'Tras varias experiencias en el sector del Marketing Digital, decidí formarme como desarrolladora Frontend en Adalab.' : 'After several experiences in the Digital Marketing Field, I decided to learn to code at Adalab.'}`}</p>
+                <p className="description">{`${props.currentLanguage === false ? 'Soy de Madrid, me considero una persona alegre y colaborativa, y estoy buscando trabajo en Madrid o Lisboa.' : 'I´m from Madrid, I consider myself a happy and collaborative person and I´m looking for a job either in Madrid or in Lisbon.'}`}
                 </p>
-                <p className="description">{`${props.currentLanguage === false ? 'Me gusta comer(' : 'I love eating ('}`}<small className="dedicatory"><span className="pasteis">{`${props.currentLanguage === false ? 'tortilla de patatas' : 'pastèis de bacalhau'}`}</span>)</small>{`${props.currentLanguage === false ? ',leer y reírme.' : ',reading and laughing.'}`}</p>
+                <p className="description">{`${props.currentLanguage === false ? 'En mi tiempo libre me gusta ' : 'My hobbies are '}`}<span class="animatedHobbies">{`${props.currentLanguage === false ? '<dormir>' : '<sleeping>'}`}</span></p>
             </div>
             <div className="stepToProjects">
                 <div className="next">

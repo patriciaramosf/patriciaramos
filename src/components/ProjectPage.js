@@ -19,7 +19,7 @@ const ProjectPage =(props)=>{
                 <button     className={`${props.hideJs === false ? "btn btnJavascript" : 'btnClicked btnJavascript'}`}
                             onClick={handleProjects}
                             id="btnJavascript"> 
-                            {`${props.hideJs === false ? "Javascript" : 'Reset'}`}
+                            {`${props.hideJs === false ? "JavaScript" : 'Reset'}`}
                 </button>
                 <button     className={`${props.hideReact === false ? "btn btnReact" : 'btnClicked btnReact'}`}
                             onClick={handleProjects}
@@ -39,11 +39,12 @@ const ProjectPage =(props)=>{
                    <div className="projectCardBottom oneBottom">
                        <div className="project__info">
                         <h3 className="project__info--title">Rick and Morty App</h3>
-                        <p className="project__info--tools">React - JavaScript - Sass</p>
-                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Busca a tus personajes favoritos de la serie.' : 'Find your favourite character of the tv serie with this App.'}`}</p>
+                        <p className="project__info--tools">React- Grid - Sass</p>
+                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Buscador de personajes de la serie, obtenidos a través de su API.' : 'Find your favourite character of the tv serie with this App.'}`}</p>
                        </div>
                        <div className="cardIcons">
-                       <a href="https://github.com/patriciaramosf/modulo-3-evaluacion-final-patriciaramosf"><i className="fas fa-code"></i></a>
+                       <a   target="blank"
+                            href="https://github.com/patriciaramosf/modulo-3-evaluacion-final-patriciaramosf"><i className="fas fa-code"></i></a>
                        <a   target="blank"
                             href="http://beta.adalab.es/modulo-3-evaluacion-final-patriciaramosf/#/"><i className="fas fa-tablet-alt"></i>
                         </a>
@@ -58,7 +59,7 @@ const ProjectPage =(props)=>{
                        <div className="project__info">
                         <h3 className="project__info--title">{`${props.currentLanguage === false ? 'Generador de tarjetas' : 'Card Generator'}`}</h3>
                         <p className="project__info--tools">JavaScript - Sass</p>
-                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Personaliza tu tarjeta y compártela en Twitter.' : 'Get your personal card and share it on Twitter.'}`}</p>
+                        <p className="project__info--description">{`${props.currentLanguage === false ? 'App para personalizar tarjetas y compartirlas en Twitter.' : 'Get your personal card and share it on Twitter.'}`}</p>
                        </div>
                        <div className="cardIcons">
                         <a  target="blank"
@@ -79,7 +80,7 @@ const ProjectPage =(props)=>{
                    <div className="projectCardBottom twoBottom">
                        <div className="project__info">
                         <h3 className="project__info--title">{`${props.currentLanguage === false ? 'Proyecto de código heredado' : 'Legacy Code Project'}`}</h3>
-                        <p className="project__info--tools">React - Sass</p>
+                        <p className="project__info--tools">React - Grid - Sass</p>
                         <p className="project__info--description">{`${props.currentLanguage === false ? 'Migración de Javascript a React JS. #darkMode' : 'Migration from Javascript to React JS #darkMode.'}`}</p>
                        </div>
                        <div className="cardIcons">
@@ -102,7 +103,7 @@ const ProjectPage =(props)=>{
                        <div className="project__info">
                         <h3 className="project__info--title">Collapsing Margins</h3>
                         <p className="project__info--tools">HTML - Sass</p>
-                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Mi primer projecto en Adalab, Web Responsive.' : 'My first project at Adalab, a responsive Web.'}`}</p>
+                        <p className="project__info--description">{`${props.currentLanguage === false ? 'Web responsive, primer proyecto grupal en Adalab.' : 'My first project at Adalab, a responsive Web.'}`}</p>
                        </div>
                        <div className="cardIcons">
                         <a  target="blank"
