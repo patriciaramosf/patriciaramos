@@ -32,7 +32,7 @@ const ProjectPage =(props)=>{
                             {`${props.hideLayout === false ? "Layout": "Reset"}`}
                 </button>
             </div>
-            <div className={`${props.hideJs === true ? 'hidden' : props.hideLayout === true ? 'hidden': 'projectCard one' }`}>
+            <div className={`${props.hideJs === true ? ' animate__animated animate__fadeIn hidden' : props.hideLayout === true ? 'hidden': 'animate__animated animate__fadeIn projectCard one' }`}>
                <div className="projectCardTop oneTop">
                    <img className="iconProjectOneDesk" alt="rick and morty" src={jar}/>
                    </div> 
@@ -50,7 +50,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className={`${props.hideReact === true ? 'hidden' : props.hideLayout === true ? 'hidden': "projectCard two2" }`}>
+            <div className={`${props.hideReact === true ? 'animate__animated animate__fadeIn hidden' : props.hideLayout === true ? 'hidden': "animate__animated animate__fadeIn projectCard two2" }`}>
                <div className="projectCardTop twoTop2">
                    <img className="iconProjectTwo2" alt="virtual cards" src={icongif}/>
                    </div> 
@@ -72,7 +72,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className={`${props.hideJs === true ? 'hidden' : props.hideLayout === true ? 'hidden': "projectCard two" }`}>
+            <div className={`${props.hideJs === true ? 'animate__animated animate__fadeIn hidden' : props.hideLayout === true ? 'hidden': "projectCard two animate__animated animate__fadeIn" }`}>
                <div className="projectCardTop twoTop">
                    <img className="iconProjectTwo" alt="virtual cards" src={icon1}/>
                    </div> 
@@ -94,7 +94,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className={`${props.hideReact === true ? 'hidden' : props.hideJs === true ? 'hidden': "projectCard three layout" }`}>
+            <div className={`${props.hideReact === true ? 'animate__animated animate__fadeIn hidden' : props.hideJs === true ? 'hidden': "projectCard three animate__animated animate__fadeIn" }`}>
                <div className="projectCardTop threeTop">
                    <img className="iconProjectThree" alt="collapsingMargins" src={responsive}/>
                    </div> 
@@ -116,7 +116,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className={`${props.hideReact === true ? 'hidden' : props.hideLayout === true ? 'hidden': "projectCard four javascript" }`}>
+            <div className={`${props.hideReact === true ? 'animate__animated animate__fadeIn hidden' : props.hideLayout === true ? 'hidden': "projectCard four animate__animated animate__fadeIn" }`}>
                <div className="projectCardTop fourTop">
                    <img className="iconProjectfour" alt="Search Films" src={icon4}/>
                    </div> 
