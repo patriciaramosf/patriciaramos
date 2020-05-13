@@ -58,6 +58,7 @@
                 margin-left:40px;
             }
             @include forDesktop{
+                display:none;
                 margin-top:20px;
                 width:500px;
                 margin-left:120px;

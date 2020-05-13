@@ -33,7 +33,7 @@ const HomePage =(props)=>{
                 <p className="description">{`${props.currentLanguage === false ? 'Soy de Madrid, me considero una persona alegre y colaborativa, y estoy buscando trabajo en Madrid o Lisboa.' : 'I´m from Madrid, I consider myself a happy, curious and collaborative person and I´m looking for a job either in Madrid or in Lisbon.'}`}
                 </p>
                 
-                <p className="description">{`${props.currentLanguage === false ? 'Además de pegarme con el código me gusta: ' : 'I love:'}`} </p>
+                <p className="description">{`${props.currentLanguage === false ? 'Además de pegarme con el código me gusta: ' : 'I love: '}`} </p>
                 <div className="content">
                     <div className="content__container">
                     <ul className="content__container__list">
