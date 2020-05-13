@@ -1,4 +1,5 @@
 @import './core/variables';
+@import 'components/animation';
 @keyframes colorchange{
     0%{
         color:$black;
@@ -89,26 +90,31 @@
             margin-right:5px;
             font-size:26px;
             line-height: 40px;
-            text-justify:auto;
             color:$black;
             @include forTablet{
                 text-align: left;
                 font-size:26px;
                 margin-left:40px;
+                margin-bottom:40px;
+            }
+            @include forDesktop{
+                font-size:30px;
             }
             .description{
                     display:none;
                     @include forTablet{
                         display:block;
-                        font-size:22px;
-                        text-align: left;
-                        line-height:32px;
-                        margin-right:10px;
+                        font-size:20px;
+                        margin-right:40px;
                         margin-top:10px;
+                        text-align: justify;
+                        line-height: 34px;
                     }
-                    .animatedHobbies{
-                       font-weight: bold;
-                       border-bottom:4px solid $primaryColor;
+                    @include forDesktop{
+                        font-size:22px;
+                    }
+                    @include forSuperdesktop{
+                        font-size:24px;
                     }
                 }
                     .myweb{

@@ -14,3 +14,9 @@
       @content
     }
   }
+  
+  @mixin forbigTablet {
+    @media all and (min-width:$bigTablet){
+      @content
+    }
+  }

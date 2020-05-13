@@ -28,10 +28,21 @@ const HomePage =(props)=>{
                 <p>
                 <span className="myweb">Patricia Ramos<br></br><span className="myJob">Frontend Developer</span></span>
                 </p>
-                <p className="description">{`${props.currentLanguage === false ? 'Tras varias experiencias en el sector del Marketing Digital, decidí formarme como desarrolladora Frontend en Adalab.' : 'After several experiences in the Digital Marketing Field, I decided to learn to code at Adalab.'}`}</p>
-                <p className="description">{`${props.currentLanguage === false ? 'Soy de Madrid, me considero una persona alegre y colaborativa, y estoy buscando trabajo en Madrid o Lisboa.' : 'I´m from Madrid, I consider myself a happy and collaborative person and I´m looking for a job either in Madrid or in Lisbon.'}`}
+                <p className="description">{`${props.currentLanguage === false ? 'Tras varias experiencias en el sector del Marketing Digital, decidí formarme en Adalab como desarrolladora.' : 'After several experiences in the Digital Marketing Field, I decided to learn coding at Adalab.'}`}</p>
+                <p className="description">{`${props.currentLanguage === false ? 'Soy de Madrid, me considero una persona alegre y colaborativa, y estoy buscando trabajo en Madrid o Lisboa.' : 'I´m from Madrid, I consider myself a happy, curious and collaborative person and I´m looking for a job either in Madrid or in Lisbon.'}`}
                 </p>
-                <p className="description">{`${props.currentLanguage === false ? 'En mi tiempo libre me gusta ' : 'My hobbies are '}`}<span class="animatedHobbies">{`${props.currentLanguage === false ? '<dormir>' : '<sleeping>'}`}</span></p>
+                
+                <p className="description">{`${props.currentLanguage === false ? 'Además de pegarme con el código me gusta: ' : 'I love:'}`} </p>
+                <div className="content">
+                    <div className="content__container">
+                    <ul className="content__container__list">
+                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<dormir>' : '<sleeping>'}`}</li>
+                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<comer>' : '<eating>'}`}</li>
+                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<reir>' : '<laughing>'}`}</li>
+                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<stackoverflow>' : '<stackoverflow>'}`}</li>
+                    </ul>
+                    </div>
+                    </div>
             </div>
             <div className="stepToProjects">
                 <div className="next">
