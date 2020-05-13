@@ -46,6 +46,10 @@ class App extends React.Component {
                 />
                 <HomePage   changeLanguage={this.changeLanguage}
                             currentLanguage={this.state.languageEn}
+                            showProjects={this.showProjects}
+                            hideJs={this.state.hideJs}
+                            hideReact={this.state.hideReact}
+                            hideLayout={this.state.hideLayout}
                 />
             </Route>
             <Route exact path='/projects'>
