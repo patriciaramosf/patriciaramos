@@ -4,6 +4,7 @@ import ProjectPage from './ProjectPage.js'
 const HomePage =(props)=>{
     return(
         <div className="HomePage">
+            <div className="containerHomePage">
             <div className="mainTitle">
                 <h1>{`${props.currentLanguage === false ? ' - ¡HOLA!' : ' - HELLO!'}`}</h1>
             </div>
@@ -55,7 +56,7 @@ const HomePage =(props)=>{
                 </div>
             </div>
             
-            
+            </div> 
         </div>
     )
 }

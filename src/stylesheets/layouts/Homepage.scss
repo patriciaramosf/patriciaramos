@@ -27,6 +27,10 @@
         background-color: #FFFCF9;
         margin-top:0px;
     }
+    .containerHomePage{
+        @include forDesktop{
+            margin-top:80px;
+        }
         .mainTitle{
             text-align: left;
             font-size: $titlePhone;
@@ -134,4 +138,5 @@
                     }
                 }
             }
-}
+        }
+    }
