@@ -19,17 +19,17 @@ const ProjectPage =(props)=>{
                 <button     className={`${props.hideJs === false ? "btn btnJavascript" : 'btnClicked btnJavascript'}`}
                             onClick={handleProjects}
                             id="btnJavascript"> 
-                            JavaScript
+                            {`${props.hideJs === false ? "Javascript" : 'Reset'}`}
                 </button>
                 <button     className={`${props.hideReact === false ? "btn btnReact" : 'btnClicked btnReact'}`}
                             onClick={handleProjects}
                             id="btnReact">
-                            React
+                            {`${props.hideReact === false ? "React" : 'Reset'}`}
                 </button>
                 <button     className={`${props.hideLayout === false ? "btn btnLayout" : 'btnClicked btnLayout'}`}
                             onClick={handleProjects}
                             id="btnLayout">
-                            {`${props.currentLanguage === false ? 'Maquetación' : 'Layout'}`}
+                            {`${props.hideLayout === false ? "Layout": "Reset"}`}
                 </button>
             </div>
             <div className={`${props.hideJs === true ? 'hidden' : props.hideLayout === true ? 'hidden': 'projectCard one' }`}>
@@ -50,7 +50,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className="projectCard two2">
+            <div className={`${props.hideReact === true ? 'hidden' : props.hideLayout === true ? 'hidden': "projectCard two2" }`}>
                <div className="projectCardTop twoTop2">
                    <img className="iconProjectTwo2" alt="virtual cards" src={icongif}/>
                    </div> 
@@ -72,7 +72,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className="projectCard two">
+            <div className={`${props.hideJs === true ? 'hidden' : props.hideLayout === true ? 'hidden': "projectCard two" }`}>
                <div className="projectCardTop twoTop">
                    <img className="iconProjectTwo" alt="virtual cards" src={icon1}/>
                    </div> 
@@ -94,7 +94,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className="projectCard three layout">
+            <div className={`${props.hideReact === true ? 'hidden' : props.hideJs === true ? 'hidden': "projectCard three layout" }`}>
                <div className="projectCardTop threeTop">
                    <img className="iconProjectThree" alt="collapsingMargins" src={responsive}/>
                    </div> 
@@ -116,7 +116,7 @@ const ProjectPage =(props)=>{
                        </div>
                    </div>
             </div>
-            <div className="projectCard four javascript">
+            <div className={`${props.hideReact === true ? 'hidden' : props.hideLayout === true ? 'hidden': "projectCard four javascript" }`}>
                <div className="projectCardTop fourTop">
                    <img className="iconProjectfour" alt="Search Films" src={icon4}/>
                    </div> 
