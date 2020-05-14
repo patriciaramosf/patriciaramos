@@ -9,6 +9,7 @@
     @include forTablet{
     display:block;
     position:relative;
+    
     &__container {
       overflow: hidden;
       height: 80px;
@@ -19,10 +20,11 @@
       bottom:-3px;
       left:5px;
       @include forDesktop{
-        bottom:-40px;
-        left:-110px;
+        left:-20px;
       }
-  
+      @include forSuperdesktop{
+        left:500px;
+      }
       &__text {
         display: inline;
         margin-left:0px;
@@ -54,6 +56,7 @@
       }
     }
 }
+    
   
   @-webkit-keyframes opacity {
     0%, 100% {opacity:0;}
@@ -112,10 +115,23 @@
   }
 }
 
-
-/* .animatedHobbies{
-    font-weight: bold;
-    font-size:24px;
-    margin:5px;
-    border-bottom:4px solid pink;
- } */
+.content {
+  display:none;
+    @include forTablet{
+    display:block;
+    position:relative;  
+      &__containerEn {
+        overflow: hidden;
+        height: 80px;
+        display:block;
+        position:absolute;
+        height: 50px;
+        overflow:hidden;
+        bottom:-3px;
+        left:-10px;
+        @include forSuperdesktop{
+          left:10px;
+        }
+      }
+    }
+  }

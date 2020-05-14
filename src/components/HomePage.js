@@ -35,7 +35,7 @@ const HomePage =(props)=>{
                 
                 <p className="description">{`${props.currentLanguage === false ? 'Además de pegarme con el código me gusta: ' : 'I love: '}`} </p>
                 <div className="content">
-                    <div className="content__container">
+                    <div className= {`${props.currentLanguage === false ? 'content__container' : 'content__containerEn'}`}>
                     <ul className="content__container__list">
                         <li className="content__container__list__item">{`${props.currentLanguage === false ? '<dormir>' : '<sleeping>'}`}</li>
                         <li className="content__container__list__item">{`${props.currentLanguage === false ? '<comer>' : '<eating>'}`}</li>
