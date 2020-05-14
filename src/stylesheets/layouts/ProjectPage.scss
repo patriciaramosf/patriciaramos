@@ -6,6 +6,7 @@
         grid-column:1;
         grid-gap:45px;
         margin-top:40px;
+        margin-left:20px;
         @include forTablet{
             margin-left:260px;
             justify-content: center;
