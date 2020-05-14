@@ -18,12 +18,15 @@
       height: 50px;
       overflow:hidden;
       bottom:-3px;
-      left:5px;
+      left:25px;
       @include formediumDesktop{
-        left:450px;
+        left:35px;
+      }
+      @include forDesktop{
+        left:35px;
       }
       @include forSuperdesktop{
-        left:500px;
+        left:45px;
       }
       &__text {
         display: inline;
@@ -129,6 +132,9 @@
         overflow:hidden;
         bottom:-3px;
         left:-30px;
+        @include forDesktop{
+          left:-10px;
+      }
         @include forSuperdesktop{
           left:0px;
         }
