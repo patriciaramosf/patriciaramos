@@ -49,7 +49,8 @@ const HomePage =(props)=>{
                 <div className="next">
                     <ProjectPage    currentLanguage={props.currentLanguage}
                                     hideJs={props.hideJs}
-                                    showProjects={props.showProjects}
+                                    /* showProjects={props.showProjects} */
+                                    showAllProjects={props.showAllProjects}
                                     hideReact={props.hideReact}
                                     hideLayout={props.hideLayout}
                     />

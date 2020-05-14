@@ -11,6 +11,7 @@ class App extends React.Component {
     super(props);
     this.changeLanguage = this.changeLanguage.bind(this);
     this.showProjects=this.showProjects.bind(this);
+    this.showAllProjects=this.showAllProjects.bind(this);
     this.state={
       languageEn: false,
       hideJs:false,
@@ -23,7 +24,8 @@ class App extends React.Component {
       languageEn: !prevState.languageEn,
     }))
   }
-  showProjects(id) {
+  
+showProjects(id) {
   let key;
   if ( id === "btnJavascript"){
     key = "hideJs";
@@ -34,7 +36,15 @@ class App extends React.Component {
   else if( id === "btnLayout"){
     key = "hideLayout";
   }
-    this.setState(prevState => ({ [key]: !prevState[key] }));
+    this.setState(prevState => ({ [key]: !prevState[key] })); 
+}
+
+showAllProjects(){
+  this.setState({
+    hideJs:false,
+    hideReact:false,
+    hideLayout:false,
+  })
 }
   render() {
     return (
@@ -47,6 +57,7 @@ class App extends React.Component {
                 <HomePage   changeLanguage={this.changeLanguage}
                             currentLanguage={this.state.languageEn}
                             showProjects={this.showProjects}
+                            showAllProjects={this.showAllProjects}
                             hideJs={this.state.hideJs}
                             hideReact={this.state.hideReact}
                             hideLayout={this.state.hideLayout}
@@ -59,6 +70,7 @@ class App extends React.Component {
                 <ProjectPage    changeLanguage={this.changeLanguage}
                                 currentLanguage={this.state.languageEn}
                                 showProjects={this.showProjects}
+                                showAllProjects={this.showAllProjects}
                                 hideJs={this.state.hideJs}
                                 hideReact={this.state.hideReact}
                                 hideLayout={this.state.hideLayout}

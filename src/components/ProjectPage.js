@@ -9,27 +9,36 @@ const ProjectPage =(props)=>{
     const handleProjects = (event) => {
         props.showProjects(event.currentTarget.id)
     }
+    const handleAllProjects =()=> props.showAllProjects()
+
     return(
         <div className="ProjectPage">
             <div className="containerProject">
             <div className="projects__titleContainer">
-                    <h2 className="projects__title">{`${props.currentLanguage === false ? 'PROYECTOS -' : 'PROJECTS -'}`}</h2>
+                    <h2 className="projects__title">
+                        {`${props.currentLanguage === false ? 'PROYECTOS -' : 'PROJECTS -'}`}
+                    </h2>
             </div>
             <div className="allbuttons">
-                <button     className={`${props.hideJs === false ? "btn btnJavascript" : 'btnClicked btnJavascript'}`}
+                <button     className="btn btnall"
+                            onClick={handleAllProjects}
+                            id="btnAll"> 
+                            {`${props.currentLanguage === false ? 'Todo' : 'All'}`}
+                </button>
+                <button     className="btn btnJavascript"
                             onClick={handleProjects}
                             id="btnJavascript"> 
-                            {`${props.hideJs === false ? "JavaScript" : 'Reset'}`}
+                            JavaScript
                 </button>
-                <button     className={`${props.hideReact === false ? "btn btnReact" : 'btnClicked btnReact'}`}
+                <button     className="btn btnReact"
                             onClick={handleProjects}
                             id="btnReact">
-                            {`${props.hideReact === false ? "React" : 'Reset'}`}
+                            React
                 </button>
-                <button     className={`${props.hideLayout === false ? "btn btnLayout" : 'btnClicked btnLayout'}`}
+                <button     className="btn btnLayout"
                             onClick={handleProjects}
                             id="btnLayout">
-                            {`${props.hideLayout === false ? "Layout": "Reset"}`}
+                            {`${props.currentLanguage === false ? 'Maquetación' : 'Layout'}`}       
                 </button>
             </div>
             <div className={`${props.hideJs === true ? ' animate__animated animate__fadeIn hidden' : props.hideLayout === true ? 'hidden': 'animate__animated animate__fadeIn projectCard one' }`}>
