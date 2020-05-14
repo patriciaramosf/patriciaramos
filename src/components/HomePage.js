@@ -37,10 +37,10 @@ const HomePage =(props)=>{
                 <div className="content">
                     <div className= {`${props.currentLanguage === false ? 'content__container' : 'content__containerEn'}`}>
                     <ul className="content__container__list">
-                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<comer>' : '<eating>'}`}</li>
                         <li className="content__container__list__item">{`${props.currentLanguage === false ? '<reir>' : '<laughing>'}`}</li>
+                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<comer>' : '<eating>'}`}</li>
                         <li className="content__container__list__item">{`${props.currentLanguage === false ? '<stackoverflow>' : '<stackoverflow>'}`}</li>
-                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<The office>' : '<The office>'}`}</li>
+                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<The office>' : '<The office US>'}`}</li>
                     </ul>
                     </div>
                     </div>
