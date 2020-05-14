@@ -101,3 +101,56 @@ font-weight: bold;
   padding-right:45px;
 }
 }
+
+/* project button */
+
+.allbuttons{
+  text-align: center;
+  display:flex;
+  justify-content: space-evenly;
+  padding:5px;
+      .btn{
+          border:1px solid $black;
+          background-color: transparent;
+          color:$primaryColor;
+          box-shadow: -4px 4px 0 $black;
+          font-size: 11px;
+          width:80px;
+          margin:3px;
+          font-weight: bold;
+          height:35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:hover {
+            top: 3px;
+            left: -3px;
+            box-shadow: -2px 2px 0 $black;
+          }
+          @include forTablet{
+            box-shadow: -6px 6px 0 $black;
+              width:90px;
+              height:35px;
+              margin-left:30px;
+              font-size:12px;
+              &:hover {
+                top: 3px;
+                left: -3px;
+                box-shadow: -3px 3px 0 $black;
+              }
+      }
+      @include forDesktop{
+          width:140px;
+          height:60px;
+          font-size: 17px;
+          margin-left:40px;
+          margin-bottom:10px;
+  }
+  @include forSuperdesktop{
+          width:200px;
+          height:70px;
+          font-size: 28px;
+          margin-top:20px;
+  }
+      }
+}
