@@ -19,8 +19,8 @@
       overflow:hidden;
       bottom:-3px;
       left:5px;
-      @include forDesktop{
-        left:-10px;
+      @include formediumDesktop{
+        left:450px;
       }
       @include forSuperdesktop{
         left:500px;
@@ -128,9 +128,9 @@
         height: 50px;
         overflow:hidden;
         bottom:-3px;
-        left:-10px;
+        left:-30px;
         @include forSuperdesktop{
-          left:10px;
+          left:0px;
         }
       }
     }

@@ -20,3 +20,10 @@
       @content
     }
   }
+  @mixin formediumDesktop {
+    @media all and (min-width: $mediumdesktop){
+      @content
+    }
+  }
+
+ 
