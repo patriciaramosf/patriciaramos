@@ -26,4 +26,10 @@
     }
   }
 
+
+  @mixin forMobile {
+    @media all and (min-width:$mobile){
+      @content
+    }
+  }
  
