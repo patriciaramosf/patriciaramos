@@ -10,13 +10,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.changeLanguage = this.changeLanguage.bind(this);
-    this.showProjects=this.showProjects.bind(this);
-    this.showAllProjects=this.showAllProjects.bind(this);
     this.state={
       languageEn: false,
-      hideJs:false,
-      hideReact:false,
-      hideLayout:false,
+      filter:null,
     }
   }
   changeLanguage(){
@@ -24,28 +20,12 @@ class App extends React.Component {
       languageEn: !prevState.languageEn,
     }))
   }
-  
-showProjects(id) {
-  let key;
-  if ( id === "btnJavascript"){
-    key = "hideJs";
+ setFilter = (filter) =>{
+   this.setState({filter:filter})
  }
-  else if ( id === "btnReact"){
-    key = "hideReact";
-  }
-  else if( id === "btnLayout"){
-    key = "hideLayout";
-  }
-    this.setState(prevState => ({ [key]: !prevState[key] })); 
-}
-
-showAllProjects(){
-  this.setState({
-    hideJs:false,
-    hideReact:false,
-    hideLayout:false,
-  })
-}
+ setReset =()=>{
+   this.setState({filter:null})
+ }
   render() {
     return (
       <div className="App">
@@ -56,11 +36,9 @@ showAllProjects(){
                 />
                 <HomePage   changeLanguage={this.changeLanguage}
                             currentLanguage={this.state.languageEn}
-                            showProjects={this.showProjects}
-                            showAllProjects={this.showAllProjects}
-                            hideJs={this.state.hideJs}
-                            hideReact={this.state.hideReact}
-                            hideLayout={this.state.hideLayout}
+                            filter={this.state.filter}
+                            setFilter={this.setFilter}
+                            setReset={this.setReset}
                 />
             </Route>
             <Route exact path='/projects'>
@@ -69,11 +47,9 @@ showAllProjects(){
                 />
                 <ProjectPage    changeLanguage={this.changeLanguage}
                                 currentLanguage={this.state.languageEn}
-                                showProjects={this.showProjects}
-                                showAllProjects={this.showAllProjects}
-                                hideJs={this.state.hideJs}
-                                hideReact={this.state.hideReact}
-                                hideLayout={this.state.hideLayout}
+                                filter={this.state.filter}
+                                setFilter={this.setFilter}
+                                setReset={this.setReset}
                 />
             </Route>
         </Switch>

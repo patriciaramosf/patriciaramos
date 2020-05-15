@@ -48,11 +48,9 @@ const HomePage =(props)=>{
             <div className="stepToProjects">
                 <div className="next">
                     <ProjectPage    currentLanguage={props.currentLanguage}
-                                    hideJs={props.hideJs}
-                                    showProjects={props.showProjects}
-                                    showAllProjects={props.showAllProjects}
-                                    hideReact={props.hideReact}
-                                    hideLayout={props.hideLayout}
+                                    filter={props.filter}
+                                    setFilter={props.setFilter}
+                                    setReset={props.setReset}
                     />
                 </div>
             </div>
