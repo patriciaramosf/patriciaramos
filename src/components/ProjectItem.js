@@ -6,12 +6,11 @@ import jar from '../images/sticker.png'
 import responsive from '../images/responsive.png'
 
 const ProjectItem=(props)=>{
-    // condition === conditionX && doSomething()
     return(
         <>
         {
             props.id === 1 &&
-        <div className={`${props.hideJs === true ? ' animate__animated animate__fadeIn hidden' : props.hideLayout === true ? 'hidden': 'animate__animated animate__fadeIn projectCard one' }`}>
+        <div className='animate__animated animate__fadeIn projectCard one'>
         <div className="projectCardTop oneTop">
             <img className="iconProjectOneDesk" alt="rick and morty" src={jar}/>
             </div> 
@@ -33,7 +32,7 @@ const ProjectItem=(props)=>{
     }
     {
         props.id === 2 &&
-        <div className={`${props.hideReact === true ? 'animate__animated animate__fadeIn hidden' : props.hideLayout === true ? 'hidden': "animate__animated animate__fadeIn projectCard two2" }`}>
+        <div className='animate__animated animate__fadeIn projectCard two2'>
             <div className="projectCardTop twoTop2">
                 <img className="iconProjectTwo2" alt="virtual cards" src={icongif}/>
                 </div> 
@@ -59,7 +58,7 @@ const ProjectItem=(props)=>{
     {
         props.id === 3 &&
     
-        <div className={`${props.hideJs === true ? 'animate__animated animate__fadeIn hidden' : props.hideLayout === true ? 'hidden': "projectCard two animate__animated animate__fadeIn" }`}>
+        <div className='animate__animated animate__fadeIn projectCard two'>
             <div className="projectCardTop twoTop">
                 <img className="iconProjectTwo" alt="virtual cards" src={icon1}/>
                 </div> 
@@ -85,7 +84,7 @@ const ProjectItem=(props)=>{
     {
         props.id === 4 &&
     
-        <div className={`${props.hideReact === true ? 'animate__animated animate__fadeIn hidden' : props.hideJs === true ? 'hidden': "projectCard three animate__animated animate__fadeIn" }`}>
+        <div className='animate__animated animate__fadeIn projectCard three'>
             <div className="projectCardTop threeTop">
                 <img className="iconProjectThree" alt="collapsingMargins" src={responsive}/>
                 </div> 
@@ -110,15 +109,15 @@ const ProjectItem=(props)=>{
     }
     {
         props.id === 5 &&
-        <div className={`${props.hideReact === true ? 'animate__animated animate__fadeIn hidden' : props.hideLayout === true ? 'hidden': "projectCard four animate__animated animate__fadeIn" }`}>
+        <div className= 'animate__animated animate__fadeIn projectCard four'>
             <div className="projectCardTop fourTop">
                 <img className="iconProjectfour" alt="Search Films" src={icon4}/>
                 </div> 
                 <div className="projectCardBottom fourBottom">
                     <div className="project__info">
-                    <h3 className="project__info--title">Buscador de películas</h3>
+                    <h3 className="project__info--title">{`${props.currentLanguage === false ? 'Buscador de películas' : 'Movie search'}`}</h3>
                     <p className="project__info--tools">JavaScript - Sass</p>
-                    <p className="project__info--description">{`${props.currentLanguage === false ? 'Buscador de películas a través de API.' : 'Movie searcher.'}`}</p>
+                    <p className="project__info--description">{`${props.currentLanguage === false ? 'Buscador de películas a través de API.' : 'Movie search.'}`}</p>
                     </div>
                     <div className="cardIcons">
                     <a href="https://github.com/patriciaramosf/find-movies-from-api"><i className="fas fa-code"></i></a>

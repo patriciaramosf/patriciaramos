@@ -5,10 +5,15 @@ const ProjectList =(props)=>{
     return(
         <>
         {   
-            projects.filter(project=>project.type===props.filter)
+            projects
+            .filter(project => props.filter === null || project.type === props.filter)
             .map(project=>{
                 return(
-                <ProjectItem    id={project.id}
+                <ProjectItem    key={project.id}    
+                                id={project.id}
+                                type={project.type}
+                                reset={project.reset}
+                                currentLanguage={props.currentLanguage}
                 />
                 )
             })

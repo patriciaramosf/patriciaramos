@@ -2,10 +2,13 @@ import React from 'react';
 import ProjectList from './ProjectList.js'
 
 const ProjectPage =(props)=>{
-    const handleProjects = (event) => {
-        props.showProjects(event.currentTarget.id)
-    }
-    const handleAllProjects =()=> props.showAllProjects()
+
+const handleProjects = (event) => {
+    props.setFilter(event.currentTarget.id)
+}
+const handleAllProjects = () => {
+    props.setReset()
+}
 
     return(
         <div className="ProjectPage">
@@ -18,26 +21,27 @@ const ProjectPage =(props)=>{
             <div className="allbuttons">
                 <button     className="btn btnall"
                             onClick={handleAllProjects}
-                            id="btnAll"> 
+                            id="all"> 
                             {`${props.currentLanguage === false ? 'Todo' : 'All'}`}
                 </button>
                 <button     className="btn btnJavascript"
                             onClick={handleProjects}
-                            id="btnJavascript"> 
+                            id="javascript"> 
                             JavaScript
                 </button>
                 <button     className="btn btnReact"
                             onClick={handleProjects}
-                            id="btnReact">
+                            id="react">
                             React
                 </button>
                 <button     className="btn btnLayout"
                             onClick={handleProjects}
-                            id="btnLayout">
+                            id="layout">
                             {`${props.currentLanguage === false ? 'Maquetación' : 'Layout'}`}       
                 </button>
             </div>
             <ProjectList    filter={props.filter}
+                            currentLanguage={props.currentLanguage}
             />
         </div>
         </div>

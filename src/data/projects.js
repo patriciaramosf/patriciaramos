@@ -9,11 +9,11 @@ const projects =[
     },
     {
         id:3,
-        type:'javascript',
+        type:'react',
     },
     {
         id:4,
-        type:'javascript',
+        type:'layout',
     },
     {
         id:5,
