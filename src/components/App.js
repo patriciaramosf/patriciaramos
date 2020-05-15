@@ -17,6 +17,7 @@ class App extends React.Component {
       hideJs:false,
       hideReact:false,
       hideLayout:false,
+      filter:null,
     }
   }
   changeLanguage(){
@@ -24,6 +25,9 @@ class App extends React.Component {
       languageEn: !prevState.languageEn,
     }))
   }
+ setFilter =(filter)=>{
+   this.setState({filter:filter})
+ }
   
 showProjects(id) {
   let key;
@@ -74,6 +78,7 @@ showAllProjects(){
                                 hideJs={this.state.hideJs}
                                 hideReact={this.state.hideReact}
                                 hideLayout={this.state.hideLayout}
+                                filter={this.state.filter}
                 />
             </Route>
         </Switch>
