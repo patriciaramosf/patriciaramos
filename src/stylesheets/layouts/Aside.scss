@@ -9,11 +9,7 @@
         }
         @include forTablet{
             width:270px;
-           /*  height:100%;
-            border-right:1px solid lightgray;
-            position:fixed;
-            background-color: white; */
-            }
+        }
     .languageToggle{
         margin-top:25px;
         margin-left:20px;
@@ -39,22 +35,6 @@
                 text-shadow: -2px -1px rgba(0,0,0,0.2);
                 box-shadow:1px 0.5px 3.5px 0.5px $primaryColor;
             }
-           /*  @include forTablet{
-                display:block;
-                text-transform: uppercase;
-                color: $primaryColor;
-                font-family: $fontFamilyGeneral;
-                font-size:28px;
-                font-weight: 200;
-                transform:rotate(270deg);
-                position:absolute;
-                top:40%;
-                background-color: transparent;
-                right:30px;
-                border:1px solid $black;
-                text-shadow: -2px -1px rgba(0,0,0,0.2);
-                box-shadow:1px 0.5px 3.5px 0.5px $primaryColor;
-                } */
             @include forDesktop{
                 font-size:36px;
                 right:30px;

@@ -8,6 +8,8 @@
         margin-top:40px;
         @include forMobile{
             margin-left:180px;
+            margin-top:0px;
+            background-color: #FFFCF9;
         }
         @include forTablet{
             margin-left:260px;
@@ -30,10 +32,7 @@
             text-transform: uppercase;
             margin-right:87px;
             font-family: $fontFamilyTitle;
-            @include forTablet{
-                margin-top:40px;
-                font-size: $titleTablet;
-                margin-right:17px;
+            @include forMobile{
                 display:none;
         }
         @include forDesktop{

@@ -34,9 +34,6 @@
         @include forMobile{
             margin-top:100px;
         }
-      /*   @include forTablet{
-            margin-top:100px;
-        } */
         @include forDesktop{
             margin-top:280px;
         }
@@ -167,12 +164,7 @@
                         line-height: 34px;
                         }
                     @include forTablet{
-                       /*  display:block; */
                         font-size:20px;
-                       /*  margin-right:40px;
-                        margin-top:10px;
-                        text-align: justify;
-                        line-height: 34px; */
                     }
                     @include forDesktop{
                         font-size:22px;
@@ -212,9 +204,6 @@
                     @include forMobile{
                         display:none;
                         }
-                   /*  @include forTablet{
-                        display:none;
-                    } */
                 }
             }
         }
