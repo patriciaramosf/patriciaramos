@@ -6,6 +6,9 @@
         grid-column:1;
         grid-gap:45px;
         margin-top:40px;
+        @include forMobile{
+            margin-left:180px;
+        }
         @include forTablet{
             margin-left:260px;
             justify-content: center;

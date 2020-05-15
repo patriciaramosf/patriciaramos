@@ -27,11 +27,9 @@
         background-color: #FFFCF9;
         margin-top:0px;
     }
-   /*  @include forTablet{
+    @include forTablet{
         margin-left:270px;
-        background-color: #FFFCF9;
-        margin-top:0px;
-    } */
+    }
     .containerHomePage{
         @include forMobile{
             margin-top:100px;
@@ -63,7 +61,7 @@
                 @include forTablet{
                     font-size:$titleTablet;
                     top:50px;
-                    right:30px;
+                    right:20px;
                 }
                 @include forDesktop{
                     right:100px;
