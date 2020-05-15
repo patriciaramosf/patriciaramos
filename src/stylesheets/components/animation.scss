@@ -6,9 +6,12 @@
 
 .content {
   display:none;
-    @include forTablet{
+  @include forMobile{
     display:block;
     position:relative;
+   /*  @include forTablet{
+    display:block;
+    position:relative; */
     
     &__container {
       overflow: hidden;
@@ -18,7 +21,11 @@
       height: 50px;
       overflow:hidden;
       bottom:-3px;
+      left:10px;
+      @include forTablet{
+      bottom:-3px;
       left:25px;
+      }
       @include formediumDesktop{
         left:35px;
       }
@@ -38,7 +45,7 @@
         text-align: left;
         list-style: none;
         font-weight: bold;
-        font-size:24px;
+        font-size:20px;
         margin-left:105px;
         margin-top:5px;
         z-index:-1; 
@@ -48,6 +55,9 @@
         animation-name: change;
         animation-duration: 10s;
         animation-iteration-count: infinite;
+        @include forTablet{
+          font-size:24px;
+        }
   
         &__item {
           line-height:50px;
@@ -120,7 +130,7 @@
 
 .content {
   display:none;
-    @include forTablet{
+    @include forMobile{
     display:block;
     position:relative;  
       &__containerEn {
@@ -131,7 +141,11 @@
         height: 50px;
         overflow:hidden;
         bottom:-3px;
-        left:-25px;
+        left:-40px;
+        @include forTablet{
+          bottom:-3px;
+          left:-25px;
+          }
         @include forDesktop{
           left:-10px;
       }

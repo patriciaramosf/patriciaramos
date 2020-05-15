@@ -22,15 +22,23 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    @include forTablet{
-        margin-left:270px;
+    @include forMobile{
+        margin-left:180px;
         background-color: #FFFCF9;
         margin-top:0px;
     }
+   /*  @include forTablet{
+        margin-left:270px;
+        background-color: #FFFCF9;
+        margin-top:0px;
+    } */
     .containerHomePage{
-        @include forTablet{
+        @include forMobile{
             margin-top:100px;
         }
+      /*   @include forTablet{
+            margin-top:100px;
+        } */
         @include forDesktop{
             margin-top:280px;
         }
@@ -47,6 +55,11 @@
             font-weight: bold;
             text-transform: uppercase;
             font-family: $fontFamilyTitle;
+                @include forMobile{
+                font-size:$titleLittleTablet;
+                top:40px;
+                right:10px;
+                }
                 @include forTablet{
                     font-size:$titleTablet;
                     top:50px;
@@ -69,6 +82,10 @@
             border-top:solid 2px black;
             border-bottom:solid 2px black;
             opacity:0.8;
+            @include forMobile{
+                width:300px;
+                margin-left:20px;
+                }
             @include forTablet{
                 margin-top:20px;
                 width:400px;
@@ -121,6 +138,10 @@
             font-size:26px;
             line-height: 40px;
             color:$black;
+            @include forMobile{
+                text-align: left;
+                margin-left:30px;
+                }
             @include forTablet{
                 text-align: left;
                 font-size:26px;
@@ -139,13 +160,21 @@
             }
             .description{
                     display:none;
-                    @include forTablet{
+                    @include forMobile{
                         display:block;
-                        font-size:20px;
-                        margin-right:40px;
+                        font-size:16px;
+                        margin-right:10px;
                         margin-top:10px;
                         text-align: justify;
                         line-height: 34px;
+                        }
+                    @include forTablet{
+                       /*  display:block; */
+                        font-size:20px;
+                       /*  margin-right:40px;
+                        margin-top:10px;
+                        text-align: justify;
+                        line-height: 34px; */
                     }
                     @include forDesktop{
                         font-size:22px;
@@ -182,9 +211,12 @@
             margin-top:60px;
             margin-bottom:20px;
                 .next{
-                    @include forTablet{
+                    @include forMobile{
                         display:none;
-                    }
+                        }
+                   /*  @include forTablet{
+                        display:none;
+                    } */
                 }
             }
         }

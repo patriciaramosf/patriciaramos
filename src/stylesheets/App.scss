@@ -14,8 +14,12 @@
 }
 html{
    background-color: white;
-    @include forTablet{
+   @include forMobile{
+    background-color: #FFFCF9;
+    height:100%;
+} 
+  /*   @include forTablet{
         background-color: #FFFCF9;
         height:100%;
-    } 
+    }  */
 }
