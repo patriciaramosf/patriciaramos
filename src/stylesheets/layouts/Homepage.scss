@@ -62,13 +62,14 @@
                 }
                 @include forDesktop{
                     right:100px;
-                    font-size:56px;
+                    /* font-size:56px; */
+                    font-size: $titleDesktop;
                     top:80px;
                     box-shadow: inset 0 -20px 0 $primaryColor;
                 }
                 @include forSuperdesktop{
                     right:240px;
-                    font-size:72px;
+                    /* font-size:72px; */
                 }
         }
         .thePhoto{
@@ -107,14 +108,14 @@
                 margin-right:20px;
             }
             .fab{
-                font-size: 28px;
+                font-size: 24px;
                 color:$primaryColor;
                 &:hover{
                     color:black;
                 }
             }
             .fas{
-                font-size: 28px;
+                font-size: 24px;
                 color:$primaryColor;
                 &:hover{
                     color:black;
@@ -128,7 +129,7 @@
             line-break: normal;
             margin-left:5px;
             margin-right:5px;
-            font-size:26px;
+            font-size:22px;
             line-height: 40px;
             color:$black;
             @include forMobile{
@@ -183,7 +184,7 @@
                         }
                     }
                     .myJob{
-                        font-size: 26px;
+                        font-size: 22px;
                         animation: colorchange 10s 1;
                         @include forDesktop{
                             font-size:52px;
