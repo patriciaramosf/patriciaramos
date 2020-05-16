@@ -1,16 +1,16 @@
 @mixin forTablet {
-    @media all and (min-width:$tablet){
+    @media all and (min-width:$GitTablet){
       @content
     }
   }
 
 @mixin forDesktop {
-    @media all and (min-width:$desktop){
+    @media all and (min-width:$GitDesktop){
       @content
     }
   }
   @mixin forSuperdesktop {
-    @media all and (min-width:$superdesktop){
+    @media all and (min-width:$GitSuperdesktop){
       @content
     }
   }

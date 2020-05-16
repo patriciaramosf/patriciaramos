@@ -74,8 +74,6 @@
         .thePhoto{
             width:350px;
             height:400px;
-            border-top:solid 2px black;
-            border-bottom:solid 2px black;
             opacity:0.8;
             @include forMobile{
                 width:300px;
