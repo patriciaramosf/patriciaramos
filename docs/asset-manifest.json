@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "./static/css/main.43f6b7de.chunk.css",
+    "main.js": "./static/js/main.66e8271a.chunk.js",
+    "main.js.map": "./static/js/main.66e8271a.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.2afa580b.js",
+    "runtime-main.js.map": "./static/js/runtime-main.2afa580b.js.map",
+    "static/js/2.1f957dfa.chunk.js": "./static/js/2.1f957dfa.chunk.js",
+    "static/js/2.1f957dfa.chunk.js.map": "./static/js/2.1f957dfa.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.be11a1119d8279db87157e970ec1c3c3.js": "./precache-manifest.be11a1119d8279db87157e970ec1c3c3.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.43f6b7de.chunk.css.map": "./static/css/main.43f6b7de.chunk.css.map",
+    "static/js/2.1f957dfa.chunk.js.LICENSE.txt": "./static/js/2.1f957dfa.chunk.js.LICENSE.txt",
+    "static/media/cartoonbn.png": "./static/media/cartoonbn.e26dd699.png",
+    "static/media/mygiphy.png": "./static/media/mygiphy.d5753ec1.png",
+    "static/media/pantera.png": "./static/media/pantera.4eb11959.png",
+    "static/media/pixar.png": "./static/media/pixar.c8254fba.png",
+    "static/media/responsive.png": "./static/media/responsive.099592e9.png",
+    "static/media/sticker.png": "./static/media/sticker.9e3db3ef.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2afa580b.js",
+    "static/js/2.1f957dfa.chunk.js",
+    "static/css/main.43f6b7de.chunk.css",
+    "static/js/main.66e8271a.chunk.js"
+  ]
+}
