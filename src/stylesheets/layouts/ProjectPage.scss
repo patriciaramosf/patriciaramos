@@ -34,25 +34,27 @@
             font-family: $fontFamilyTitle;
             @include forMobile{
                 display:none;
-        }
-        @include forDesktop{
-        margin-right:87px;
-    }
-        @include forSuperdesktop{
-            font-size:$titleDesktop;
-            margin-top:60px;
-          
-        }
+            }
+            @include forDesktop{
+                margin-right:87px;
+            }
+            @include forSuperdesktop{
+                font-size:$titleDesktop;
+                margin-top:60px;
+            }
         }
         .projectCard{
-            width:340px;
-            height:300px;
+            width:300px;
+            height:260px;
             -webkit-box-shadow: 3px 3px 3px 2px rgba(59, 59, 59, 0.2);
             box-shadow: 3px 3px 3px 2px rgba(59, 59, 59, 0.2);
             position: relative;
-            margin-left:10px;
+            margin-left:35px;
+            @include forMobile{
+                margin-left:20px;
+            }
             @include forTablet{
-                 width:420px;
+                width:420px;
                 height:360px;
                 margin-top:20px;
                 margin-left:40px;
@@ -98,7 +100,7 @@
                         .project__info{
                             padding:10px;
                             line-height: 20px;
-                            font-size:20px;
+                            font-size:18px;
                             color:$black;
                             @include forTablet{
                                   font-size:24px; 
@@ -116,7 +118,7 @@
                                 margin-bottom:6px;
                             }
                             .project__info--description{
-                                font-size: 18px;
+                                font-size: 16px;
                                 color:darkgrey;
                                 @include forTablet{
                                     font-size:24px; 
@@ -127,13 +129,14 @@
                         .cardIcons{
                             position:absolute;
                             right:5px;
-                            bottom:20px;
+                            bottom:15px;
                             display: flex;
                             justify-content: flex-end;
-                            font-size: 20px;
+                            font-size: 18px;
                             opacity:0.8;
                             @include forTablet{
-                                font-size:24px; 
+                                font-size:24px;
+                                bottom:20px; 
                           }
                             @include forSuperdesktop{
                                 font-size:28px;
@@ -164,8 +167,8 @@
     }
         .iconProjectOneDesk{
             position: absolute;
-            width:160px;
-            left:200px;
+            width:140px;
+            left:180px;
             top:-30px;
             @include forTablet{
                 width:240px;
@@ -198,10 +201,10 @@
             }
         }
         .iconProjectTwo{
-            width:180px;
+            width:140px;
             position: absolute;
-            top:-45px;
-            right:-10px;
+            top:-23px;
+            right:-8px;
             @include forTablet{
                 width:220px;
                 top:-58px;
@@ -229,7 +232,7 @@
         }
     }
         .iconProjectThree{
-            width:250px;
+            width:200px;
             position: absolute;
             top:-35px;
             left:-10px;
@@ -260,7 +263,7 @@
             }
         }
         .iconProjectTwo2{
-            width:120px;
+            width:100px;
             position: absolute;
             top:-20px;
             left:30px;
@@ -291,9 +294,9 @@
         }
     }
         .iconProjectfour{
-            width:120px;
+            width:100px;
             position: absolute;
-            top:-35px;
+            top:-25px;
             right:20px;
             @include forTablet{
                 width:150px;

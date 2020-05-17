@@ -17,7 +17,7 @@
 }
 .HomePage{
     height:100vh;
-    margin:40px 20px 40px 20px;
+    margin:80px 20px 40px 20px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +44,7 @@
             text-align: left;
             font-size: $titlePhone;
             position:absolute;
-            top:-50px;
+            top:-60px;
             right:20px;
             color:$black;
             font-weight: bold;
@@ -73,9 +73,10 @@
                 }
         }
         .thePhoto{
-            width:350px;
-            height:400px;
+            width:300px;
+            height:340px;
             opacity:0.8;
+            margin-left:40px;
             @include forMobile{
                 width:300px;
                 margin-left:20px;

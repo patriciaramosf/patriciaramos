@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from '../images/cartoon.png'
+import photo from '../images/cartoonbn.png'
 import ProjectPage from './ProjectPage.js'
 const HomePage =(props)=>{
     return(
