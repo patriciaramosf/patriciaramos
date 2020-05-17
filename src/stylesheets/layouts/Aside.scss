@@ -44,6 +44,9 @@
                 height: 45px;
                 width:140px;
                 font-size:16px;
+                &:hover {
+                    box-shadow: -3px 3px 0 $black;
+                  }
             }
             @include forDesktop{
                 right:30px;
@@ -61,12 +64,12 @@
                 bottom:50px;
             }
             @include forTablet{
-                left:10px;
+                left:5px;
                 bottom:50px;
                 margin-top:20px;
             }
             @include forDesktop{
-                left:20px;
+                left:5px;
                 }
             i{
                 margin-left:20px;
