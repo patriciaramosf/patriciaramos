@@ -29,8 +29,8 @@ const HomePage =(props)=>{
                 <p>
                 <span className="myweb">Patricia Ramos<br></br><span className="myJob">Frontend Developer</span></span>
                 </p>
-                <p className="description">{`${props.currentLanguage === false ? 'Tras varias experiencias en el sector del Marketing Digital, decidí formarme en Adalab como desarrolladora.' : 'After several experiences in Digital Marketing, I decided to learn coding at Adalab.'}`}</p>
-                <p className="description">{`${props.currentLanguage === false ? 'Soy de Madrid, me considero una persona alegre, curiosa y colaborativa, y estoy buscando un trabajo en el que poder aportar y aprender cada día.' : 'I´m from Madrid, I consider myself a happy, curious and collaborative person, and I´m looking for a job where I can put all my skills and learn everyday.'}`}
+                <p className="description">{`${props.currentLanguage === false ? 'Tras varias experiencias en el sector del Marketing Digital, decidí formarme en Adalab como desarrolladora frontend.' : 'After several experiences in Digital Marketing, I decided to learn coding at Adalab.'}`}</p>
+                <p className="description">{`${props.currentLanguage === false ? 'Soy de Madrid, me considero una persona alegre, curiosa y colaborativa, y estoy buscando un trabajo en el que poder aportar y aprender a diario.' : 'I´m from Madrid, I consider myself a happy, curious and collaborative person, and I´m looking for a job where I can put all my skills and learn everyday.'}`}
                 </p>
                 
                 <p className="description">{`${props.currentLanguage === false ? 'Me encanta ' : 'I love '}`} </p>

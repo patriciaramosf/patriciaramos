@@ -32,4 +32,8 @@
       @content
     }
   }
- 
+  @mixin forGitMobile {
+    @media all and (min-width:$GitMobileProject){
+      @content
+    }
+  }

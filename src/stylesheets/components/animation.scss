@@ -8,11 +8,7 @@
   display:none;
   @include forMobile{
     display:block;
-    position:relative;
-   /*  @include forTablet{
-    display:block;
-    position:relative; */
-    
+    position:relative; 
     &__container {
       overflow: hidden;
       height: 80px;
@@ -20,20 +16,23 @@
       position:absolute;
       height: 50px;
       overflow:hidden;
-      bottom:-3px;
-      left:10px;
+      bottom:-1px;
+      left:-10px;
+      @include forGitMobile{
+        left:5px;
+      }
       @include forTablet{
       bottom:-3px;
-      left:25px;
+      left:5px;
       }
       @include formediumDesktop{
         left:35px;
       }
       @include forDesktop{
-        left:35px;
+        left:15px;
       }
       @include forSuperdesktop{
-        left:45px;
+        left:25px;
       }
       &__text {
         display: inline;
@@ -55,8 +54,11 @@
         animation-name: change;
         animation-duration: 10s;
         animation-iteration-count: infinite;
+        @include forMobile{
+          font-size:18px;
+        }
         @include forTablet{
-          font-size:24px;
+          font-size:20px;
         }
   
         &__item {
@@ -140,17 +142,18 @@
         position:absolute;
         height: 50px;
         overflow:hidden;
-        bottom:-3px;
+        bottom:-1px;
         left:-40px;
         @include forTablet{
-          bottom:-3px;
-          left:-25px;
+          bottom:-1px;
+          left:-35px;
           }
         @include forDesktop{
-          left:-10px;
+          left:-30px;
       }
         @include forSuperdesktop{
-          left:0px;
+          left:-20px;
+          bottom:-3px;
         }
       }
     }

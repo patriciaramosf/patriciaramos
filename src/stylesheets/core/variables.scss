@@ -4,10 +4,10 @@ $trying: #FFBF81;
 $trying2: #C04ABC;
 $black:#2F2F2F;
 /* sizes */
-$titlePhone:/* 36px; */32px;
-$titleLittleTablet:/* 40px; */36px;
-$titleTablet:/* 48px; */42px;
-$titleDesktop:/* 54px; */44px;
+$titlePhone:/* 36px; */34px;
+$titleLittleTablet:/* 40px; */32px;
+$titleTablet:/* 48px; */38px;
+$titleDesktop:/* 54px; */40px;
 /* fonts */
 $fontFamilyTitle:'Nunito', sans-serif;
 $fontFamilyGeneral: 'Roboto Mono', monospace;
@@ -18,9 +18,11 @@ $bigTablet:768px;
 $desktop:1024px;
 $mediumdesktop:1100px;
 $superdesktop:1200px;
-$mobile:500px;
+
 
 /* Github sizes */
 $GitTablet: 738px;
 $GitDesktop:1012px;
 $GitSuperdesktop:1280px;
+$mobile:500px;
+$GitMobileProject:544px;

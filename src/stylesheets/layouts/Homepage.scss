@@ -28,18 +28,21 @@
         margin-top:0px;
     }
     @include forTablet{
-        margin-left:270px;
+        margin-left:210px;
     }
     .containerHomePage{
         @include forMobile{
             margin-top:100px;
         }
+        @include forTablet{
+            margin-top:140px;
+        }
         @include forDesktop{
-            margin-top:280px;
+            margin-top:180px;
         }
-        @include forSuperdesktop{
+       /*  @include forSuperdesktop{
             margin-top:280px;
-        }
+        } */
         .mainTitle{
             text-align: left;
             font-size: $titlePhone;
@@ -53,23 +56,24 @@
                 @include forMobile{
                 font-size:$titleLittleTablet;
                 top:40px;
-                right:10px;
+                right:5px;
+                }
+                @include forGitMobile{
+                    right:30px;
                 }
                 @include forTablet{
                     font-size:$titleTablet;
                     top:50px;
                     right:20px;
+                    box-shadow: inset 0 -20px 0 $primaryColor;
                 }
                 @include forDesktop{
                     right:100px;
-                    /* font-size:56px; */
                     font-size: $titleDesktop;
                     top:80px;
-                    box-shadow: inset 0 -20px 0 $primaryColor;
                 }
                 @include forSuperdesktop{
-                    right:240px;
-                    /* font-size:72px; */
+                    right:180px;
                 }
         }
         .thePhoto{
@@ -78,22 +82,14 @@
             opacity:0.8;
             margin-left:40px;
             @include forMobile{
+                width:260px;
+                margin-left:30px;
+            }
+            @include forGitMobile{
                 width:300px;
-                margin-left:20px;
-                }
+            }
             @include forTablet{
-                margin-top:20px;
-                width:400px;
-                margin-left:40px;
-            }
-            @include forDesktop{
                 display:none;
-                margin-top:20px;
-                width:500px;
-                margin-left:120px;
-            }
-            @include forSuperdesktop{
-                margin-left:200px;
             }
         }
         .mainIcons{
@@ -101,7 +97,7 @@
             justify-content: space-around;
             align-items: center;
             margin-top:20px;
-            @include forTablet{
+            @include forMobile{
                 display:none;
             }
             i{
@@ -136,63 +132,65 @@
             @include forMobile{
                 text-align: left;
                 margin-left:30px;
+                font-size:20px;
                 }
             @include forTablet{
-                text-align: left;
-                font-size:26px;
                 margin-left:40px;
                 margin-bottom:40px;
             }
             @include forDesktop{
-                font-size:30px;
                 margin-right:80px;
                 margin-left:80px;
-                line-height: 45px;
             }
             @include forSuperdesktop{
-                margin-right:200px;
-                margin-left:200px;
+                margin-right:160px;
+                margin-left:160px;
             }
             .description{
                     display:none;
                     @include forMobile{
                         display:block;
-                        font-size:16px;
-                        margin-right:10px;
+                        font-size:14px;
+                        margin-right:5px;
                         margin-top:10px;
                         text-align: justify;
                         line-height: 34px;
                         }
-                    @include forTablet{
-                        font-size:20px;
+                    @include forGitMobile{
+                        font-size:16px;
                     }
                     @include forDesktop{
-                        font-size:22px;
+                        font-size:18px;
                     }
                     @include forSuperdesktop{
-                        font-size:24px;
+                        font-size:20px;
                     }
                 }
                     .myweb{
                         font-weight: bold;
+                        font-size:24px;
+                        @include forTablet{
+                            font-size:26px;
+                        }
                         @include forDesktop{
-                            font-size:56px;
-                            line-height: 85px;
+                            font-size:30px;
+                            line-height: 25px;
                         }
                         @include forSuperdesktop{
-                            font-size:72px;
-                            line-height: 85px;
+                            font-size:36px;
+                            line-height:55px;
                         }
                     }
                     .myJob{
                         font-size: 22px;
+                        font-weight: 400;
                         animation: colorchange 10s 1;
                         @include forDesktop{
-                            font-size:52px;
+                            font-size:28px;
                             margin-bottom:40px;
                         }
                         @include forSuperdesktop{
-                            font-size:70px;
+                            font-size:34px;
                             margin-bottom:40px;
                         }
                     }

@@ -7,7 +7,7 @@
 @import './layouts/ProjectPage.scss';
 .App{
     background:white;
-    @include forTablet{
+    @include forMobile{
         background-color: #FFFCF9;
         height:100%;
     } 

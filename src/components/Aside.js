@@ -16,7 +16,7 @@ const Aside =(props)=>{
                 </label>
             </div>
                 <Link to='/projects'>
-                    <button className="linkTabletProject">{`${props.currentLanguage === false ? ' PROYECTOS' : ' PROJECTS'}`}
+                    <button className="asidebtn">{`${props.currentLanguage === false ? ' PROYECTOS' : ' PROJECTS'}`}
                     </button>
                 </Link>
                 <div className="mainIconsAside">
