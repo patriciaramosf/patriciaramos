@@ -9,22 +9,25 @@ import { Route, Switch } from 'react-router-dom';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.changeLanguage = this.changeLanguage.bind(this);
     this.state={
-      languageEn: false,
+      currentLanguage: 'es',
       filter:null,
     }
   }
-  changeLanguage(){
-    this.setState(prevState=>({
-      languageEn: !prevState.languageEn,
-    }))
+  changeLanguage = () =>{
+    const newLanguage = this.state.currentLanguage === 'es' ? 'en': 'es';
+   /*  this.setState(prevState=>({
+      isEnglish: !prevState.isEnglish,
+    })) */
+    this.setState({
+      currentLanguage: newLanguage
+    })
   }
  setFilter = (filter) =>{
-   this.setState({filter:filter})
+   this.setState({filter:filter});
  }
  setReset =()=>{
-   this.setState({filter:null})
+   this.setFilter(null);
  }
   render() {
     return (
@@ -32,10 +35,10 @@ class App extends React.Component {
           <Switch>
             <Route exact path='/'>
                 <Aside    changeLanguage={this.changeLanguage}
-                          currentLanguage={this.state.languageEn}
+                          currentLanguage={this.state.currentLanguage}
                 />
                 <HomePage   changeLanguage={this.changeLanguage}
-                            currentLanguage={this.state.languageEn}
+                            currentLanguage={this.state.currentLanguage}
                             filter={this.state.filter}
                             setFilter={this.setFilter}
                             setReset={this.setReset}
@@ -43,10 +46,10 @@ class App extends React.Component {
             </Route>
             <Route exact path='/projects'>
                 <AsideProject   changeLanguage={this.changeLanguage}
-                                currentLanguage={this.state.languageEn}
+                                currentLanguage={this.state.currentLanguage}
                 />
                 <ProjectPage    changeLanguage={this.changeLanguage}
-                                currentLanguage={this.state.languageEn}
+                                currentLanguage={this.state.currentLanguage}
                                 filter={this.state.filter}
                                 setFilter={this.setFilter}
                                 setReset={this.setReset}

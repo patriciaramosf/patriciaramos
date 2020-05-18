@@ -1,6 +1,7 @@
 import React from 'react';
 import projects from './../data/projects.js'
 import ProjectItem from './ProjectItem.js'
+
 const ProjectList =(props)=>{
     return(
         <>
@@ -9,10 +10,8 @@ const ProjectList =(props)=>{
             .filter(project => props.filter === null || project.type === props.filter)
             .map(project=>{
                 return(
-                <ProjectItem    key={project.id}    
-                                id={project.id}
-                                type={project.type}
-                                reset={project.reset}
+                <ProjectItem    key={project.id}
+                                project={project}
                                 currentLanguage={props.currentLanguage}
                 />
                 )

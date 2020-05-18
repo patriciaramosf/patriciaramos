@@ -19,22 +19,22 @@ const handleAllProjects = () => {
                     </h2>
             </div>
             <div className="allbuttons">
-                <button     className="btn btnall"
+                <button     className="btn"
                             onClick={handleAllProjects}
                             id="all"> 
                             {`${props.currentLanguage === false ? 'Todo' : 'All'}`}
                 </button>
-                <button     className="btn btnJavascript"
+                <button     className="btn"
                             onClick={handleProjects}
                             id="javascript"> 
                             JavaScript
                 </button>
-                <button     className="btn btnReact"
+                <button     className="btn"
                             onClick={handleProjects}
                             id="react">
                             React
                 </button>
-                <button     className="btn btnLayout"
+                <button     className="btn"
                             onClick={handleProjects}
                             id="layout">
                             {`${props.currentLanguage === false ? 'Maquetación' : 'Layout'}`}       

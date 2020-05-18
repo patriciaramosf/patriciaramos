@@ -10,7 +10,7 @@ const Aside =(props)=>{
             <div className="languageToggle">
                 <label className="switch">
                     <input  type="checkbox"
-                            onChange={handleLanguages}
+                            onChange={ handleLanguages }
                     />
                     <span className="slider round"/>
                 </label>

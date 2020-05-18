@@ -163,7 +163,7 @@
             }
 .one{
     .oneTop{
-        background-color: $primaryColor;
+        background-color: #63cbfb;
         @include forDesktop{
         }
         
@@ -320,3 +320,35 @@
             }
         }
 }
+.five{
+    .fiveTop{
+        background-color: $primaryColor;
+    }
+    .fiveBottom{
+        @include forDesktop{
+            top:-30px;
+            right:20px;
+        }
+    }
+        .iconPortfolio{
+            width:130px;
+            position: absolute;
+            top:-33px;
+            left:20px;
+            @include forTablet{
+                width:160px;
+                top:-48px;
+            }
+            @include forDesktop{
+                top:55px;
+                width:230px;
+                right:2px;
+            }
+            @include forSuperdesktop{
+               right:60px;
+               top:-2px;
+               width:280px;
+            }
+        }
+}
+
