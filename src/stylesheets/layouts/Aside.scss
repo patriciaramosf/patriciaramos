@@ -76,23 +76,23 @@
                 margin-right:20px;
             }
             .fab{
-                color:$primaryColor;
+                color:$icons;
                 font-size:20px;
                 @include forDesktop{
                 font-size: 22px;
                 }
                 &:hover{
-                    color:black;
+                    color:$black;
                 }
             }
             .fas{
-                color:$primaryColor;
+                color:$icons;
                 font-size:20px;
                 @include forDesktop{
                 font-size: 22px;
                 }
                 &:hover{
-                    color:black;
+                    color:$black;
                 }
             }
         }

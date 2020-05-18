@@ -20,7 +20,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $primaryColor;
+    background-color: $buttonColor;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -38,7 +38,7 @@
   }
   
   input:checked + .slider {
-    background-color: #ccc;
+    background-color: $twoButtonColor;
   }
   
   input:focus + .slider {
@@ -68,7 +68,7 @@
  transform: translate(-50%,-50%);
  top: 50%;
  left: 50%;
- font-size: 14px;
+ font-size: 12px;
  font-family: $fontFamilyGeneral;
  padding-left:20px;
  font-weight: bold;
@@ -77,7 +77,7 @@
 input:checked + .slider:after{  
 content:'EN';
 padding-right:40px;
-color:$primaryColor;
+color:white;
 font-weight: bold;
 }
 

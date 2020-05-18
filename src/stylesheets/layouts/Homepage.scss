@@ -106,16 +106,16 @@
             }
             .fab{
                 font-size: 24px;
-                color:$primaryColor;
+                color:$icons;
                 &:hover{
-                    color:black;
+                    color:$iconHover;
                 }
             }
             .fas{
                 font-size: 24px;
-                color:$primaryColor;
+                color:$icons;
                 &:hover{
-                    color:black;
+                    color:$iconHover;
                 }
             }
         }

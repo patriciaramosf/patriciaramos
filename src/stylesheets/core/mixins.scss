@@ -15,17 +15,11 @@
     }
   }
   
-  @mixin forbigTablet {
-    @media all and (min-width:$bigTablet){
-      @content
-    }
-  }
   @mixin formediumDesktop {
     @media all and (min-width: $mediumdesktop){
       @content
     }
   }
-
 
   @mixin forMobile {
     @media all and (min-width:$mobile){
