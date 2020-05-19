@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const Aside =(props)=>{
-    const { currentLanguage, switchLanguage } = props;
+    const { currentLanguage, switchLanguage, text, link, textEn } = props;
     const handleLanguages=()=>{
         props.changeLanguage()
     }
@@ -17,8 +17,9 @@ const Aside =(props)=>{
                     <span className="slider round"/>
                 </label>
             </div>
-                <Link to='/projects'>
-                    <button className="asidebtn">{`${currentLanguage === 'es' ? ' PROYECTOS' : ' PROJECTS'}`}
+                <Link to={link}>
+                    <button className="asidebtn">
+                    {`${currentLanguage === 'es' ? text : textEn}`}
                     </button>
                 </Link>
                 <div className="mainIconsAside">

@@ -1,7 +1,6 @@
 import React from 'react';
 import HomePage from './HomePage.js'
 import Aside from './Aside.js'
-import AsideProject from './AsideProject.js'
 import ProjectPage from './ProjectPage.js'
 import '../stylesheets/App.scss';
 import { Route, Switch } from 'react-router-dom';
@@ -39,6 +38,9 @@ class App extends React.Component {
                 <Aside    changeLanguage={ changeLanguage }
                           currentLanguage={ currentLanguage }
                           switchLanguage={ switchLanguage }
+                          text='Proyectos'
+                          textEn='Projects'
+                          link='/projects'
                 />
                 <HomePage   changeLanguage={ changeLanguage }
                             currentLanguage={ currentLanguage }
@@ -48,9 +50,12 @@ class App extends React.Component {
                 />
             </Route>
             <Route exact path='/projects'>
-                <AsideProject   changeLanguage={ changeLanguage }
+                <Aside          changeLanguage={ changeLanguage }
                                 currentLanguage={ currentLanguage }
                                 switchLanguage={ switchLanguage }
+                                text='Hola'
+                                textEn='Hello'
+                                link='/'
                 />
                 <ProjectPage    changeLanguage={ changeLanguage }
                                 currentLanguage={ currentLanguage }
