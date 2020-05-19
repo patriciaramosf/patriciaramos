@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const Aside =(props)=>{
-    const { currentLanguage } = props;
+    const { currentLanguage, switchLanguage } = props;
     const handleLanguages=()=>{
         props.changeLanguage()
     }
@@ -11,6 +11,7 @@ const Aside =(props)=>{
             <div className="languageToggle">
                 <label className="switch">
                     <input  type="checkbox"
+                            checked={ switchLanguage }
                             onChange={ handleLanguages }
                     />
                     <span className="slider round"/>

@@ -12,12 +12,15 @@ class App extends React.Component {
     this.state={
       currentLanguage: 'es',
       filter:null,
+      switchLanguage:false,
     }
   }
   changeLanguage =()=>{
     const newLanguage = this.state.currentLanguage === 'es' ? 'en': 'es';
+    const switchOnLanguage = this.state.switchLanguage === false ? true: false;
     this.setState({
-      currentLanguage: newLanguage
+      currentLanguage: newLanguage,
+      switchLanguage: switchOnLanguage,
     })
   }
  setFilter = (filter) =>{
@@ -27,7 +30,7 @@ class App extends React.Component {
    this.setFilter(null);
  }
   render() {
-    const { currentLanguage, filter } = this.state;
+    const { currentLanguage, filter, switchLanguage } = this.state;
     const { setFilter, setReset, changeLanguage } = this;
     return (
       <div className="App">
@@ -35,6 +38,7 @@ class App extends React.Component {
             <Route exact path='/'>
                 <Aside    changeLanguage={ changeLanguage }
                           currentLanguage={ currentLanguage }
+                          switchLanguage={ switchLanguage }
                 />
                 <HomePage   changeLanguage={ changeLanguage }
                             currentLanguage={ currentLanguage }
@@ -46,6 +50,7 @@ class App extends React.Component {
             <Route exact path='/projects'>
                 <AsideProject   changeLanguage={ changeLanguage }
                                 currentLanguage={ currentLanguage }
+                                switchLanguage={ switchLanguage }
                 />
                 <ProjectPage    changeLanguage={ changeLanguage }
                                 currentLanguage={ currentLanguage }
