@@ -40,7 +40,7 @@ const PROJECTS =[
         image: {
             class:'iconProjectOneDesk',
             alt:'rick and morty',
-            src:'/images/sticker.png',
+            src:'./images/sticker.png',
         },
         text: {
             es: {
@@ -70,7 +70,7 @@ const PROJECTS =[
         image: {
             class:'iconProjectTwo2',
             alt:'virtual cards',
-            src:'/images/mygiphy.png',
+            src:'./images/mygiphy.png',
         },
         text: {
             es: {
@@ -100,7 +100,7 @@ const PROJECTS =[
         image: {
             class:'iconProjectTwo',
             alt:'virtual cards',
-            src:'/images/pantera.png',
+            src:'./images/pantera.png',
         },
         text: {
             es: {
@@ -130,7 +130,7 @@ const PROJECTS =[
         image: {
             class:'iconProjectThree',
             alt:'collapsingMargins',
-            src:'/images/responsive.png',
+            src:'./images/responsive.png',
         },
         text: {
             es: {
@@ -160,7 +160,7 @@ const PROJECTS =[
         image: {
             class:'iconProjectfour',
             alt:'movie search',
-            src:'/images/pixar.png',
+            src:'./images/pixar.png',
         },
         text: {
             es: {
