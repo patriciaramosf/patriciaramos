@@ -2,10 +2,11 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const AsideProject =(props)=>{
+    const { currentLanguage } = props;
     return(
         <div className="aside">
                 <Link to={`${props.currentLanguage === false ? '/' : '/'}`}>
-                    <button className="asidebtn">{`${props.currentLanguage === false ? ' HOLA' : ' HELLO'}`}
+                    <button className="asidebtn">{`${currentLanguage === 'es' ? ' HOLA' : ' HELLO'}`}
                     </button>
                 </Link>
                 <div className="mainIconsAside">

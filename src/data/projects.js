@@ -1,4 +1,4 @@
-const projects =[
+const PROJECTS =[
     {
         id:1,
         type:'react',
@@ -22,7 +22,7 @@ const projects =[
                 nameEn:'Portfolio',
                 tools:'React - Sass - Router',
                 description:'Check the code of this project.',
-            }
+            },
         },
         links: {
             code:'https://github.com/patriciaramosf/patriciaramos',
@@ -181,4 +181,4 @@ const projects =[
     },
     
 ]
-export default projects;
+export default PROJECTS;

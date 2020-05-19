@@ -14,45 +14,44 @@ class App extends React.Component {
       filter:null,
     }
   }
-  changeLanguage = () =>{
+  changeLanguage =()=>{
     const newLanguage = this.state.currentLanguage === 'es' ? 'en': 'es';
-   /*  this.setState(prevState=>({
-      isEnglish: !prevState.isEnglish,
-    })) */
     this.setState({
       currentLanguage: newLanguage
     })
   }
  setFilter = (filter) =>{
-   this.setState({filter:filter});
+   this.setState({ filter:filter });
  }
  setReset =()=>{
    this.setFilter(null);
  }
   render() {
+    const { currentLanguage, filter } = this.state;
+    const { setFilter, setReset, changeLanguage } = this;
     return (
       <div className="App">
           <Switch>
             <Route exact path='/'>
-                <Aside    changeLanguage={this.changeLanguage}
-                          currentLanguage={this.state.currentLanguage}
+                <Aside    changeLanguage={ changeLanguage }
+                          currentLanguage={ currentLanguage }
                 />
-                <HomePage   changeLanguage={this.changeLanguage}
-                            currentLanguage={this.state.currentLanguage}
-                            filter={this.state.filter}
-                            setFilter={this.setFilter}
-                            setReset={this.setReset}
+                <HomePage   changeLanguage={ changeLanguage }
+                            currentLanguage={ currentLanguage }
+                            filter={ filter }
+                            setFilter={ setFilter }
+                            setReset={ setReset }
                 />
             </Route>
             <Route exact path='/projects'>
-                <AsideProject   changeLanguage={this.changeLanguage}
-                                currentLanguage={this.state.currentLanguage}
+                <AsideProject   changeLanguage={ changeLanguage }
+                                currentLanguage={ currentLanguage }
                 />
-                <ProjectPage    changeLanguage={this.changeLanguage}
-                                currentLanguage={this.state.currentLanguage}
-                                filter={this.state.filter}
-                                setFilter={this.setFilter}
-                                setReset={this.setReset}
+                <ProjectPage    changeLanguage={ changeLanguage }
+                                currentLanguage={ currentLanguage }
+                                filter={ filter }
+                                setFilter={ setFilter }
+                                setReset={ setReset }
                 />
             </Route>
         </Switch>

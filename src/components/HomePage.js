@@ -1,12 +1,15 @@
 import React from 'react';
-import photo from '../images/recortada.png'
-import ProjectPage from './ProjectPage.js'
+import photo from '../images/recortada.png';
+import ProjectPage from './ProjectPage.js';
+import Home from './../texts/home.js';
+
 const HomePage =(props)=>{
+    const { currentLanguage, filter, setFilter, setReset }=props;
     return(
         <div className="HomePage">
             <div className="containerHomePage">
             <div className="mainTitle">
-                <h1>{`${props.currentLanguage === false ? ' - ¡HOLA!' : ' - HELLO!'}`}</h1>
+                <h1>{ Home[currentLanguage].title }</h1>
             </div>
             <div className="mainPhoto">
             <img alt="profile" className="thePhoto" src={photo}></img>
@@ -29,28 +32,27 @@ const HomePage =(props)=>{
                 <p>
                 <span className="myweb">Patricia Ramos<br></br><span className="myJob">Frontend Developer</span></span>
                 </p>
-                <p className="description">{`${props.currentLanguage === false ? 'Tras varias experiencias en el sector del Marketing Digital, decidí formarme en Adalab como desarrolladora frontend.' : 'After several experiences in Digital Marketing, I decided to learn coding at Adalab.'}`}</p>
-                <p className="description">{`${props.currentLanguage === false ? 'Soy de Madrid, me considero una persona alegre, curiosa y colaborativa, y estoy buscando un trabajo en el que poder aportar y aprender a diario.' : 'I´m from Madrid, I consider myself a happy, curious and collaborative person, and I´m looking for a job where I can put all my skills and learn everyday.'}`}
-                </p>
+                <p className="description">{ Home[currentLanguage].introduction }</p>
+                <p className="description">{ Home[currentLanguage].description }</p>
                 
-                <p className="description">{`${props.currentLanguage === false ? 'Me encanta ' : 'I love '}`} </p>
+                <p className="description">{ Home[currentLanguage].hobbies.title }</p>
                 <div className="content">
-                    <div className= {`${props.currentLanguage === false ? 'content__container' : 'content__containerEn'}`}>
-                    <ul className="content__container__list">
-                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<reir>' : '<laughing>'}`}</li>
-                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<comer>' : '<eating>'}`}</li>
-                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<stackoverflow>' : '<stackoverflow>'}`}</li>
-                        <li className="content__container__list__item">{`${props.currentLanguage === false ? '<The office>' : '<The office US>'}`}</li>
-                    </ul>
+                    <div className= { `${currentLanguage === 'es' ? 'content__container' : 'content__containerEn'}` }>
+                        <ul className="content__container__list">
+                            <li className="content__container__list__item">{ Home[currentLanguage].hobbies.firstHobbie }</li>
+                            <li className="content__container__list__item">{ Home[currentLanguage].hobbies.secondHobbie }</li>
+                            <li className="content__container__list__item">{ Home[currentLanguage].hobbies.thirdHobbie }</li>
+                            <li className="content__container__list__item">{ Home[currentLanguage].hobbies.fourthHobbie }</li>
+                        </ul>
                     </div>
-                    </div>
+                </div>
             </div>
             <div className="stepToProjects">
                 <div className="next">
-                    <ProjectPage    currentLanguage={props.currentLanguage}
-                                    filter={props.filter}
-                                    setFilter={props.setFilter}
-                                    setReset={props.setReset}
+                    <ProjectPage    currentLanguage={currentLanguage}
+                                    filter={filter}
+                                    setFilter={setFilter}
+                                    setReset={setReset}
                     />
                 </div>
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const Aside =(props)=>{
+    const { currentLanguage } = props;
     const handleLanguages=()=>{
         props.changeLanguage()
     }
@@ -16,7 +17,7 @@ const Aside =(props)=>{
                 </label>
             </div>
                 <Link to='/projects'>
-                    <button className="asidebtn">{`${props.currentLanguage === false ? ' PROYECTOS' : ' PROJECTS'}`}
+                    <button className="asidebtn">{`${currentLanguage === 'es' ? ' PROYECTOS' : ' PROJECTS'}`}
                     </button>
                 </Link>
                 <div className="mainIconsAside">
