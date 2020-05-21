@@ -1,2 +1,2 @@
-Portfolio created with ReactJS 😊
+Portfolio built with ReactJS 😊
 
