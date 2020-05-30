@@ -14,7 +14,7 @@ const ProjectPage =(props)=>{
             <div className="containerProject">
             <div className="projects__titleContainer">
                     <h2 className="projects__title">
-                        {`${currentLanguage === 'es' ? 'PROYECTOS -' : 'PROJECTS -'}`}
+                        {`${currentLanguage === 'es' ? '- PROYECTOS' : '- PROJECTS'}`}
                     </h2>
                     <div className="allbuttons">
                         <button     className='btn'
