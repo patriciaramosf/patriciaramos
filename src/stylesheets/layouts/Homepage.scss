@@ -17,13 +17,15 @@
 }
 .HomePage{
     height:100vh;
-    margin:80px 20px 40px 20px;
+    margin:60px 20px 40px 20px;
     display:flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    background-color: #FFFCF9;
     @include forMobile{
         margin-left:180px;
+        margin-top:80px;
         background-color: #FFFCF9;
         margin-top:0px;
     }
@@ -40,9 +42,6 @@
         @include forDesktop{
             margin-top:180px;
         }
-       /*  @include forSuperdesktop{
-            margin-top:280px;
-        } */
         .mainTitle{
             text-align: left;
             font-size: $titlePhone;
@@ -53,6 +52,7 @@
             font-weight: bold;
             text-transform: uppercase;
             font-family: $fontFamilyTitle;
+            display:none;
                 @include forMobile{
                 font-size:$titleLittleTablet;
                 top:40px;
@@ -76,44 +76,32 @@
                     right:180px;
                 }
         }
-        .thePhoto{
-            width:300px;
-            height:340px;
-            opacity:0.8;
-            margin-left:40px;
-            @include forMobile{
-                width:260px;
-                margin-left:30px;
-            }
-            @include forGitMobile{
-                width:300px;
-            }
-            @include forTablet{
-                display:none;
-            }
-        }
         .mainIcons{
             display:flex;
             justify-content: space-around;
             align-items: center;
-            margin-top:20px;
+            position:absolute;
+            top:-90px;
+            right:-10px;
+            z-index:1;
+            padding:5px;
             @include forMobile{
                 display:none;
             }
             i{
-                margin-left:20px;
-                margin-right:20px;
+                margin-left:12px;
+                margin-right:12px;
             }
             .fab{
                 font-size: 24px;
-                color:$icons;
+                color:$primaryColor;
                 &:hover{
                     color:$iconHover;
                 }
             }
             .fas{
                 font-size: 24px;
-                color:$icons;
+                color:$primaryColor;
                 &:hover{
                     color:$iconHover;
                 }
@@ -126,7 +114,6 @@
             line-break: normal;
             margin-left:5px;
             margin-right:5px;
-            font-size:22px;
             line-height: 40px;
             color:$black;
             @include forMobile{
@@ -147,7 +134,9 @@
                 margin-left:160px;
             }
             .description{
-                    display:none;
+                font-size:14px;
+                text-align: justify;
+                line-height: 30px;
                     @include forMobile{
                         display:block;
                         font-size:14px;
@@ -167,8 +156,12 @@
                     }
                 }
                     .myweb{
+                        font-size: 30px;
+                        font-weight: bold;
+                        @include forMobile{
                         font-weight: bold;
                         font-size:24px;
+                        }
                         @include forTablet{
                             font-size:26px;
                         }
@@ -182,9 +175,12 @@
                         }
                     }
                     .myJob{
-                        font-size: 22px;
-                        font-weight: 400;
                         animation: colorchange 10s 1;
+                        font-weight: 400;
+                        font-size: 28px;
+                        @include forMobile{
+                            font-size: 22px;
+                            }
                         @include forDesktop{
                             font-size:28px;
                             margin-bottom:40px;
@@ -194,6 +190,12 @@
                             margin-bottom:40px;
                         }
                     }
+            }
+            .description1{
+                margin-top:20px;
+                @include forMobile{
+                    margin-top:0px;
+                }
             }
         .stepToProjects{
             margin-top:60px;

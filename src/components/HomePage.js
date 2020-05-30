@@ -1,5 +1,4 @@
 import React from 'react';
-import photo from '../images/recortada.png';
 import ProjectPage from './ProjectPage.js';
 import Home from './../texts/home.js';
 
@@ -10,9 +9,6 @@ const HomePage =(props)=>{
             <div className="containerHomePage">
             <div className="mainTitle">
                 <h1>{ Home[currentLanguage].title }</h1>
-            </div>
-            <div className="mainPhoto">
-            <img alt="profile" className="thePhoto" src={photo}></img>
             </div>
             <div className="mainIcons">
                 <a  href="https://github.com/patriciaramosf"
@@ -30,9 +26,10 @@ const HomePage =(props)=>{
             </div>
             <div className="mainText">
                 <p>
-                <span className="myweb">Patricia Ramos<br></br><span className="myJob">Frontend Developer</span></span>
+                <span className="myweb">Patricia Ramos<br></br></span>
+                <span className="myJob">Frontend Developer</span>
                 </p>
-                <p className="description">{ Home[currentLanguage].introduction }</p>
+                <p className="description description1">{ Home[currentLanguage].introduction }</p>
                 <p className="description">{ Home[currentLanguage].description }</p>
                 
                 <p className="description">{ Home[currentLanguage].hobbies.title }</p>

@@ -6,14 +6,15 @@
 @import './layouts/Homepage.scss';
 @import './layouts/ProjectPage.scss';
 .App{
-    background:white;
+    background-color: #FFFCF9;
     @include forMobile{
         background-color: #FFFCF9;
         height:100%;
     } 
 }
 html{
-   background-color: white;
+ 
+ background-color: #FFFCF9;
    @include forMobile{
     background-color: #FFFCF9;
     height:100%;
