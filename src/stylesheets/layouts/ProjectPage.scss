@@ -121,11 +121,20 @@
                             .project__info--title{
                                 font-weight: bold;
                                 margin-bottom:10px;
+                                @include forDesktop{
+                                    font-size:20px; 
+                                    }
                             }
                             .project__info--tools{
                                 margin-bottom:6px;
-                                @include forMobile{
-                                    font-size:16px;
+                                line-height: 24px;
+                                font-size:14px;
+                                font-weight: 500;
+                                @include forTablet{
+                                    font-size:16px; 
+                              }
+                              @include forDesktop{
+                                font-size:18px; 
                                 }
                             }
                             .project__info--description{
@@ -134,12 +143,15 @@
                                 @include forMobile{
                                     font-size:14px;
                                 }
+                                @include forDesktop{
+                                    font-size:16px;
+                                }
                             }
                         }
                         .cardIcons{
                             position:absolute;
                             right:5px;
-                            bottom:15px;
+                            bottom:10px;
                             display: flex;
                             justify-content: flex-end;
                             font-size: 18px;
@@ -199,7 +211,7 @@
     }
 .two{
     .twoTop{
-        background-color: black;
+        background-color: $black;
         }
     .twoBottom{
             @include forDesktop{
@@ -208,21 +220,21 @@
             }
         }
         .iconProjectTwo{
-            width:140px;
+            width:110px;
             position: absolute;
-            top:-23px;
-            right:-8px;
+            top:2px;
+            right:20px;
             @include forTablet{
-                width:190px;
-                top:-55px;
+                width:160px;
+                top:-15px;
             }
             @include forDesktop{
-                width:260px;
+                width:200px;
                 top:60px;
                 right:5px;
             }
             @include forSuperdesktop{
-                width:280px;
+                width:220px;
                 top:40px;
             }
         } 
@@ -290,34 +302,34 @@
             }
     }
 }
-.four{
-    .fourTop{
-        background-color: #BF1A2F;
+.zero{
+    .zeroTop{
+        background-color: #ABEDC6;
     }
-    .fourBottom{
+    .zeroBottom{
         @include forDesktop{
             top:-30px;
             left:40px;
         }
     }
-        .iconProjectfour{
-            width:100px;
+        .iconProjectZero{
+            width:120px;
             position: absolute;
-            top:-25px;
+            top:5px;
             right:20px;
             @include forTablet{
                 width:140px;
-                top:-55px;
+                top:-5px;
             }
             @include forDesktop{
-                top:20px;
+                top:50px;
                 width:200px;
                 right:2px;
             }
             @include forSuperdesktop{
-               right:60px;
-               top:-30px;
-               width:220px;
+               right:30px;
+               top:20px;
+               width:260px;
             }
         }
 }

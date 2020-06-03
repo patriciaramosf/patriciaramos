@@ -1,5 +1,35 @@
 const PROJECTS =[
     {
+        id:0,
+        type:'javascript',
+        style: {
+            container:'animate__animated animate__fadeIn projectCard zero',
+            top:'projectCardTop zeroTop',
+            bottom:'projectCardBottom zeroBottom',
+        },
+        image: {
+            class:'iconProjectZero',
+            alt:'ecommerce',
+            src:'./images/sushi.png',
+        },
+        text: {
+            es: {
+                name:'Sushi Ecommerce',
+                tools:'Javascript - CSS - Bootstrap - LocalStorage',
+                description:'Añade al carrito todo el sushi que puedas.',
+            },
+            en: {
+                name:'Sushi Ecommerce',
+                tools:'Javascript - CSS - Bootstrap - LocalStorage',
+                description:'Add sushi to your cart and get hungry.',
+            }
+        },
+        links: {
+            code:'https://github.com/patriciaramosf/ecommerce',
+            web:'https://patriciaramosf.github.io/ecommerce/',
+        },
+    },
+    {
         id:1,
         type:'react',
         style: {
@@ -19,7 +49,7 @@ const PROJECTS =[
                 description:'Echa un vistazo al código de esta página.',
             },
             en: {
-                nameEn:'Portfolio',
+                name:'Portfolio',
                 tools:'React - Sass - Router',
                 description:'Check the code of this project.',
             },
@@ -49,7 +79,7 @@ const PROJECTS =[
                 description:'Buscador de personajes de la serie.',
             },
             en: {
-                nameEn:'Rick and Morty App',
+                name:'Rick and Morty App',
                 tools:'React - Sass - APIs - Router',
                 description:'Find your favourite character of the tv serie with this App.',
             }
@@ -79,7 +109,7 @@ const PROJECTS =[
                 description:'App para personalizar tarjetas y compartirlas en Twitter.',
             },
             en: {
-                nameEn:'Card Generator',
+                name:'Card Generator',
                 tools:'JavaScript - APIs - Sass',
                 description:'Get your personal card and share it on Twitter.',
             }
@@ -100,7 +130,7 @@ const PROJECTS =[
         image: {
             class:'iconProjectTwo',
             alt:'virtual cards',
-            src:'./images/pantera.png',
+            src:'./images/toggle.png',
         },
         text: {
             es: {
@@ -109,7 +139,7 @@ const PROJECTS =[
                 description:'Migración de Javascript a React JS. #darkMode.',
             },
             en: {
-                nameEn:'Legacy Code Project',
+                name:'Legacy Code Project',
                 tools:'React - Sass - LocalStorage',
                 description:'Migration from Javascript to React JS #darkMode.',
             }
@@ -139,44 +169,14 @@ const PROJECTS =[
                 description:'Web responsive, primer proyecto grupal en Adalab.',
             },
             en: {
-                nameEn:'Collapsing Margins',
+                name:'Collapsing Margins',
                 tools:'HTML - Sass',
-                description:'My first project at Adalab, a responsive design Web.',
+                description:'My first project at Adalab, a responsive Website.',
             }
         },
         links: {
             code:'https://github.com/patriciaramosf/Collapsing-margins-Web__Adalab-Project',
             web:'http://beta.adalab.es/project-promo-i-module-1-team-3-afternoon-final/',
-        },
-    },
-    {
-        id:6,
-        type:'javascript',
-        style: {
-            container:'animate__animated animate__fadeIn projectCard four',
-            top:'projectCardTop fourTop',
-            bottom:'projectCardBottom fourBottom',
-        },
-        image: {
-            class:'iconProjectfour',
-            alt:'movie search',
-            src:'./images/pixar.png',
-        },
-        text: {
-            es: {
-                name:'Buscador de películas',
-                tools:'Javascript - Sass - APIs',
-                description:'Buscador de películas y series.',
-            },
-            en: {
-                nameEn:'Movie Search',
-                tools:'Javascript - Sass - APIs',
-                description:'Search your favourite movie.',
-            }
-        },
-        links: {
-            code:'https://github.com/patriciaramosf/find-movies-from-api',
-            web:'https://patriciaramosf.github.io/find-movies-from-api/',
         },
     },
     
