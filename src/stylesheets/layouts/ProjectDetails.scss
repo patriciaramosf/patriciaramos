@@ -1,3 +1,65 @@
 .ProjectDetails{
-    background-color: lightgoldenrodyellow;
+    background-color: #FFFCF9;
+    height:100vh;
+    margin:20px 20px 20px 20px;
+    .details__top{
+        border-bottom:1px solid lightgray;
+        margin-bottom:20px;
+        .projectDetails__Title{
+            font-family:$fontFamilyGeneral;
+            text-align: left;
+            font-size: $titlePhone;
+            color:$black;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom:10px;
+            margin-top:15px;
+        }
+        .btnDetails{
+        margin-left:250px;
+        }
+    }
+    .container__Details{
+        display:flex;
+        flex-direction: column;
+        .buttons__details{
+            display:flex;
+            justify-content: flex-start;
+            .details__button{
+                margin-left:10px;
+            }
+           /*  .fa-code{
+                color:$primaryColor;
+                margin-left:5px;
+                font-size:20px;
+            }
+            .fa-browser{
+                color:$primaryColor;
+                margin-left:5px;
+                font-size:20px;
+            } */
+        }
+        .details__description{
+            text-align:justify;
+            margin-bottom:20px;
+            font-family: $fontFamilyGeneral;
+            font-size:14px;
+        }
+        .img__container{
+            margin-top:20px;
+            width:100%;
+            .fa-chevron-left{
+                color:$black;
+                font-size:24px;
+            }
+            .fa-chevron-right{
+                color:$black;
+                font-size:24px;
+            }
+            .img__details{
+                width:340px;
+                height:380px;
+            }
+        }
+    }
 }

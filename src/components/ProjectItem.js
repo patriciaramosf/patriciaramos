@@ -10,7 +10,7 @@ const ProjectItem=(props)=>{
             <div className={ style.container }>
                 <div className={ style.top }>
                     <img className={ image.class } alt={ image.alt } src={ image.src} />
-                    </div> 
+                    </div>
                     <div className={ style.bottom }>
                         <div className="project__info">
                         <h3 className="project__info--title">{ text[currentLanguage].name }</h3>
@@ -21,7 +21,7 @@ const ProjectItem=(props)=>{
                             <i className="fas fa-long-arrow-alt-right hidden animate__fadeInRight"></i>
                     </div>
                 </div>
-        </div>
+                </div>
      </Link>
      </div>
     )

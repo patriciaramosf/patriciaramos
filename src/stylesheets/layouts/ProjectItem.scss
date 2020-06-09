@@ -1,8 +1,8 @@
-.projectCardTop{
+ .projectCardTop{
     opacity : 0.8;
-}
+} 
 .containerHover:hover{
-    .projectCardTop{
+   .projectCardTop{
         transition: opacity .2s ease-in-out;
         opacity : 1;
     }
@@ -13,7 +13,7 @@
 .fa-long-arrow-alt-right{
     animation:fadeInRight;
     animation-duration: 0.8s;
-}
+} 
 .one{
     .oneTop{
         background-color: #63cbfb;
