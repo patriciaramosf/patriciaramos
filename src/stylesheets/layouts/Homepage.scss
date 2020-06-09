@@ -57,9 +57,15 @@
                 font-size:$titleLittleTablet;
                 top:40px;
                 right:5px;
+                display:block;
+                top:50px;
+                right:20px;
+                box-shadow: inset 0 -20px 0 $primaryColor;
                 }
                 @include forGitMobile{
-                    right:30px;
+                    right:30px; top:50px;
+                    right:20px;
+                    box-shadow: inset 0 -20px 0 $primaryColor;
                 }
                 @include forTablet{
                     font-size:$titleTablet;
