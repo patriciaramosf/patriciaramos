@@ -4,6 +4,7 @@ import Aside from './Aside.js'
 import ProjectPage from './ProjectPage.js'
 import ProjectDetails from './ProjectDetails.js'
 import '../stylesheets/App.scss';
+import projects from './../data/projects.js';
 import { Route, Switch } from 'react-router-dom';
 
 class App extends React.Component {
@@ -29,9 +30,20 @@ class App extends React.Component {
  setReset =()=>{
    this.setFilter(null);
  }
+renderProjectDetail = (props) =>{
+  const routeId = props.match.params.id;
+  for (let projectDetail of projects) {
+    if (projectDetail.id === parseInt(routeId)) {
+      return <ProjectDetails  project={projectDetail}
+                              changeLanguage={ this.changeLanguage }
+                              currentLanguage={ this.state.currentLanguage }
+              />;
+    }
+  }
+}
   render() {
     const { currentLanguage, filter, switchLanguage } = this.state;
-    const { setFilter, setReset, changeLanguage } = this;
+    const { setFilter, setReset, changeLanguage, renderProjectDetail } = this;
     return (
       <div className="App">
           <Switch>
@@ -65,12 +77,9 @@ class App extends React.Component {
                                 setReset={ setReset }
                 />
             </Route>
-            {/* solo pa verlo */}
-            <Route exact path='/details'>
-                <ProjectDetails 
-                />
-            </Route>
-            {/* solo pa verlo--hasta aqui */}
+            <Route path="/projects/:id" 
+                  render={renderProjectDetail}
+               />
         </Switch>
       </div>
       

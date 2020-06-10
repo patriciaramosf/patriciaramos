@@ -1,6 +1,6 @@
 import React from 'react';
-import projects from './../data/projects.js';
 import ProjectItem from './ProjectItem.js';
+import projects from './../data/projects.js';
 
 const ProjectList =(props)=>{
     return(

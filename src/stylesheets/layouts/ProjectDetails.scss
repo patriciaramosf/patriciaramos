@@ -8,7 +8,7 @@
         .projectDetails__Title{
             font-family:$fontFamilyGeneral;
             text-align: left;
-            font-size: $titlePhone;
+            font-size: $titlePhoneDetail;
             color:$black;
             font-weight: bold;
             text-transform: uppercase;
@@ -27,6 +27,10 @@
             justify-content: flex-start;
             .details__button{
                 margin-left:10px;
+                a{
+                    text-decoration: none;
+                    color:$primaryColor;
+                }
             }
            /*  .fa-code{
                 color:$primaryColor;
