@@ -15,8 +15,17 @@
             margin-bottom:10px;
             margin-top:15px;
         }
-        .btnDetails{
-        margin-left:250px;
+        .btnMobile{
+            display:block;
+            @include forMobile{
+                display:none;
+            }
+        }
+        .btnTablet{
+            display:none;
+            @include forMobile{
+                display:block;
+            }
         }
     }
     .container__Details{

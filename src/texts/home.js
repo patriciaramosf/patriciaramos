@@ -9,7 +9,8 @@ const HOME = {
             secondHobbie:'comer',
             thirdHobbie:'Stackoverflow',
             fourthHobbie:'The Office',
-        }
+        },
+        button:'Volver',
 
     },
     en : {
@@ -22,7 +23,8 @@ const HOME = {
             secondHobbie:'eating',
             thirdHobbie:'Stackoverflow',
             fourthHobbie:'The Office US',
-        }
+        },
+        button:'Go back',
 
     },
 }

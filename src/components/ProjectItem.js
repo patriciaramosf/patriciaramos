@@ -17,7 +17,7 @@ const ProjectItem=(props)=>{
                         <p className="project__info--tools">{ text[currentLanguage].tools }</p>
                         </div>
                         <div className="cardIcons">
-                            <i className="fas fa-long-arrow-alt-right hidden animate__fadeInRight"></i>
+                            <i className="fas fa-long-arrow-alt-right animate__fadeInRight"></i>
                     </div>
                 </div>
                 </div>

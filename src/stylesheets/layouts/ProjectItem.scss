@@ -1,11 +1,28 @@
- .projectCardTop{
-    opacity : 0.8;
-} 
+.containerHover{
+        width:300px;
+        height:260px;
+            @include forTablet{
+                width:360px;
+                height:300px;
+                margin-top:20px;
+            }
+            @include forDesktop{
+                width:600px;
+                height:300px;
+                margin-bottom:20px;
+            }
+            @include forSuperdesktop{
+                width:700px;
+                height:340px;
+            }
+        .fa-long-arrow-alt-right{
+            display:block;
+            @include forMobile{
+                display:none;
+            }
+        }
+}
 .containerHover:hover{
-   .projectCardTop{
-        transition: opacity .2s ease-in-out;
-        opacity : 1;
-    }
     .fa-long-arrow-alt-right{
         display:block;
     }
@@ -13,7 +30,7 @@
 .fa-long-arrow-alt-right{
     animation:fadeInRight;
     animation-duration: 0.8s;
-} 
+}
 .one{
     .oneTop{
         background-color: #63cbfb;
@@ -205,6 +222,3 @@
         }
 }
 
-.hidden{
-    display:none;
-}

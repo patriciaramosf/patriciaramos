@@ -107,12 +107,12 @@
                     }
                         .project__info{
                             padding:10px;
-                            line-height: 18px;
-                            font-size:16px;
+                            line-height: 24px;
+                            font-size:20px;
                             color:$black;
                             @include forTablet{
-                                  font-size:18px; 
-                                  line-height: 24px; 
+                                  font-size:22px; 
+                                  line-height: 26px; 
                             }
                             @include forDesktop{
                                 padding:20px;
@@ -122,19 +122,19 @@
                                 font-weight: bold;
                                 margin-bottom:10px;
                                 @include forDesktop{
-                                    font-size:20px; 
+                                    font-size:24px; 
                                     }
                             }
                             .project__info--tools{
                                 margin-bottom:6px;
-                                line-height: 24px;
-                                font-size:14px;
+                                line-height: 28px;
+                                font-size:16px;
                                 font-weight: 500;
                                 @include forTablet{
-                                    font-size:16px; 
+                                    font-size:18px; 
                               }
                               @include forDesktop{
-                                font-size:18px; 
+                                font-size:20px; 
                                 }
                             }
                             .project__info--description{
@@ -154,14 +154,14 @@
                             bottom:5px;
                             display: flex;
                             justify-content: flex-end;
-                            font-size: 28px;
+                            font-size: 44px;
                             opacity:0.8;
                             @include forTablet{
-                                font-size:34px;
+                                font-size:54px;
                                 bottom:5px; 
                           }
                             @include forSuperdesktop{
-                                font-size:40px;
+                                font-size:60px;
                             }
                                 .fas{
                                     color:$primaryColor;

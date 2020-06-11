@@ -24,7 +24,7 @@ const PROJECTS =[
             es: {
                 name:'Sushi Ecommerce',
                 tools:'Javascript - CSS - Bootstrap - LocalStorage',
-                description:'Añade al carrito todo el sushi que puedas.',
+                description:'Simulación de tienda Online, en la que podrás añadir y quitar productos del carrito, calcular la suma total, y guardar tu compra gracias a LocalStorage.'
             },
             en: {
                 name:'Sushi Ecommerce',
@@ -60,13 +60,13 @@ const PROJECTS =[
         text: {
             es: {
                 name:'Portfolio',
-                tools:'React - Sass - Router',
-                description:'Echa un vistazo al código de esta página.',
+                tools:'React - Sass - React Router',
+                description:'Este portfolio ha sido creado con React y es una pequeña muestra de mi continuo aprendizaje.',
             },
             en: {
                 name:'Portfolio',
-                tools:'React - Sass - Router',
-                description:'Check the code of this project.',
+                tools:'React - Sass - React Router',
+                description:'I built this project with React and its a small sample of my continuous learning.',
             },
         },
         links: {
@@ -97,13 +97,13 @@ const PROJECTS =[
         text: {
             es: {
                 name:'Rick and Morty App',
-                tools:'React - Sass - APIs - Router',
-                description:'Buscador de personajes de la serie.',
+                tools:'React - Sass - API REST - React Router',
+                description:'Buscador de personajes de la serie, en el que podrás filtrar por sus nombres de una manera divertida.',
             },
             en: {
                 name:'Rick and Morty App',
-                tools:'React - Sass - APIs - Router',
-                description:'Find your favourite character of the tv serie with this App.',
+                tools:'React - Sass - API REST - React Router',
+                description:'Character search of Rick and Morty TV serie. This app is a funny way to find your favourite character and to filter them by name.',
             }
         },
         links: {
@@ -134,13 +134,13 @@ const PROJECTS =[
         text: {
             es: {
                 name:'Generador de tarjetas',
-                tools:'JavaScript - APIs - Sass',
-                description:'App para personalizar tarjetas y compartirlas en Twitter.',
+                tools:'JavaScript - API REST - Sass - LocalStorage',
+                description:'Con esta App podrás crear tarjetas personalizadas con todos tus datos de contacto, generar un link para poder compartirlo de la manera que prefieras, o incluso través de Twitter directamente desde la app.',
             },
             en: {
                 name:'Card Generator',
-                tools:'JavaScript - APIs - Sass',
-                description:'Get your personal card and share it on Twitter.',
+                tools:'JavaScript - API REST - Sass - LocalStorage',
+                description:'Through this app you could create your own card, filled with all your personal details, and share it on Twitter.',
             }
         },
         links: {
@@ -172,12 +172,12 @@ const PROJECTS =[
             es: {
                 name:'Proyecto de código heredado',
                 tools:'React - Sass - LocalStorage',
-                description:'Migración de Javascript a React JS. #darkMode.',
+                description:'Migración de un proyecto Javascript a React JS, en el que también se añadió el modo noche como mejora.',
             },
             en: {
                 name:'Legacy Code Project',
                 tools:'React - Sass - LocalStorage',
-                description:'Migration from Javascript to React JS #darkMode.',
+                description:'Migration from Javascript to React JS. Dark Mode was added too as an improvement for the app.',
             }
         },
         links: {
@@ -209,7 +209,7 @@ const PROJECTS =[
             es: {
                 name:'Collapsing Margins',
                 tools:'HTML - Sass',
-                description:'Web responsive, primer proyecto grupal en Adalab.',
+                description:'Web responsive, en la que se muestran los datos de contacto y la información personal de cada una de las persona que creamos la página. Este fue mi primer proyecto en Adalab.',
             },
             en: {
                 name:'Collapsing Margins',
