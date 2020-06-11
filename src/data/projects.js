@@ -29,7 +29,7 @@ const PROJECTS =[
             en: {
                 name:'Sushi Ecommerce',
                 tools:'Javascript - CSS - Bootstrap - LocalStorage',
-                description:'Add sushi to your cart and get hungry.',
+                description:'Online store simulation, where you can add and remove products from the cart, calculate the total amount, and save your purchase through LocalStorage.',
             }
         },
         links: {
@@ -177,7 +177,7 @@ const PROJECTS =[
             en: {
                 name:'Legacy Code Project',
                 tools:'React - Sass - LocalStorage',
-                description:'Migration from Javascript to React JS. Dark Mode was added too as an improvement for the app.',
+                description:'Migration from Javascript to React JS. Dark Mode was added too, as an improvement for usability of the app.',
             }
         },
         links: {

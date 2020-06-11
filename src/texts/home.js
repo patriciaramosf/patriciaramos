@@ -10,7 +10,11 @@ const HOME = {
             thirdHobbie:'Stackoverflow',
             fourthHobbie:'The Office',
         },
-        button:'Volver',
+        buttons : {
+          exit:'Volver',
+          code:'Ver el código',
+          web: 'Ver web'
+        },
 
     },
     en : {
@@ -24,7 +28,11 @@ const HOME = {
             thirdHobbie:'Stackoverflow',
             fourthHobbie:'The Office US',
         },
-        button:'Go back',
+        buttons : {
+            exit:'Go back',
+            code:'See the code',
+            web: 'Visit web',
+          },
 
     },
 }

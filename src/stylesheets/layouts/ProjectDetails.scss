@@ -13,7 +13,17 @@
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom:10px;
-            margin-top:15px;
+            margin-top:65px;
+        }
+        .btnExit{
+            position:absolute;
+            right:20px;
+            top:15px;
+            color:$black;
+            font-size:16px;
+            text-transform: uppercase;
+            font-family: $fontFamilyTitle;
+            box-shadow: inset 0 -6px 0 $primaryColor;
         }
         .btnMobile{
             display:block;
@@ -57,6 +67,12 @@
             margin-bottom:20px;
             font-family: $fontFamilyGeneral;
             font-size:14px;
+            line-height: 20px;
+            margin-right:20px;
+            /* margin-left:20px;  */
+            border-left:5px solid $black;
+            border-style: dotted;
+            padding-left:15px;
         }
         .img__container{
             margin-top:20px;
