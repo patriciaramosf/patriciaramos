@@ -61,7 +61,7 @@
   }
 
   .slider:after{
- content:'ES';
+ content:'EN';
  color: white;
  display: block;
  position: absolute;
@@ -75,7 +75,7 @@
 }
 
 input:checked + .slider:after{  
-content:'EN';
+content:'ES';
 padding-right:40px;
 color:white;
 font-weight: bold;

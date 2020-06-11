@@ -66,7 +66,7 @@ const PROJECTS =[
             en: {
                 name:'Portfolio',
                 tools:'React - Sass - React Router',
-                description:'I built this project with React and its a small sample of my continuous learning.',
+                description:'I built this project with React, to have a web where I could show all my projects as a small sample of my continuous learning.',
             },
         },
         links: {
@@ -103,7 +103,7 @@ const PROJECTS =[
             en: {
                 name:'Rick and Morty App',
                 tools:'React - Sass - API REST - React Router',
-                description:'Character search of Rick and Morty TV serie. This app is a funny way to find your favourite character and to filter them by name.',
+                description:'Character search of Rick and Morty TV serie. This app is a funny way to find your favourites characters and to filter them by name.',
             }
         },
         links: {
@@ -177,7 +177,7 @@ const PROJECTS =[
             en: {
                 name:'Legacy Code Project',
                 tools:'React - Sass - LocalStorage',
-                description:'Migration from Javascript to React JS. Dark Mode was added too, as an improvement for usability of the app.',
+                description:'Migration from Javascript to React JS. Dark Mode was added too, to increase the app usability.',
             }
         },
         links: {
