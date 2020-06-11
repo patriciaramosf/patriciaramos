@@ -7,10 +7,18 @@ const PROJECTS =[
             top:'projectCardTop zeroTop',
             bottom:'projectCardBottom zeroBottom',
         },
-        image: {
-            class:'iconProjectZero',
-            alt:'ecommerce',
-            src:'./images/sushi.png',
+        images: {
+            general: {
+                class:'iconProjectZero',
+                alt:'ecommerce',
+                src:'./images/sushi.png',
+            },
+            detail: {
+                class:'iconProjectZero',
+                alt:'ecommerce',
+                src:'./images/sushi.png',
+            },
+            
         },
         text: {
             es: {
@@ -37,11 +45,18 @@ const PROJECTS =[
             top:'projectCardTop fiveTop',
             bottom:'projectCardBottom fiveBottom',
         },
-        image: {
-            class:'iconPortfolio',
-            alt:'portfolio',
-            src:'./images/cartoon.png',
-        },
+        images: {
+            general: {
+                class:'iconPortfolio',
+                alt:'portfolio',
+                src:'./images/cartoon.png',
+            },
+            detail: {
+                class:'iconPortfolio',
+                alt:'portfolio',
+                src:'./images/cartoon.png',
+            },
+            },
         text: {
             es: {
                 name:'Portfolio',
@@ -67,10 +82,17 @@ const PROJECTS =[
             top:'projectCardTop oneTop',
             bottom:'projectCardBottom oneBottom',
         },
-        image: {
-            class:'iconProjectOneDesk',
-            alt:'rick and morty',
-            src:'./images/sticker.png',
+        images: {
+            general: {
+                class:'iconProjectOneDesk',
+                alt:'rick and morty',
+                src:'./images/sticker.png',
+            },
+            detail: {
+                class:'iconProjectOneDesk',
+                alt:'rick and morty',
+                src:'./images/sticker.png',
+            },
         },
         text: {
             es: {
@@ -97,10 +119,17 @@ const PROJECTS =[
             top:'projectCardTop twoTop2',
             bottom:'projectCardBottom twoBottom2',
         },
-        image: {
-            class:'iconProjectTwo2',
-            alt:'virtual cards',
-            src:'./images/mygiphy.png',
+        images: {
+            general: {
+                class:'iconProjectTwo2',
+                alt:'virtual cards',
+                src:'./images/mygiphy.png',
+            },
+            detail: {
+                class:'iconProjectTwo2',
+                alt:'virtual cards',
+                src:'./images/mygiphy.png',
+            },
         },
         text: {
             es: {
@@ -127,10 +156,17 @@ const PROJECTS =[
             top:'projectCardTop twoTop',
             bottom:'projectCardBottom twoBottom',
         },
-        image: {
-            class:'iconProjectTwo',
-            alt:'virtual cards',
-            src:'./images/toggle.png',
+        images: {
+            general: {
+                class:'iconProjectTwo',
+                alt:'virtual cards',
+                src:'./images/toggle.png',
+            },
+            detail: {
+                class:'iconProjectTwo',
+                alt:'virtual cards',
+                src:'./images/toggle.png',
+            },
         },
         text: {
             es: {
@@ -157,10 +193,17 @@ const PROJECTS =[
             top:'projectCardTop threeTop',
             bottom:'projectCardBottom threeBottom',
         },
-        image: {
-            class:'iconProjectThree',
-            alt:'collapsingMargins',
-            src:'./images/responsive.png',
+        images: {
+            general: {
+                class:'iconProjectThree',
+                alt:'collapsingMargins',
+                src:'./images/responsive.png',
+            },
+            detail: {
+                class:'iconProjectThree',
+                alt:'collapsingMargins',
+                src:'./images/responsive.png',
+            },
         },
         text: {
             es: {
