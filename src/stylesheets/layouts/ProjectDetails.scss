@@ -51,16 +51,6 @@
                     color:$primaryColor;
                 }
             }
-           /*  .fa-code{
-                color:$primaryColor;
-                margin-left:5px;
-                font-size:20px;
-            }
-            .fa-browser{
-                color:$primaryColor;
-                margin-left:5px;
-                font-size:20px;
-            } */
         }
         .details__description{
             text-align:justify;
@@ -69,25 +59,18 @@
             font-size:14px;
             line-height: 20px;
             margin-right:20px;
-            /* margin-left:20px;  */
-            border-left:5px solid $black;
+            border-left:4px solid $black;
             border-style: dotted;
             padding-left:15px;
         }
         .img__container{
             margin-top:20px;
-            width:100%;
-            .fa-chevron-left{
-                color:$black;
-                font-size:24px;
-            }
-            .fa-chevron-right{
-                color:$black;
-                font-size:24px;
-            }
-            .img__details{
-                width:340px;
-                height:380px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            .iconProjectZeroDetail{
+                width:430px;
+                margin-bottom:40px;
             }
         }
     }

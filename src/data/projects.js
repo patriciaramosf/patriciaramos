@@ -14,9 +14,9 @@ const PROJECTS =[
                 src:'./images/sushi.png',
             },
             detail: {
-                class:'iconProjectZero',
+                class:'iconProjectZeroDetail',
                 alt:'ecommerce',
-                src:'./images/sushi.png',
+                src:'./images/ecommerce.png',
             },
             
         },
