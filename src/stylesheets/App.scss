@@ -5,6 +5,7 @@
 @import './layouts/Aside.scss';
 @import './layouts/Homepage.scss';
 @import './layouts/ProjectPage.scss';
+@import './layouts/ProjectCard.scss';
 .App{
     background-color: #FFFCF9;
     @include forMobile{

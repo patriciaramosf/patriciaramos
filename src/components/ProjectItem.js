@@ -4,7 +4,7 @@ const ProjectItem=(props)=>{
     const { project, currentLanguage } = props;
     const { style, image, text, links } = project;
     return(
-         <div className={ style.container }>
+    <div className={ style.container }>
         <div className={ style.top }>
             <img className={ image.class } alt={ image.alt } src={ image.src} />
             </div> 

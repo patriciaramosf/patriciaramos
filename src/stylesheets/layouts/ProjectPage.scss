@@ -50,13 +50,32 @@
         }
         .projectCard{
             width:300px;
-            height:280px;
+            height:260px;
             -webkit-box-shadow: 3px 3px 3px 2px rgba(59, 59, 59, 0.2);
             box-shadow: 3px 3px 3px 2px rgba(59, 59, 59, 0.2);
             position: relative;
             margin-left:25px;
             @include forMobile{
                 margin-left:10px;
+                    &:hover{
+                        .projectCardBottom{
+                            .project__info{
+                            .project__info--title{
+                                display:none;
+                
+                            }
+                            .project__info--tools{
+                                display:none;
+                            }
+                            .project__info--description{
+                                display:block;
+                            }
+                            }
+                            .cardIcons{
+                                display:block;
+                            }
+                        }
+                    }
             }
             @include forGitMobile{
                 margin-left:30px;
@@ -107,11 +126,11 @@
                     }
                         .project__info{
                             padding:10px;
-                            line-height: 18px;
-                            font-size:16px;
+                            line-height: 20px;
+                            font-size:20px;
                             color:$black;
                             @include forTablet{
-                                  font-size:18px; 
+                                  font-size:22px; 
                                   line-height: 24px; 
                             }
                             @include forDesktop{
@@ -121,27 +140,30 @@
                             .project__info--title{
                                 font-weight: bold;
                                 margin-bottom:10px;
+                                margin-top:10px;
                                 @include forDesktop{
-                                    font-size:20px; 
+                                    font-size:24px; 
                                     }
                             }
                             .project__info--tools{
                                 margin-bottom:6px;
                                 line-height: 24px;
-                                font-size:14px;
+                                font-size:18px;
                                 font-weight: 500;
                                 @include forTablet{
-                                    font-size:16px; 
+                                    font-size:20px; 
+                                    line-height: 30px;
                               }
                               @include forDesktop{
-                                font-size:18px; 
+                                font-size:20px; 
+                                line-height: 28px;
                                 }
                             }
                             .project__info--description{
-                                font-size: 14px;
-                                color:darkgrey;
+                                display:none;
                                 @include forMobile{
                                     font-size:14px;
+                                    color:darkgrey;
                                 }
                                 @include forDesktop{
                                     font-size:16px;
@@ -151,11 +173,14 @@
                         .cardIcons{
                             position:absolute;
                             right:5px;
-                            bottom:10px;
+                            bottom:15px;
                             display: flex;
                             justify-content: flex-end;
                             font-size: 18px;
                             opacity:0.8;
+                            @include forMobile{
+                                display:none;
+                          }
                             @include forTablet{
                                 font-size:18px;
                                 bottom:20px; 
@@ -174,194 +199,22 @@
                         }
                 }
             }
-.one{
-    .oneTop{
-        background-color: #63cbfb;
-        @include forDesktop{
-        }
-        
-    }
-    .oneBottom{
-        @include forDesktop{
-            top:-30px;
-            left:40px;
-        }
-    }
-        .iconProjectOneDesk{
-            position: absolute;
-            width:140px;
-            left:180px;
-            top:-30px;
-            @include forTablet{
-                width:200px;
-                left:195px;
-                top:-35px;
-            }
-            @include forDesktop{
-                top:-10px;
-                width:260px;
-                left:400px;
-                transform:rotate(20deg);
-            }
-            @include forSuperdesktop{
-                width:300px;
-                left:400px;
-            }
-        }
-    }
-.two{
-    .twoTop{
-        background-color: $black;
-        }
-    .twoBottom{
-            @include forDesktop{
-                top:-30px;
-                left:40px;
-            }
-        }
-        .iconProjectTwo{
-            width:110px;
-            position: absolute;
-            top:2px;
-            right:20px;
-            @include forTablet{
-                width:160px;
-                top:-15px;
-            }
-            @include forDesktop{
-                width:200px;
-                top:60px;
-                right:5px;
-            }
-            @include forSuperdesktop{
-                width:220px;
-                top:40px;
-            }
-        } 
-    }
-    
-.three{
-    .threeTop{
-        background-color:#9A98B5;
-    }
-    .threeBottom{
-        @include forDesktop{
-            top:-30px;
-            right:10px;
-        }
-    }
-        .iconProjectThree{
-            width:200px;
-            position: absolute;
-            top:-35px;
-            left:-10px;
-            @include forTablet{
-                width:260px;
-                top:-40px;
-            }
-            @include forDesktop{
-                width:340px;
-                top:80px;
-                left:5px;
-            }
-            @include forSuperdesktop{
-                width:380px;
-                left:10px;
-                top:30px;
-            }
-        }
-    }
-    .two2{
-        .twoTop2{
-            background-color:rgba(243, 243, 243,0.8);
-        }
-        .twoBottom2{
-            @include forDesktop{
-                top:-30px;
-                right:20px;
-            }
-        }
-        .iconProjectTwo2{
-            width:100px;
-            position: absolute;
-            top:-20px;
-            left:30px;
-            @include forTablet{
-                width:140px;
-                top:-50px;
-            } 
-            @include forDesktop{
-                width:200px;
-                top:20px;
-                right:330px;
-            }
-            @include forSuperdesktop{
-                width:240px;
-                top:-40px;
-                left:80px;
-            }
-    }
-}
-.zero{
-    .zeroTop{
-        background-color: #ABEDC6;
-    }
-    .zeroBottom{
-        @include forDesktop{
-            top:-30px;
-            left:40px;
-        }
-    }
-        .iconProjectZero{
-            width:120px;
-            position: absolute;
-            top:5px;
-            right:20px;
-            @include forTablet{
-                width:140px;
-                top:-5px;
-            }
-            @include forDesktop{
-                top:50px;
-                width:200px;
-                right:2px;
-            }
-            @include forSuperdesktop{
-               right:30px;
-               top:20px;
-               width:260px;
-            }
-        }
-}
-.five{
-    .fiveTop{
-        background-color: $primaryColor;
-    }
-    .fiveBottom{
-        @include forDesktop{
-            top:-30px;
-            right:20px;
-        }
-    }
-        .iconPortfolio{
-            width:130px;
-            position: absolute;
-            top:-33px;
-            left:20px;
-            @include forTablet{
-                width:160px;
-                top:-48px;
-            }
-            @include forDesktop{
-                top:55px;
-                width:230px;
-                right:2px;
-            }
-            @include forSuperdesktop{
-               right:60px;
-               top:-2px;
-               width:280px;
-            }
-        }
-}
+/* .projectCard{
+    @include forMobile{
+        &:hover{
+            .project__info--title{
+                display:none;
 
+            }
+            .project__info--tools{
+                display:none;
+            }
+            .project__info--description{
+                display:block;
+            }
+            .cardIcons{
+                display:block;
+            }
+        }
+    }
+} */
