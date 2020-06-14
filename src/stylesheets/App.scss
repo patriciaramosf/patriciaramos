@@ -13,10 +13,9 @@
     } 
 }
 html{
- 
- background-color: #FFFCF9;
+    height: 100%;
+    background-color: #FFFCF9;
    @include forMobile{
     background-color: #FFFCF9;
-    height:100%;
 }
 }

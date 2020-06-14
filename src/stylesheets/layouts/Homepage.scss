@@ -205,9 +205,12 @@
                     margin-top:0px;
                 }
             }
-        .stepToProjects{
-            margin-top:260px;
+      .stepToProjects{
+            margin-top:200px;
             margin-bottom:20px;
+            position: relative;
+            min-height: 100vh;
+            box-sizing: border-box;
                 .next{
                     @include forMobile{
                         display:none;
