@@ -100,21 +100,23 @@
             }
             .fab{
                 font-size: 24px;
-                color:$primaryColor;
+                color:$black;
+                opacity:0.8;
                 &:hover{
                     color:$iconHover;
                 }
             }
             .fas{
                 font-size: 24px;
-                color:$primaryColor;
+                color:$black;
+                opacity:0.8;
                 &:hover{
                     color:$iconHover;
                 }
             }
         }
         .mainText{
-            margin-top:20px;
+            margin-top:60px;
             font-family: $fontFamilyGeneral;
             text-align: left;
             line-break: normal;
@@ -140,9 +142,9 @@
                 margin-left:160px;
             }
             .description{
-                font-size:14px;
+                font-size:18px;
                 text-align: justify;
-                line-height: 30px;
+                line-height: 35px;
                     @include forMobile{
                         display:block;
                         font-size:14px;
@@ -162,7 +164,7 @@
                     }
                 }
                     .myweb{
-                        font-size: 30px;
+                        font-size: 34px;
                         font-weight: bold;
                         @include forMobile{
                         font-weight: bold;
@@ -183,7 +185,7 @@
                     .myJob{
                         animation: colorchange 10s 1;
                         font-weight: 400;
-                        font-size: 28px;
+                        font-size: 30px;
                         @include forMobile{
                             font-size: 22px;
                             }
@@ -204,7 +206,7 @@
                 }
             }
         .stepToProjects{
-            margin-top:60px;
+            margin-top:260px;
             margin-bottom:20px;
                 .next{
                     @include forMobile{

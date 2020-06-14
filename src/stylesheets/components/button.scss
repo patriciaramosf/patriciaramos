@@ -38,7 +38,7 @@
   }
   
   input:checked + .slider {
-    background-color: $twoButtonColor;
+    background-color: $primaryColor;
   }
   
   input:focus + .slider {
@@ -61,7 +61,7 @@
   }
 
   .slider:after{
- content:'ES';
+ content:'EN';
  color: white;
  display: block;
  position: absolute;
@@ -75,7 +75,7 @@
 }
 
 input:checked + .slider:after{  
-content:'EN';
+content:'ES';
 padding-right:40px;
 color:white;
 font-weight: bold;
@@ -134,4 +134,41 @@ font-weight: bold;
       font-size: 18px;
       margin-top:20px;
     }
+}
+
+/* scroll */
+
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  left: 50%;
+  @include forMobile{
+    display:none;
+  }
+}
+.icon-scroll{
+  width: 35px;
+  height: 60px;
+  margin-left: -20px;
+  top: 78%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px black;
+  border-radius: 25px;
+}
+
+.icon-scroll:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: black;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+@keyframes scroll{
+  0% {opacity: 1}
+  100% { opacity: 0; transform: translateY(46px)}
 }

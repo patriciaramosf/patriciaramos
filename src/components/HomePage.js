@@ -44,6 +44,7 @@ const HomePage =(props)=>{
                     </div>
                 </div>
             </div>
+            <div className="icon-scroll"></div>
             <div className="stepToProjects">
                 <div className="next">
                     <ProjectPage    currentLanguage={currentLanguage}
@@ -57,5 +58,5 @@ const HomePage =(props)=>{
             </div> 
         </div>
     )
-}
+    }
 export default HomePage;

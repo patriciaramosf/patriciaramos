@@ -9,13 +9,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      currentLanguage: 'es',
+      currentLanguage: 'en',
       filter:null,
       switchLanguage:false,
     }
   }
   changeLanguage =()=>{
-    const newLanguage = this.state.currentLanguage === 'es' ? 'en': 'es';
+    const newLanguage = this.state.currentLanguage === 'en' ? 'es': 'en';
     const switchOnLanguage = this.state.switchLanguage === false ? true: false;
     this.setState({
       currentLanguage: newLanguage,
