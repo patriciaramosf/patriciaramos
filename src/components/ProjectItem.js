@@ -20,7 +20,7 @@ const ProjectItem=(props)=>{
                 {
                     !!links.web &&
                         <a   target="blank"
-                        href={ links.web }><i className="fas fa-tablet-alt"></i>
+                        href={ links.web }><i className="fas fa-laptop"></i>
                         </a>
                  }
                 </div>

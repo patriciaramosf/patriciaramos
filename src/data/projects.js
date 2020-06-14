@@ -75,12 +75,12 @@ const PROJECTS =[
         text: {
             es: {
                 name:'Rick and Morty App',
-                tools:'React - Sass - APIs - Router',
+                tools:'React - Sass - API Rest - Router',
                 description:'Buscador de personajes de la serie.',
             },
             en: {
                 name:'Rick and Morty App',
-                tools:'React - Sass - APIs - Router',
+                tools:'React - Sass - API Rest - Router',
                 description:'Find your favourite character of the tv serie with this App.',
             }
         },
@@ -105,12 +105,12 @@ const PROJECTS =[
         text: {
             es: {
                 name:'Generador de tarjetas',
-                tools:'JavaScript - APIs - Sass',
+                tools:'JavaScript - API Rest - Sass',
                 description:'App para personalizar tarjetas y compartirlas en Twitter.',
             },
             en: {
                 name:'Card Generator',
-                tools:'JavaScript - APIs - Sass',
+                tools:'JavaScript - API Rest - Sass',
                 description:'Get your personal card and share it on Twitter.',
             }
         },
