@@ -162,11 +162,10 @@
                             .project__info--description{
                                 display:none;
                                 @include forMobile{
-                                    font-size:14px;
-                                    color:darkgrey;
-                                }
-                                @include forDesktop{
                                     font-size:16px;
+                                    color:darkgrey;
+                                    animation:fadeInRight;
+                                    animation-duration: 0.8s;
                                 }
                             }
                         }
@@ -178,15 +177,20 @@
                             justify-content: flex-end;
                             font-size: 18px;
                             opacity:0.8;
+                            animation:fadeInRight;
+                            animation-duration: 0.8s;
                             @include forMobile{
                                 display:none;
                           }
                             @include forTablet{
-                                font-size:18px;
+                                font-size:20px;
                                 bottom:20px; 
                           }
+                          @include forDesktop{
+                            font-size:22px;
+                            }
                             @include forSuperdesktop{
-                                font-size:20px;
+                                font-size:24px;
                             }
                                 .fas{
                                     color:$primaryColor;
@@ -199,22 +203,3 @@
                         }
                 }
             }
-/* .projectCard{
-    @include forMobile{
-        &:hover{
-            .project__info--title{
-                display:none;
-
-            }
-            .project__info--tools{
-                display:none;
-            }
-            .project__info--description{
-                display:block;
-            }
-            .cardIcons{
-                display:block;
-            }
-        }
-    }
-} */

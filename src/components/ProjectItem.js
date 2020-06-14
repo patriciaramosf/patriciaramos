@@ -12,9 +12,9 @@ const ProjectItem=(props)=>{
                 <div className="project__info">
                  <h3 className="project__info--title">{ text[currentLanguage].name }</h3>
                  <p className="project__info--tools">{ text[currentLanguage].tools }</p>
-                 <p className="project__info--description">{ text[currentLanguage].description }</p>
+                 <p className="project__info--description animate__fadeInRight">{ text[currentLanguage].description }</p>
                 </div>
-                <div className="cardIcons">
+                <div className="cardIcons animate__fadeInRight">
                 <a   target="blank"
                      href={ links.code }><i className="fas fa-code"></i></a>
                 {
