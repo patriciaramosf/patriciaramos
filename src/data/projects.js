@@ -21,7 +21,7 @@ const PROJECTS =[
             en: {
                 name:'Sushi Ecommerce',
                 tools:'Javascript - CSS - Bootstrap - LocalStorage',
-                description:'Add sushi to your cart and get hungry.',
+                description:'Online store simulation, where you can add and remove products from the cart, calculate the total amount, and save your purchase.',
             }
         },
         links: {
@@ -45,13 +45,13 @@ const PROJECTS =[
         text: {
             es: {
                 name:'Portfolio',
-                tools:'React - Sass - Router',
+                tools:'React - Sass - React Router',
                 description:'Este portfolio ha sido creado con React y es una pequeña muestra de mi continuo aprendizaje.',
             },
             en: {
                 name:'Portfolio',
-                tools:'React - Sass - Router',
-                description:'Check the code of this project.',
+                tools:'React - Sass - React Router',
+                description:'This is my portfolio, built with React, in which I upload the projects I have been developing during my learning process.',
             },
         },
         links: {
@@ -75,13 +75,13 @@ const PROJECTS =[
         text: {
             es: {
                 name:'Rick and Morty App',
-                tools:'React - Sass - API Rest - Router',
+                tools:'React - Sass - API Rest - React Router',
                 description:'Buscador de personajes de la serie, en el que podrás filtrar por sus nombres.',
             },
             en: {
                 name:'Rick and Morty App',
-                tools:'React - Sass - API Rest - Router',
-                description:'Find your favourite character of the tv serie with this App.',
+                tools:'React - Sass - API Rest - React Router',
+                description:'Character search of Rick and Morty TV serie. This app is a funny way to find your favourite characters and to filter them by name.',
             }
         },
         links: {
@@ -111,7 +111,7 @@ const PROJECTS =[
             en: {
                 name:'Card Generator',
                 tools:'JavaScript - API Rest - Sass',
-                description:'Get your personal card and share it on Twitter.',
+                description:'Through this app you can create your personalized card, filled with all your personal details, and share it on Twitter.',
             }
         },
         links: {
@@ -141,7 +141,7 @@ const PROJECTS =[
             en: {
                 name:'Legacy Code Project',
                 tools:'React - Sass - LocalStorage',
-                description:'Migration from Javascript to React JS #darkMode.',
+                description:'Migration from Javascript to React JS. Dark Mode was added too, to increase the app usability.',
             }
         },
         links: {
@@ -171,7 +171,7 @@ const PROJECTS =[
             en: {
                 name:'Collapsing Margins',
                 tools:'HTML - Sass',
-                description:'My first project at Adalab, a responsive Website.',
+                description:'My first project of my Web Development Bootcamp. A web responsive page.',
             }
         },
         links: {
