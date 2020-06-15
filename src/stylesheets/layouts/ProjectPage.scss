@@ -6,6 +6,13 @@
         grid-column:1;
         grid-gap:45px;
         margin-top:40px;
+        /* parallax */
+        position : relative;
+        height : 100%;
+        background-attachment: fixed;
+        background-position: center top;
+        background-size: cover;
+        background-color: white;
         @include forMobile{
             margin-left:180px;
             margin-top:0px;
@@ -44,6 +51,7 @@
             text-transform: uppercase;
             margin-right:15px;
             font-family: $fontFamilyTitle;
+            margin-top:10px;
             @include forMobile{
                 display:none;
             }
@@ -162,17 +170,23 @@
                             .project__info--description{
                                 display:none;
                                 @include forMobile{
-                                    font-size:16px;
+                                    font-size:14px;
                                     color:darkgrey;
                                     animation:fadeInRight;
                                     animation-duration: 0.8s;
+                                }
+                                @include forTablet{
+                                    font-size:16px;
+                                }
+                                @include forDesktop{
+                                    font-size:18px;
                                 }
                             }
                         }
                         .cardIcons{
                             position:absolute;
                             right:5px;
-                            bottom:15px;
+                            bottom:12px;
                             display: flex;
                             justify-content: flex-end;
                             font-size: 18px;

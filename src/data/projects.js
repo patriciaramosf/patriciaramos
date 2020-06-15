@@ -16,7 +16,7 @@ const PROJECTS =[
             es: {
                 name:'Sushi Ecommerce',
                 tools:'Javascript - CSS - Bootstrap - LocalStorage',
-                description:'Añade al carrito todo el sushi que puedas.',
+                description:'Simulación de tienda Online, en la que podrás añadir y quitar productos del carrito, calcular la suma total, y guardar tu compra.',
             },
             en: {
                 name:'Sushi Ecommerce',
@@ -46,7 +46,7 @@ const PROJECTS =[
             es: {
                 name:'Portfolio',
                 tools:'React - Sass - Router',
-                description:'Echa un vistazo al código de esta página.',
+                description:'Este portfolio ha sido creado con React y es una pequeña muestra de mi continuo aprendizaje.',
             },
             en: {
                 name:'Portfolio',
@@ -76,7 +76,7 @@ const PROJECTS =[
             es: {
                 name:'Rick and Morty App',
                 tools:'React - Sass - API Rest - Router',
-                description:'Buscador de personajes de la serie.',
+                description:'Buscador de personajes de la serie, en el que podrás filtrar por sus nombres.',
             },
             en: {
                 name:'Rick and Morty App',
@@ -106,7 +106,7 @@ const PROJECTS =[
             es: {
                 name:'Generador de tarjetas',
                 tools:'JavaScript - API Rest - Sass',
-                description:'App para personalizar tarjetas y compartirlas en Twitter.',
+                description:'Con esta App podrás crear tarjetas personalizadas con tus datos, y compartirlas a través de Twitter directamente desde la app.',
             },
             en: {
                 name:'Card Generator',
@@ -136,7 +136,7 @@ const PROJECTS =[
             es: {
                 name:'Proyecto de código heredado',
                 tools:'React - Sass - LocalStorage',
-                description:'Migración de Javascript a React JS. #darkMode.',
+                description:'Migración de un proyecto Javascript a React JS, en el que también se añadió el modo noche como mejora.',
             },
             en: {
                 name:'Legacy Code Project',
@@ -166,7 +166,7 @@ const PROJECTS =[
             es: {
                 name:'Collapsing Margins',
                 tools:'HTML - Sass',
-                description:'Web responsive, primer proyecto grupal en Adalab.',
+                description:'Web responsive, en la que se muestran los datos de contacto y la información personal de cada una de las persona que creamos la página.',
             },
             en: {
                 name:'Collapsing Margins',

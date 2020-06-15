@@ -141,7 +141,9 @@ font-weight: bold;
 .icon-scroll,
 .icon-scroll:before{
   position: absolute;
+  z-index:2;
   left: 50%;
+  top:120px;
   @include forMobile{
     display:none;
   }

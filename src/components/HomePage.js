@@ -7,7 +7,6 @@ const HomePage =(props)=>{
     return(
         <div className="HomePage">
             <div className="containerHomePage">
-                <div className="father">
                 <div className="mainTitle">
                     <h1>{ Home[currentLanguage].title }</h1>
                 </div>
@@ -43,11 +42,9 @@ const HomePage =(props)=>{
                                 <li className="content__container__list__item">{ Home[currentLanguage].hobbies.fourthHobbie }</li>
                             </ul>
                         </div>
+                        <div className="icon-scroll"></div>
                 </div>
             </div>
-            </div>
-                <div className="icon-scroll"></div>
-                <div className="parallax">
                     <div className="stepToProjects">
                         <div className="next">
                             <ProjectPage    currentLanguage={currentLanguage}
@@ -57,7 +54,6 @@ const HomePage =(props)=>{
                             />
                         </div>
                     </div>
-                </div>
         </div> 
     </div>
     )

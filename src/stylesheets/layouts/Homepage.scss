@@ -16,7 +16,7 @@
 
 }
 .HomePage{
-    height:100vh;
+    /* height:100%; */
     margin:60px 20px 40px 20px;
     display:flex;
     flex-direction: column;
@@ -26,7 +26,6 @@
     @include forMobile{
         margin-left:180px;
         margin-top:80px;
-        background-color: #FFFCF9;
         margin-top:0px;
     }
     @include forTablet{
@@ -124,6 +123,7 @@
             margin-right:5px;
             line-height: 40px;
             color:$black;
+           /*  position:absolute; */
             @include forMobile{
                 text-align: left;
                 margin-left:30px;
@@ -206,11 +206,14 @@
                 }
             }
       .stepToProjects{
-            margin-top:200px;
             margin-bottom:20px;
+            margin-top:200px;
             position: relative;
             min-height: 100vh;
             box-sizing: border-box;
+            @include forMobile{
+                display:none;
+            }
                 .next{
                     @include forMobile{
                         display:none;
@@ -219,3 +222,5 @@
             }
         }
     }
+
+    
