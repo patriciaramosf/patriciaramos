@@ -211,6 +211,7 @@
             position: relative;
             min-height: 100vh;
             box-sizing: border-box;
+            background-color: white;
             @include forMobile{
                 display:none;
             }

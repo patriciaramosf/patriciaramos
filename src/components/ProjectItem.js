@@ -10,8 +10,8 @@ const ProjectItem=(props)=>{
             </div> 
             <div className={ style.bottom }>
                 <div className="project__info">
-                 <h3 className="project__info--title">{ text[currentLanguage].name }</h3>
-                 <p className="project__info--tools">{ text[currentLanguage].tools }</p>
+                 <h3 className="project__info--title animate__animated  animate__flipInX">{ text[currentLanguage].name }</h3>
+                 <p className="project__info--tools animate__animated animate__flipInX">{ text[currentLanguage].tools }</p>
                  <p className="project__info--description animate__fadeInRight">{ text[currentLanguage].description }</p>
                 </div>
                 <div className="cardIcons animate__fadeInRight">

@@ -12,7 +12,8 @@
         background-attachment: fixed;
         background-position: center top;
         background-size: cover;
-        background-color: white;
+       /*  background-color: black; */
+        /* background-color: white; */
         @include forMobile{
             margin-left:180px;
             margin-top:0px;
@@ -149,6 +150,8 @@
                                 font-weight: bold;
                                 margin-bottom:10px;
                                 margin-top:10px;
+                                animation: flipInX;
+                                animation-duration: 1s;
                                 @include forDesktop{
                                     font-size:24px; 
                                     }
@@ -158,6 +161,8 @@
                                 line-height: 24px;
                                 font-size:18px;
                                 font-weight: 500;
+                                animation: flipInX;
+                                animation-duration: 1s;
                                 @include forTablet{
                                     font-size:20px; 
                                     line-height: 30px;
