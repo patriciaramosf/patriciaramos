@@ -71,26 +71,26 @@
     .threeBottom{
         @include forDesktop{
             top:-30px;
-            right:10px;
+            left:35px;
         }
     }
         .iconProjectThree{
             width:200px;
             position: absolute;
-            top:-35px;
-            left:-10px;
+            top:-25px;
+            left:120px;
             @include forTablet{
                 width:260px;
                 top:-40px;
             }
             @include forDesktop{
                 width:340px;
-                top:80px;
-                left:5px;
+                top:60px;
+                left:300px;
             }
             @include forSuperdesktop{
                 width:380px;
-                left:10px;
+                left:360px;
                 top:30px;
             }
         }
@@ -185,6 +185,38 @@
                right:60px;
                top:-2px;
                width:280px;
+            }
+        }
+}
+
+.six{
+    .sixTop{
+        background-color: #8980F5;
+    }
+    .sixBottom{
+        @include forDesktop{
+            top:-30px;
+            right:20px;
+        }
+    }
+        .iconProjectSix{
+            width:110px;
+            position: absolute;
+            top:-16px;
+            left:20px;
+            @include forTablet{
+                width:130px;
+                top:-20px;
+            }
+            @include forDesktop{
+                top:55px;
+                width:180px;
+                left:32px;
+            }
+            @include forSuperdesktop{
+               top:20px;
+               width:240px;
+               left:45px;
             }
         }
 }

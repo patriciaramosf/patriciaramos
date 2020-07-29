@@ -153,6 +153,36 @@ const PROJECTS =[
         id:5,
         type:'layout',
         style: {
+            container:'animate__animated animate__fadeIn projectCard six',
+            top:'projectCardTop sixTop',
+            bottom:'projectCardBottom sixBottom',
+        },
+        image: {
+            class:'iconProjectSix',
+            alt:'responsiveMenu',
+            src:'./images/animation.png',
+        },
+        text: {
+            es: {
+                name:'Menu Responsive Full Screen',
+                tools:'HTML - CSS - Javascript',
+                description:'Menu Responsive para continuar practicando animaciones CSS y Javascript',
+            },
+            en: {
+                name:'Full Screen Responsive Menu',
+                tools:'HTML - CSS - Javascript',
+                description:'Responsive Menu to continue practicing CSS and Javascript animations.',
+            }
+        },
+        links: {
+            code:'https://github.com/patriciaramosf/animated-menu',
+            web:'https://patriciaramosf.github.io/animated-menu/',
+        },
+    },
+    {
+        id:6,
+        type:'layout',
+        style: {
             container:'animate__animated animate__fadeIn projectCard three',
             top:'projectCardTop threeTop',
             bottom:'projectCardBottom threeBottom',
