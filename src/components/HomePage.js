@@ -3,7 +3,7 @@ import ProjectPage from './ProjectPage.js';
 import Home from './../texts/home.js';
 
 const HomePage =(props)=>{
-    const { currentLanguage, filter, setFilter, setReset }=props;
+    const { currentLanguage, filter, setFilter, setReset } =props;
     return(
         <div className="HomePage">
             <div className="containerHomePage">
@@ -31,6 +31,7 @@ const HomePage =(props)=>{
                     </p>
                     <p className="description description1">{ Home[currentLanguage].introduction }</p>
                     <p className="description">{ Home[currentLanguage].description }</p>
+                    <p className="description">{ Home[currentLanguage].description2 }</p>
                     
                     <p className="description">{ Home[currentLanguage].hobbies.title }</p>
                     <div className="content">

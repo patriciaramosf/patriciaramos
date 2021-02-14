@@ -2,9 +2,9 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const Aside =(props)=>{
-    const { currentLanguage, switchLanguage, text, link, textEn } = props;
+    const { currentLanguage, switchLanguage, text, link, textEn, changeLanguage } = props;
     const handleLanguages=()=>{
-        props.changeLanguage()
+        changeLanguage()
     }
     return(
         <div className="aside">
