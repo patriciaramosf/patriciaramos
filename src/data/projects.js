@@ -45,12 +45,12 @@ const PROJECTS =[
         text: {
             es: {
                 name:'Portfolio',
-                tools:'React - Sass - React Router',
+                tools:'React Hooks - Sass - React Router',
                 description:'Este portfolio ha sido creado con React y es una pequeña muestra de mi continuo aprendizaje.',
             },
             en: {
                 name:'Portfolio',
-                tools:'React - Sass - React Router',
+                tools:'React Hooks - Sass - React Router',
                 description:'This is my portfolio, built with React, in which I upload the projects I have been developing during my learning process.',
             },
         },
@@ -177,36 +177,6 @@ const PROJECTS =[
         links: {
             code:'https://github.com/patriciaramosf/animated-menu',
             web:'https://patriciaramosf.github.io/animated-menu/',
-        },
-    },
-    {
-        id:6,
-        type:'layout',
-        style: {
-            container:'animate__animated animate__fadeIn projectCard three',
-            top:'projectCardTop threeTop',
-            bottom:'projectCardBottom threeBottom',
-        },
-        image: {
-            class:'iconProjectThree',
-            alt:'collapsingMargins',
-            src:'./images/responsive.png',
-        },
-        text: {
-            es: {
-                name:'Collapsing Margins',
-                tools:'HTML - Sass',
-                description:'Web responsive, en la que se muestran los datos de contacto y la información personal de cada una de las persona que creamos la página.',
-            },
-            en: {
-                name:'Collapsing Margins',
-                tools:'HTML - Sass',
-                description:'My first project of my Web Development Bootcamp. A web responsive page.',
-            }
-        },
-        links: {
-            code:'https://github.com/patriciaramosf/Collapsing-margins-Web__Adalab-Project',
-            web:'http://beta.adalab.es/project-promo-i-module-1-team-3-afternoon-final/',
         },
     },
     

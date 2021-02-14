@@ -64,37 +64,6 @@
         } 
     }
     
-.three{
-    .threeTop{
-        background-color:#9A98B5;
-    }
-    .threeBottom{
-        @include forDesktop{
-            top:-30px;
-            left:35px;
-        }
-    }
-        .iconProjectThree{
-            width:200px;
-            position: absolute;
-            top:-25px;
-            left:120px;
-            @include forTablet{
-                width:260px;
-                top:-40px;
-            }
-            @include forDesktop{
-                width:340px;
-                top:60px;
-                left:300px;
-            }
-            @include forSuperdesktop{
-                width:380px;
-                left:360px;
-                top:30px;
-            }
-        }
-    }
     .two2{
         .twoTop2{
             background-color:rgba(243, 243, 243,0.8);
