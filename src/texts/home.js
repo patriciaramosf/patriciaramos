@@ -15,8 +15,8 @@ const HOME = {
     },
     en : {
         title:'Hello!',
-        introduction:'Its been over a year since I decided to change from digital marketing to frontend development, and to this day ... I couldn´t be more proud of the decision I made! I´m passionate about coding, how it makes time fly and how much it allows me to use both logic and creativity.',
-        description:'Currently I´m developing with Vue, but I also have experience in React, (this portfolio is a proof of this 😆), and React Native, with which I am starting to make my first steps in the mobile development world.',
+        introduction:'It´s been over a year since I decided to change from digital marketing to frontend development... and I couldn´t be more proud of the decision I made! I´m passionate about coding, how it makes time fly and how much it allows me to use both logic and creativity.',
+        description:'Currently, I´m developing with Vue, but I also have experience in React (this portfolio is a proof of this 😆), and React Native, with which I am starting to take my first steps in the mobile development world.',
         description2:'I´m from Madrid, and I consider myself a happy, curious and collaborative person.',
         hobbies :{
             title:'I love',
