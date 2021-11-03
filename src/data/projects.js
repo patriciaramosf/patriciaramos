@@ -63,36 +63,6 @@ const PROJECTS =[
         id:2,
         type:'react',
         style: {
-            container:'animate__animated animate__fadeIn projectCard one',
-            top:'projectCardTop oneTop',
-            bottom:'projectCardBottom oneBottom',
-        },
-        image: {
-            class:'iconProjectOneDesk',
-            alt:'rick and morty',
-            src:'./images/sticker.png',
-        },
-        text: {
-            es: {
-                name:'Rick and Morty App',
-                tools:'React - Sass - API Rest - React Router',
-                description:'Buscador de personajes de la serie, en el que podrás filtrar por sus nombres.',
-            },
-            en: {
-                name:'Rick and Morty App',
-                tools:'React - Sass - API Rest - React Router',
-                description:'Character search of Rick and Morty TV serie. This app is a funny way to find your favourite characters and to filter them by name.',
-            }
-        },
-        links: {
-            code:'https://github.com/patriciaramosf/modulo-3-evaluacion-final-patriciaramosf',
-            web:'http://beta.adalab.es/modulo-3-evaluacion-final-patriciaramosf/#/',
-        },
-    },
-    {
-        id:3,
-        type:'javascript',
-        style: {
             container:'animate__animated animate__fadeIn projectCard two2',
             top:'projectCardTop twoTop2',
             bottom:'projectCardBottom twoBottom2',
@@ -100,57 +70,26 @@ const PROJECTS =[
         image: {
             class:'iconProjectTwo2',
             alt:'virtual cards',
-            src:'./images/mygiphy.png',
+            src:'./images/cat.png',
         },
         text: {
             es: {
-                name:'Generador de tarjetas',
-                tools:'JavaScript - API Rest - Sass',
-                description:'Con esta App podrás crear tarjetas personalizadas con tus datos, y compartirlas a través de Twitter directamente desde la app.',
+                name:'Petifa',
+                tools:'JavaScript - React - Sass',
+                description:'Proyecto real para un cliente.',
             },
             en: {
-                name:'Card Generator',
-                tools:'JavaScript - API Rest - Sass',
-                description:'Through this app you can create your personalized card, filled with all your personal details, and share it on Twitter.',
+                name:'Petifa',
+                tools:'JavaScript - React - Sass',
+                description:'Real website for a client.',
             }
         },
         links: {
-            code:'https://github.com/patriciaramosf/project-promo-i-module-2-team-3-afternoon',
-            web:'http://beta.adalab.es/project-promo-i-module-2-team-3-afternoon/',
+            web:'http://www.petifa.pt/',
         },
     },
     {
-        id:4,
-        type:'react',
-        style: {
-            container:'animate__animated animate__fadeIn projectCard two',
-            top:'projectCardTop twoTop',
-            bottom:'projectCardBottom twoBottom',
-        },
-        image: {
-            class:'iconProjectTwo',
-            alt:'virtual cards',
-            src:'./images/toggle.png',
-        },
-        text: {
-            es: {
-                name:'Proyecto de código heredado',
-                tools:'React - Sass - LocalStorage',
-                description:'Migración de un proyecto Javascript a React JS, en el que también se añadió el modo noche como mejora.',
-            },
-            en: {
-                name:'Legacy Code Project',
-                tools:'React - Sass - LocalStorage',
-                description:'Migration from Javascript to React JS. Dark Mode was added too, to increase the app usability.',
-            }
-        },
-        links: {
-            code:'https://github.com/patriciaramosf/project-promo-i-module-3-team-1-new',
-            web:'http://beta.adalab.es/project-promo-i-module-3-team-1-new/#/',
-        },
-    },
-    {
-        id:5,
+        id:3,
         type:'layout',
         style: {
             container:'animate__animated animate__fadeIn projectCard six',

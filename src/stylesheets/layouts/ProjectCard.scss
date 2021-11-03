@@ -33,65 +33,35 @@
             }
         }
     }
-.two{
-    .twoTop{
-        background-color: $black;
+    
+    .two2{
+        .twoTop2{
+            background-color:#FFB347;
         }
-    .twoBottom{
+        .twoBottom2{
             @include forDesktop{
                 top:-30px;
                 left:40px;
             }
         }
-        .iconProjectTwo{
-            width:110px;
-            position: absolute;
-            top:2px;
-            right:20px;
-            @include forTablet{
-                width:160px;
-                top:-15px;
-            }
-            @include forDesktop{
-                width:200px;
-                top:60px;
-                right:5px;
-            }
-            @include forSuperdesktop{
-                width:220px;
-                top:40px;
-            }
-        } 
-    }
-    
-    .two2{
-        .twoTop2{
-            background-color:rgba(243, 243, 243,0.8);
-        }
-        .twoBottom2{
-            @include forDesktop{
-                top:-30px;
-                right:20px;
-            }
-        }
         .iconProjectTwo2{
             width:100px;
             position: absolute;
-            top:-20px;
-            left:30px;
+            top:10px;
+            right:20px;
+            border:1px solid red;
             @include forTablet{
                 width:140px;
-                top:-50px;
+                top:30px;
             } 
             @include forDesktop{
                 width:200px;
-                top:20px;
-                right:330px;
+                right:2px;
             }
             @include forSuperdesktop{
                 width:240px;
-                top:-40px;
-                left:80px;
+                top:80px;
+                right:20px;
             }
     }
 }
