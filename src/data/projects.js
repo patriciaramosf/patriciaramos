@@ -75,13 +75,13 @@ const PROJECTS =[
         text: {
             es: {
                 name:'Petifa',
-                tools:'JavaScript - React - Sass',
-                description:'Proyecto real para un cliente.',
+                tools:'React Hooks - Sass - React Router',
+                description:'Proyecto real para la empresa Petifa.',
             },
             en: {
                 name:'Petifa',
-                tools:'JavaScript - React - Sass',
-                description:'Real website for a client.',
+                tools:'React Hooks - Sass - React Router',
+                description:'Real project for the Petifa company.',
             }
         },
         links: {

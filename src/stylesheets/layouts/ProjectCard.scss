@@ -36,7 +36,7 @@
     
     .two2{
         .twoTop2{
-            background-color:#FFB347;
+            background-color:#ff9d59;
         }
         .twoBottom2{
             @include forDesktop{
@@ -49,19 +49,19 @@
             position: absolute;
             top:10px;
             right:20px;
-            border:1px solid red;
             @include forTablet{
                 width:140px;
-                top:30px;
+                top:-10px;
             } 
             @include forDesktop{
-                width:200px;
-                right:2px;
+                width:240px;
+                right:-30px;
+                top:20px;
             }
             @include forSuperdesktop{
-                width:240px;
-                top:80px;
-                right:20px;
+                width:280px;
+                top:20px;
+                right:0px;
             }
     }
 }
