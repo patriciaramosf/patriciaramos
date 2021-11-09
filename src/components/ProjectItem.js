@@ -15,8 +15,8 @@ const ProjectItem=(props)=>{
                  <p className="project__info--description animate__fadeInRight">{ text[currentLanguage].description }</p>
                 </div>
                 <div className="cardIcons animate__fadeInRight">
-                <a   target="blank"
-                     href={ links.code }><i className="fas fa-code"></i></a>
+                {links.code && <a   target="blank"
+                     href={ links.code }><i className="fas fa-code"></i></a>}
                 {
                     !!links.web &&
                         <a   target="blank"
