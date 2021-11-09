@@ -45,13 +45,13 @@
             }
         }
         .iconProjectTwo2{
-            width:100px;
+            width:140px;
             position: absolute;
-            top:10px;
-            right:20px;
+            top:-10px;
+            right:0px;
             @include forTablet{
-                width:140px;
-                top:-10px;
+                width:170px;
+                top:-20px;
             } 
             @include forDesktop{
                 width:240px;
@@ -59,8 +59,8 @@
                 top:20px;
             }
             @include forSuperdesktop{
-                width:280px;
-                top:20px;
+                width:300px;
+                top:5px;
                 right:0px;
             }
     }
